@@ -33,7 +33,7 @@
 
 [Celeste Muniz](https://github.com/celeste1030)
 
-[Saroja ](https://github.com/shreeniv)
+[Saroja Shreenivasan](https://github.com/shreeniv)
 
 [Sai Prasanna](https://github.com/prasanna0913)
 
