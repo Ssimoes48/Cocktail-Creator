@@ -1,4 +1,4 @@
-# Full Flask App
+# Cocktail Creator Flask App
 
 > Here goes your awesome project description!
 
@@ -29,7 +29,7 @@
 
 ## Contact
 
-[Eliot McFarland](https://github.com/emcfarland)
+[Elliott McFarland](https://github.com/emcfarland)
 
 [Celeste Muniz](https://github.com/celeste1030)
 
