@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample Flask Website</title>
+  <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/html-templating">HTML Templating</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/js-variables">JS Variables</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/js-templating">JS Templating</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/raw-web-api">Raw Web API</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/js-using-web-api">JS Web API</a>
+      </li>
+    </ul>
+  
+  </nav>
+  <div class="content">
+    <h2>Plotly Visualization Created Using JavaScript Templating</h2>
+    <br>
+    <div id="my-chart"></div>
+  </div>
+</body>
+
+<script>
+  var cocktail_data = [
+      {% for cocktail in db_data %}
+        {
+          "name": "{{ cocktail.name }}",
+          "type": "{{ cocktail.type }}"
+        },
+      {% endfor %}
+      ];
+</script>
+
+<script src="/static/js/js-templating.js"></script>
+
+</html>

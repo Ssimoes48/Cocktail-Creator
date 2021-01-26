@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sample Flask Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/html-templating">HTML Templating</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/js-variables">JS Variables</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/js-templating">JS Templating</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/raw-web-api">Raw Web API</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/js-using-web-api">JS Web API</a>
+      </li>
+    </ul>
+  
+  </nav>
+  <div class="content">
+    <h2>JS Finds Variables Declared In Previously Listed JavaScript</h2>
+    <br>
+    <p>This behavior is used to to add functionality to JavaScript files.</p>
+  </div>
+</body>
+
+<script>var myVarDeclaredInScript = "I was declared in a previous script!";</script>
+<script src="/static/js/js-variable-alert.js"></script>
+
+</html>

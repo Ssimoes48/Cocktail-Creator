@@ -1,0 +1,24 @@
+div.content {
+    margin: 15px;
+}
+
+nav {
+    margin-bottom: 15px;
+}
+
+li.active {
+    background-color: #5b6e82;
+}
+
+table {
+    width: 300px !important;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: darkslategrey;
+}
