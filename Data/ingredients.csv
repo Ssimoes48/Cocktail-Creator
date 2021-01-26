@@ -161,7 +161,7 @@ After Dinner Cocktail,1.0, Apricot Flavored Brandy,True,Fl Oz
 Harvest Moon,1.5, Straight rye whiskey,True,Fl Oz
 Red Raider,1.0, Bourbon,True,Fl Oz
 Vodka and Apple Juice,2.0, Vodka,True,Fl Oz
-Mint Julep (Southern Style),5,springs mint,False,garnish
+Mint Julep (Southern Style),5.0,springs mint,False,garnish
 Limestone,1.5, Bourbon,True,Fl Oz
 Grounds For Divorce,1.5, Straight rye whiskey,True,Fl Oz
 Gentleman's Cocktail,1.5, Bourbon,True,Fl Oz
@@ -306,7 +306,7 @@ Bloody Scotsman,24.0," Smoky Scotch whisky, such as Laphroaig",True,Fl Oz
 White Cargo Cocktail,1.0, Vanilla Ice Cream,True,Fl Oz
 Blood and Sand,0.5, Blended Scotch Whiskey,True,Fl Oz
 The Blinker,2.0, Straight rye whisky,True,Fl Oz
-Pike's Peak Cooler,,Cider,False,garnish
+Pike's Peak Cooler,1,Cider,False,garnish
 Blarney Stone Cocktail,2.0, Irish Whiskey,True,Fl Oz
 Pacman,2.0, Lemon Juice,True,Fl Oz
 Lemonade (Golden),1.0, Juice of a Lemon,True,Fl Oz
@@ -346,7 +346,7 @@ Pretty In Pink,2.0, Vodka,True,Fl Oz
 Cherry Wine Cocktail,0.75, Danish Cherry Wine,True,Fl Oz
 Cherry Flip,1.0, Whole Egg,True,Fl Oz
 Cherry Cooler,2.0, Cherry Vodka,True,Fl Oz
-Polynesian Cocktail,," Lime wedge, superfine sugar",False,garnish
+Polynesian Cocktail,1," Lime wedge, superfine sugar",False,garnish
 Chateau Briand's Rum Cow,1.25, Dark rum,True,Fl Oz
 Champagne Velvet,5.0, Chilled Stout,True,Fl Oz
 Pink Pussycat,1.5, Vodka,True,Fl Oz
@@ -532,7 +532,7 @@ Godchild,1.0, Vodka,True,Fl Oz
 Grape Vodka Froth,1.5, Vodka,True,Fl Oz
 Grapefruit Nog,1.5, Brandy,True,Fl Oz
 Golden Slipper,0.75, Yellow Chartreuse,True,Fl Oz
-Golden Freindship,, Amaretto,False,garnish
+Golden Freindship,1, Amaretto,False,garnish
 Golden Frappe,1.0, Orange Juice,True,Fl Oz
 Glass Tower,1.0, Vodka,True,Fl Oz
 Golden Fizz,0.5, Juice of a Lemon,True,Fl Oz
@@ -811,7 +811,7 @@ Orange Gin Collins,0.5, Juice of a Lemon,True,Fl Oz
 Sidewinder,1.5, Reposado tequila,True,Fl Oz
 Orange Blossom Cocktail,1.0, Old Mr. Boston Dry Gin,True,Fl Oz
 Shady Lady,1.0, Blanco tequila,True,Fl Oz
-Cherry Blossom,," Cherry-flavored brandy, superfine sugar",False,garnish
+Cherry Blossom,1," Cherry-flavored brandy, superfine sugar",False,garnish
 The Sfozando,1.0, Mezcal,True,Fl Oz
 Napoleon Cocktail,2.0, Old Mr. Boston Dry Gin,True,Fl Oz
 Moulin Rouge Cocktail,1.5, Old Mr. Boston Sloe Gin,True,Fl Oz
@@ -828,14 +828,14 @@ Quetzalcoatl,1.0, Blanco tequila,True,Fl Oz
 Zero Mint,2.0, Mr. Boston Creme de menthe,True,Fl Oz
 Purple Pancho,for glass," Lime wedge, superfine sugar",False,garnish
 Midnight Express,1.5, Dark rum,True,Fl Oz
-London Special Cocktail,,orange peel,False,garnish
+London Special Cocktail,1,orange peel,False,garnish
 Mary Pickford Cocktail,1.5, Light Rum,True,Fl Oz
 Charles Cocktail,1.5, Brandy,True,Fl Oz
 Martinique Rose,2.0, Aged rhum agricole,True,Fl Oz
 Mariposa,1.0, Light Rum,True,Fl Oz
 Mandeville,1.5, Light Rum,True,Fl Oz
 K.C.B. Cocktail,0.5, Old Mr. Boston Kummel,True,Fl Oz
-Malmaison,, Anisette,False,garnish
+Malmaison,1, Anisette,False,garnish
 Mai-Tai (Trader Vic Version),2.0," Dark rum, preferably Jamaican",True,Fl Oz
 Jersey Lightning Cocktail,1.5, Apple Brandy,True,Fl Oz
 Lumination,2.0, Fresh ginger,True,Fl Oz
@@ -917,16 +917,16 @@ Chelsea Sidecar Cocktail,0.25, Juice of a Lemon,True,Fl Oz
 Mexican Firing Squad,2.0, Blanco tequila,True,Fl Oz
 Mexicana,0.5, Blanco tequila,True,Fl Oz
 El Presidente Cocktail No. 2,1.5, Light Rum,True,Fl Oz
-Margarita Tequila,," Lime wedge, coarse salt",False,garnish
+Margarita Tequila,1," Lime wedge, coarse salt",False,garnish
 Lillypad,1.5, Blanco tequila,True,Fl Oz
 X. Y. Z. Cocktail,1.0, Lemon Juice,True,Fl Oz
 La Ultima Palabra,0.75, Blanco tequila,True,Fl Oz
 La Perla,1.5, Reposado tequila,True,Fl Oz
 Bull's Milk,1.5, Brandy,True,Fl Oz
-La Bomba,," Lime wedge, superfine sugar",False,garnish
+La Bomba,1," Lime wedge, superfine sugar",False,garnish
 Jinx Cocktail,1.0, Blanco tequila,True,Fl Oz
 The Interesting Cocktail,2.0, Blanco tequila,True,Fl Oz
-Hot Pants,," Lime wedge, coarse salt",False,garnish
+Hot Pants,1," Lime wedge, coarse salt",False,garnish
 High Plains Drifter No. 1,1.0, Campari,True,Fl Oz
 Hairy Sunrise,0.75, Blanco tequila,True,Fl Oz
 Guadalajara,2.0, Blanco tequila,True,Fl Oz
@@ -950,7 +950,7 @@ Bulldog Cocktail,1.5, cherry-flavored brandy,True,Fl Oz
 Boston Sidecar Cocktail,0.75, Old Mr. Boston Five Star Brandy,True,Fl Oz
 Catalina Margarita,1.5, Blanco tequila,True,Fl Oz
 Camino Del Ray,1.75, Anejo tequila,True,Fl Oz
-Cactus Berry,, Lime wedge coarse salt,False,garnish
+Cactus Berry,1, Lime wedge coarse salt,False,garnish
 Bolero Cocktail,1.5, Old Mr. Boston Rum,True,Fl Oz
 Bum's Rush,1.5, Blanco tequila,True,Fl Oz
 Brave Bull,1.5, Blanco tequila,True,Fl Oz
@@ -1096,7 +1096,7 @@ Brown Cocktail,0.75, Light Rum,True,Fl Oz
 Bronx Terrace Cocktail,1.5, Dry Vermouth,True,Fl Oz
 Bronx Cocktail (Dry),1.0, Dry Vermouth,True,Fl Oz
 Hill Dog,0.5, Grand Marnier,True,Fl Oz
-Blue Devil Cocktail,1/2,Juice of Lemon or Lime,False,garnish
+Blue Devil Cocktail,0.5,Juice of Lemon or Lime,False,garnish
 Blue Canary,3.0, Grapefruit Juice,True,Fl Oz
 Blue Bird,0.5, Triple Sec,True,Fl Oz
 Bloodhound Cocktail,0.5, Sweet Vermouth,True,Fl Oz
@@ -1136,22 +1136,22 @@ Bull's Eye,2.0, Hard cider,True,Fl Oz
 Brantini,1.0, Gin,True,Fl Oz
 Heather's Kiss,0.5, Fresh lemon juice,True,Fl Oz
 Brandy Squirt,1.0, Powdered Sugar,True,Fl Oz
-Brandy and Soda,, Club Soda,False,garnish
+Brandy and Soda,1, Club Soda,False,garnish
 Brandy Milk Punch,2.0, Brandy,True,Fl Oz
 Vodka Collins,0.75, Fresh lemon juice,True,Fl Oz
 Brandy Crusta Cocktail,1.0, Bitters,True,Fl Oz
 Heather Blush,1.0, Strawberry liqueur,True,Fl Oz
 Jack Maples,1.0, maple syrup (grade B or medium-amber),True,Fl Oz
 Brandy Alexander,0.5, Brandy,True,Fl Oz
-Vodka and Tonic,, Tonic water,False,garnish
+Vodka and Tonic,1, Tonic water,False,garnish
 Apricot Cocktail,0.25, Juice of Orange,True,Fl Oz
 Alexander Cocktail No. 2,1.0, Brandy,True,Fl Oz
 After Dinner Cocktail,1.0, Triple Sec,True,Fl Oz
 Harvest Moon,1.0, Lillet Blanc,True,Fl Oz
 Red Raider,0.5, Triple Sec,True,Fl Oz
-Vodka and Apple Juice,, Apple juice,False,garnish
+Vodka and Apple Juice,1, Apple juice,False,garnish
 Mint Julep (Southern Style),1.0, Powdered Sugar,True,Fl Oz
-Limestone,, Collins Mix,False,garnish
+Limestone,1, Collins Mix,False,garnish
 Grounds For Divorce,0.75, Kirschwasser,True,Fl Oz
 Gentleman's Cocktail,0.5, Brandy,True,Fl Oz
 Dixie Julep,2.5, Bourbon,True,Fl Oz
@@ -1200,7 +1200,7 @@ Irish Whisky ,0.5, Absinthe Substitute,True,Fl Oz
 Dubliner,0.5, Sweet Vermouth,True,Fl Oz
 Double Standard Sour,0.75, Gin,True,Fl Oz
 Dixie Whiskey Cocktail,0.5, White creme de menthe,True,Fl Oz
-Hill Billy Highball,, Mountain Dew,False,garnish
+Hill Billy Highball,1, Mountain Dew,False,garnish
 The Titian,0.5, Grand Marnier,True,Fl Oz
 Tiger Tanaka,1.0, Slice peeled fresh ginger,True,Fl Oz
 Grenadine Rickey,1.5, Grenadine,True,Fl Oz
@@ -1258,7 +1258,7 @@ Rosemary Clementine Sparkle,1.5, Vodka,True,Fl Oz
 Chapel Hill,0.5, Triple Sec,True,Fl Oz
 Robin's Nest,1.0, Cranberry Juice,True,Fl Oz
 Chancellor Cocktail,0.5, Dry Vermouth,True,Fl Oz
-Cafe di Saronno,, Hot Black Coffee,False,garnish
+Cafe di Saronno,1, Hot Black Coffee,False,garnish
 Carre Reprise,1.0, Cognac,True,Fl Oz
 Gilroy Cocktail,0.75, Gin,True,Fl Oz
 Redhead Martini,0.75, Fresh lemon juice,True,Fl Oz
@@ -1280,7 +1280,7 @@ Bull And Bear,0.75, Orange curacao,True,Fl Oz
 Brooklyn,0.5, Sweet Vermouth,True,Fl Oz
 Brighton Punch,0.75, Brandy,True,Fl Oz
 Bourbon Renewal,1.0, Fresh lemon juice,True,Fl Oz
-Bourbon Highball,, Ginger ale or soda water,False,garnish
+Bourbon Highball,1, Ginger ale or soda water,False,garnish
 Bourbon And Elder,0.75, Elderflower liqueur,True,Fl Oz
 Bourbon Crusta,2.0, Bourbon whiskey,True,Fl Oz
 Bourbon Cooler,0.5, Fresh lemon juice,True,Fl Oz
@@ -1331,7 +1331,7 @@ Chicago Fizz,1.0, Powdered Sugar,True,Fl Oz
 Pretty In Pink,0.5, Cranberry Juice,True,Fl Oz
 Cherry Wine Cocktail,0.75, Vodka,True,Fl Oz
 Cherry Flip,1.0, Powdered Sugar,True,Fl Oz
-Cherry Cooler,, Cola,False,garnish
+Cherry Cooler,1, Cola,False,garnish
 Polynesian Cocktail,1.5, Vodka,True,Fl Oz
 Chateau Briand's Rum Cow,1.0, Sugar,True,Fl Oz
 Champagne Velvet,5.0, Chilled Champagne,True,Fl Oz
@@ -1395,7 +1395,7 @@ Affinity Cocktail,0.75, Maraschino liqueur,True,Fl Oz
 Peggy Cocktail,1.5, Gin,True,Fl Oz
 Peach Blow Fizz,1.0, Powdered Sugar,True,Fl Oz
 Peach Blossom,0.5, Powdered Sugar,True,Fl Oz
-Passion Mimosa,, Chilled Champagne,False,garnish
+Passion Mimosa,1, Chilled Champagne,False,garnish
 Mocha Express,0.75, Irish cream liqueur,True,Fl Oz
 Palmer Cocktail,1.0, Bitters,True,Fl Oz
 Mr. 404,0.75, Elderflower liqueur,True,Fl Oz
@@ -1430,7 +1430,7 @@ L'italienne,0.25, Lillet Blanc,True,Fl Oz
 Rum Dubonnet,1.5, Dubonnet,True,Fl Oz
 Ruby Fizz,1.0, Powdered Sugar,True,Fl Oz
 Limoncello Manzanilla Marmalade Sour,0.75, Limoncello,True,Fl Oz
-Royal Purple Punch,,ginger ale,False,garnish
+Royal Purple Punch,1,ginger ale,False,garnish
 Royal Gin Fizz,1.0, Powdered Sugar,True,Fl Oz
 Royal Cocktail,0.5, Juice of a Lemon,True,Fl Oz
 Royal Clover Club Cocktail,1.0, Grenadine,True,Fl Oz
@@ -1458,7 +1458,7 @@ White Plush,1.0, Milk,True,Fl Oz
 White Elephant,1.0, Sweet Vermouth,True,Fl Oz
 Whiskey Toddy (cold),2.0, Water,True,Fl Oz
 Kretchma Cocktail,1.0, White creme de cacao,True,Fl Oz
-Whiskey Skin,,boiling water,False,garnish
+Whiskey Skin,1,boiling water,False,garnish
 Whiskey Milk Punch,2.0, Blended whiskey,True,Fl Oz
 Katana,1.5, Vodka,True,Fl Oz
 Ethel Duffy Cocktail,0.75, White creme de menthe,True,Fl Oz
@@ -1473,11 +1473,11 @@ Washington Cocktail,0.75, Brandy,True,Fl Oz
 The Jamaican Ten Speed,0.75, Melon liqueur,True,Fl Oz
 Twin Six Cocktail,0.5, Sweet Vermouth,True,Fl Oz
 Jackie-O,0.5, each Citrus-flavored vodka and orange-flavored vodka,True,Fl Oz
-Tropical Heart,, Hot Apple Cider,False,garnish
+Tropical Heart,1, Hot Apple Cider,False,garnish
 Trois Rivieres,1.0, Dubonnet,True,Fl Oz
 Tovarich Cocktail,0.75, Kummel,True,Fl Oz
 Italian Screwdriver,1.5, Citrus-flavored vodka,True,Fl Oz
-T.N.T. Cocktail No. 2,, Tonic,False,garnish
+T.N.T. Cocktail No. 2,1, Tonic,False,garnish
 T.N.T. Cocktail No. 1,1.5, Anis,True,Fl Oz
 Ibiza,0.5, Campari,True,Fl Oz
 Thunder,1.0, Egg Yolk,True,Fl Oz
@@ -1486,7 +1486,7 @@ Tequila Fizz,0.75, Grenadine,True,Fl Oz
 Humpty Dumpty,1.0, Orange juice,True,Fl Oz
 Tequila Cocktail,0.5, Juice of a Lemon,True,Fl Oz
 Temptation Cocktail,0.5, Triple Sec,True,Fl Oz
-Tchoupitolas Street Guzzle,, Ginger beer,False,garnish
+Tchoupitolas Street Guzzle,1, Ginger beer,False,garnish
 Tahitian Tea,0.5, Light Rum,True,Fl Oz
 Limey ,1.0, Lime Liqueur,True,Fl Oz
 Headless Horseman,3.0, Angostura Bitters,True,Fl Oz
@@ -1494,14 +1494,14 @@ Love Cocktail,1.0, Egg White,True,Fl Oz
 Los Angeles Cocktail,1.0, Powdered Sugar,True,Fl Oz
 Long Island Tea,0.5, Gin,True,Fl Oz
 Harvey Wallbanger,4.0, Fresh orange juice,True,Fl Oz
-Lime Giant,, Lemon-lime soda,False,garnish
+Lime Giant,1, Lemon-lime soda,False,garnish
 Lil Naue,0.5, Port,True,Fl Oz
 Harrington,0.25, Triple Sec,True,Fl Oz
 El Profesor,0.5, Punt e Mes,True,Fl Oz
 Leap Year Cocktail,0.5, Orange Flavored Gin,True,Fl Oz
 Lasky Cocktail,0.75, Swedish Punch,True,Fl Oz
 Lady Love Fizz,0.5, Juice of a Lemon,True,Fl Oz
-Handball Cooler,, Soda water,False,garnish
+Handball Cooler,1, Soda water,False,garnish
 Hyatt's Jamaican Banana,0.5, White creme de cacao,True,Fl Oz
 H.P.W. Cocktail,1.5, Sweet Vermouth,True,Fl Oz
 Hot Shot Margarita,1.0, Hot Shot Tropical Fruit Liqueur,True,Fl Oz
@@ -1513,13 +1513,13 @@ Grapefruit Gimlet Royale,1.0, Fresh grapefruit juice,True,Fl Oz
 Hair Raiser,0.5, Rock and Rye,True,Fl Oz
 Godmother,0.75, Amaretto,True,Fl Oz
 Green Opal,0.5, Anisette,True,Fl Oz
-Green Hornet (Dry),, Lemon-lime soda,False,garnish
+Green Hornet (Dry),1, Lemon-lime soda,False,garnish
 Green Fizz,1.0, Egg White,True,Fl Oz
 Godchild,1.0, Amaretto,True,Fl Oz
 Grape Vodka Froth,1.0, Grape Juice,True,Fl Oz
 Grapefruit Nog,0.5, Grapefruit Juice,True,Fl Oz
 Golden Slipper,2.0, Apricot-Flavored Brandy,True,Fl Oz
-Golden Freindship,, Sweet Vermouth,False,garnish
+Golden Freindship,1, Sweet Vermouth,False,garnish
 Golden Frappe,2.0, Lemon Juice,True,Fl Oz
 Glass Tower,1.0, Peach schnapps,True,Fl Oz
 Golden Fizz,0.5, Powdered Sugar,True,Fl Oz
@@ -1542,7 +1542,7 @@ Electric Jam,0.5, Blue curacao,True,Fl Oz
 Fairy Belle Cocktail,1.0, Grenadine,True,Fl Oz
 Duke Cocktail,1.0, Orange Juice,True,Fl Oz
 Dreamy Dorini Smoking Martini,0.5," Smoky Scotch, such as Laphroaig",True,Fl Oz
-Dubonnet Highball,,ginger ale,False,garnish
+Dubonnet Highball,1,ginger ale,False,garnish
 Dubonnet Fizz,0.25, Juice of a Lemon,True,Fl Oz
 Dubonnet Cocktail,0.75, Gin,True,Fl Oz
 Doctor Cook,1.0, Lemon Juice,True,Fl Oz
@@ -1608,7 +1608,7 @@ Bachelor's Bait Cocktail,1.0, Egg White,True,Fl Oz
 Bushranger,1.0, Dubonnet,True,Fl Oz
 Sunset at Gowanus,0.75, Fresh Lime Juice,True,Fl Oz
 Bulldog Highballl,2.0, Gin,True,Fl Oz
-Bucks Fizz (Mimosa),, Chilled Champagne,False,garnish
+Bucks Fizz (Mimosa),1, Chilled Champagne,False,garnish
 Buckjones,1.0, Sweet Sherry,True,Fl Oz
 Stormy Colada,2.0, Pineapple Juice,True,Fl Oz
 Bronx SIlver Cocktail,1.0, Egg White,True,Fl Oz
@@ -1653,7 +1653,7 @@ Scotch Cocktail,1.5, Desmond & Duff Scotch Whisky,True,Fl Oz
 Rum Relaxer,1.0, Pineapple Juice,True,Fl Oz
 Rum Old-Fashioned,1.0, 151-Proof Rum,True,Fl Oz
 Rum Martini,1.0, Dry Vermouth,True,Fl Oz
-Rum Highball,, Ginger ale or soda water,False,garnish
+Rum Highball,1, Ginger ale or soda water,False,garnish
 Rum Fix,1.0, Fresh lemon or lime juice,True,Fl Oz
 Rum Daisy,0.5, Fresh lemon juice,True,Fl Oz
 D'artagnan,1.0, Grand Marnier,True,Fl Oz
@@ -1690,7 +1690,7 @@ Night Cap,0.5, Simple Syrup,True,Fl Oz
 New Orleans Buck,1.0, Fresh orange juice,True,Fl Oz
 Nevada Cocktail,1.0, Grapefruit Juice,True,Fl Oz
 Moonquake Shake,1.0, Coffee-flavored brandy,True,Fl Oz
-Monkey Wrench,, Grapefruit Juice,False,garnish
+Monkey Wrench,1, Grapefruit Juice,False,garnish
 Creme De Cafe,0.5, Light Rum,True,Fl Oz
 Margarita,0.75, Cointreau or triple sec,True,Fl Oz
 Mojito,7.0, Fresh mint leaves,False,garnish
@@ -1713,7 +1713,7 @@ Bolshoi Punch,0.75, Fresh lemon juice,True,Fl Oz
 Blue Lagoon,1.0, Blue curacao,True,Fl Oz
 Stinger Cocktail,1.5, Old Mr. Boston Five Star Brandy,True,Fl Oz
 Bloody Mary,3.0, Tomato Juice,True,Fl Oz
-Spritzer Highball,,carbonated water,False,garnish
+Spritzer Highball,1,carbonated water,False,garnish
 Bloody Bull,2.0, Tomato Juice,True,Fl Oz
 The Blood Orange,1.0, Campari,True,Fl Oz
 Black Russian,0.75, Coffee liqueur,True,Fl Oz
@@ -1727,18 +1727,18 @@ Cold Deck Cocktail,0.5, Sweet Vermouth,True,Fl Oz
 The Big Crush,0.5, Triple Sec,True,Fl Oz
 Bianca,1.5, Citrus-flavored vodka,True,Fl Oz
 Bella Fragolia,4.0, Fresh basil leaves,True,Fl Oz
-Beer Buster,, Chilled beer or ale,False,garnish
+Beer Buster,1, Chilled beer or ale,False,garnish
 Basil 8,5.0, White grapes,True,Fl Oz
 Shamrock Cocktail,0.5, Dry Vermouth,True,Fl Oz
 Aqueduct,0.75, Fresh Lime Juice,True,Fl Oz
-Scotch Whisky Highball,,ginger ale,False,garnish
+Scotch Whisky Highball,1,ginger ale,False,garnish
 Alfie Cocktail,0.75, Pineapple Juice,True,Fl Oz
 Admiral Perry,1.0, Cinnamon schnapps,True,Fl Oz
 Yellow Rose Of Texas,0.75, Fresh lemon juice,True,Fl Oz
 St. Patrick's Day Cocktail,0.75, Green Chartreuse,True,Fl Oz
-Purple Twister,,cola,False,garnish
+Purple Twister,1,cola,False,garnish
 Waiting On Summer,3.0, Fresh sage leaves,True,Fl Oz
-Cognac Highball,, Ginger ale or soda water,False,garnish
+Cognac Highball,1, Ginger ale or soda water,False,garnish
 Prince's Smile Cocktail,0.5, Apple Brandy,True,Fl Oz
 Viva Villa,1.5, Blanco tequila,True,Fl Oz
 Praire Oyster Cocktail,1.0, Worcestershire Sauce,True,Fl Oz
@@ -1792,7 +1792,7 @@ Silk Stockings,1.0, White creme de cacao,True,Fl Oz
 Orchid Cocktail,1.0, Egg White,True,Fl Oz
 Orange Milk Fizz,1.0, Powdered Sugar,True,Fl Oz
 Orange Gin Rickey,2.0, Old Mr. Boston Orange Flavored Gin ,True,Fl Oz
-Orange Gin Highball,,ginger ale,False,garnish
+Orange Gin Highball,1,ginger ale,False,garnish
 Orange Gin Fizz,1.0, Powdered Sugar,True,Fl Oz
 Orange Gin Collins,2.0, Old Mr. Boston Orange Flavored Gin ,True,Fl Oz
 Sidewinder,0.5, Campari,True,Fl Oz
@@ -1812,10 +1812,10 @@ The Refuge,0.5, Aperol,True,Fl Oz
 Manhattan Cocktail (dry),1.5, Old Thompson Blended Whiskey,True,Fl Oz
 Mamie Taylor,2.0, Desmond & Duff Scotch Whisky,True,Fl Oz
 Quetzalcoatl,0.75, Mezcal,True,Fl Oz
-Zero Mint,,water,False,garnish
+Zero Mint,1,water,False,garnish
 Purple Pancho,1.0, Blanco tequila,True,Fl Oz
 Midnight Express,0.5, Triple Sec,True,Fl Oz
-London Special Cocktail,,lump sugar,False,garnish
+London Special Cocktail,1,lump sugar,False,garnish
 Mary Pickford Cocktail,0.75, Pineapple Juice,True,Fl Oz
 Charles Cocktail,1.5, Sweet Vermouth,True,Fl Oz
 Martinique Rose,0.5, Amaretto,True,Fl Oz
@@ -1874,7 +1874,7 @@ Grande Guignol,0.75, Yellow Chartreuse,True,Fl Oz
 Pancho Villa,0.75, Aperol,True,Fl Oz
 Paloma (Natural),2.0, Fresh white or ruby red grapefruit juice,True,Fl Oz
 Golden Friendship,1.0, Sweet Vermouth,True,Fl Oz
-Paloma,, Grapefruit-flavored soda,False,garnish
+Paloma,1, Grapefruit-flavored soda,False,garnish
 Pacific Sunshine,1.5, Blanco tequila,True,Fl Oz
 Golden Eclipse,0.25, Amaro,True,Fl Oz
 Diplomat Cocktail,0.5, Sweet Vermouth,True,Fl Oz
@@ -1925,7 +1925,7 @@ Bulla's Eye,2.0, Hard cider,True,Fl Oz
 El Oso (The Bear),0.75, Honey liqueur,True,Fl Oz
 El Ni_o,1.0, Whole strawberry,True,Fl Oz
 El Molino,0.75, Palo cortado or oloroso sherry,True,Fl Oz
-Bucks Fizz,,champagne,False,garnish
+Bucks Fizz,1,champagne,False,garnish
 Dirty Daisy,1.0, White Curacao,True,Fl Oz
 Diablo,0.75, Creme de Cassis,True,Fl Oz
 Count Camillo's Paloma,0.75, Sweet Vermouth,True,Fl Oz
@@ -1977,7 +1977,7 @@ Waikiki Beachcomber,0.75, Triple Sec,True,Fl Oz
 Vow Of Silence,0.75, Grapefruit Juice,True,Fl Oz
 Gauguin,1.0, Lemon Juice,True,Fl Oz
 Fort Lauderdale,0.25, Juice of Orange,True,Fl Oz
-Apple Pie,, Apple slice,False,garnish
+Apple Pie,1, Apple slice,False,garnish
 Cuban Cocktail No. 1,2.0, Light Rum,True,Fl Oz
 Cool Carlos,2.0, Pineapple Juice,True,Fl Oz
 John Collins,0.5, Simple Syrup,True,Fl Oz
@@ -2026,11 +2026,11 @@ Monte Carlo Imperial Highball,0.25, Juice of a Lemon,True,Fl Oz
 Irish Shillelagh,0.5, Sloe gin,True,Fl Oz
 Melon Cocktail,0.25, Maraschino,True,Fl Oz
 Martini (Medium),0.5, Sweet Vermouth,True,Fl Oz
-Mamie's Sister,, Ginger ale,False,garnish
+Mamie's Sister,1, Ginger ale,False,garnish
 Irish Rickey,1.0, Soda water,True,Fl Oz
 Maiden's Prayer,1.0, Lemon Juice,True,Fl Oz
-London Buck,, Ginger ale,False,garnish
-Leap Frog Highball,, Ginger ale,False,garnish
+London Buck,1, Ginger ale,False,garnish
+Leap Frog Highball,1, Ginger ale,False,garnish
 Incider Cocktail,1.0, Apple slice,True,Fl Oz
 Kup's Indispensable Cocktail,1.5, Gin,True,Fl Oz
 Knock-Out Cocktail,0.75, Dry Vermouth,True,Fl Oz
@@ -2041,7 +2041,7 @@ H. P. W. Cocktail,1.5, Gin,True,Fl Oz
 I.A.P.,3.0, Cola,True,Fl Oz
 Hotel Plaza Cocktail,0.75, Gin,True,Fl Oz
 Hawaiin Cocktail,0.5, Triple Sec,True,Fl Oz
-White Russian,, Milk or half-and-half,False,garnish
+White Russian,1, Milk or half-and-half,False,garnish
 Green Devil,1.0, Lime Juice,True,Fl Oz
 Greenback,1.0, Lemon Juice,True,Fl Oz
 Grapefruit Cocktail,1.0, Maraschino,True,Fl Oz
@@ -2065,7 +2065,7 @@ Dixie Cocktail,0.5, Dry Vermouth,True,Fl Oz
 Delmonico No. 2,1.5, Gin,True,Fl Oz
 Hole-In-One,0.25, Fresh lemon juice,True,Fl Oz
 Caruso,0.5, Green creme de menthe,True,Fl Oz
-Bulldog Highball,, Ginger ale,False,garnish
+Bulldog Highball,1, Ginger ale,False,garnish
 Brown Cocktail,0.75, Dry Vermouth,True,Fl Oz
 Bronx Terrace Cocktail,0.5, Juice of a Lime,True,Fl Oz
 Bronx Cocktail (Dry),0.25, Juice of Orange,True,Fl Oz
@@ -2074,13 +2074,13 @@ Blue Devil Cocktail,1.0, Maraschino,True,Fl Oz
 Blue Canary,1.0, Blue curacao,True,Fl Oz
 Blue Bird,1.0, Bitters,True,Fl Oz
 Bloodhound Cocktail,1.0, Gin,True,Fl Oz
-Billy Taylor,, Club Soda,False,garnish
+Billy Taylor,1, Club Soda,False,garnish
 Bijou Cocktail,0.75, Sweet Vermouth,True,Fl Oz
 Bermuda Rose ,1.5, Grenadine,True,Fl Oz
 Vodka Sour,0.75, Fresh lemon juice,True,Fl Oz
 Apricot Anisette Collins,1.5, Anisette,True,Fl Oz
 Alexander's Sister Cocktail,1.0, Light cream,True,Fl Oz
-Highland Cooler,, Soda water or ginger ale,False,garnish
+Highland Cooler,1, Soda water or ginger ale,False,garnish
 Alexander Cocktail No. 1,1.0, Light cream,True,Fl Oz
 Adam and Eve,1.0, Brandy,True,Fl Oz
 Vodka Sling,0.5, Simple Syrup,True,Fl Oz
@@ -2098,8 +2098,8 @@ Hebrides,0.5, Triple Sec,True,Fl Oz
 Vodka Daisy,0.5, Simple Syrup,True,Fl Oz
 Heavenly Dram,0.75, Fresh lemon juice,True,Fl Oz
 Classic Cocktail,1.5, Maraschino,True,Fl Oz
-Cherry Fizz,, Club Soda,False,garnish
-Vodka Cooler,, Soda water or ginger ale,False,garnish
+Cherry Fizz,1, Club Soda,False,garnish
+Vodka Cooler,1, Soda water or ginger ale,False,garnish
 Button Hook Cocktail,0.5, Anisette,True,Fl Oz
 Brantini,1.0, Dry Vermouth,True,Fl Oz
 Heather's Kiss,0.25, Agave nectar,True,Fl Oz
@@ -2110,14 +2110,14 @@ Brandy Crusta Cocktail,1.0, Lemon Juice,True,Fl Oz
 Heather Blush,3.0, Chilled sparkling wine,True,Fl Oz
 Jack Maples,1.0, Aromatic bitters,True,Fl Oz
 Brandy Alexander,0.5, Heavy cream,True,Fl Oz
-Vodka and Tonic,, Lemon or lime wedge,False,garnish
+Vodka and Tonic,1, Lemon or lime wedge,False,garnish
 Apricot Cocktail,1.5, Apricot Flavored Brandy,True,Fl Oz
 Alexander Cocktail No. 2,1.0, Light cream,True,Fl Oz
 After Dinner Cocktail,1.0, Juice of a Lime,True,Fl Oz
 Harvest Moon,0.5, Apple Brandy,True,Fl Oz
 Red Raider,1.0, Lemon Juice,True,Fl Oz
 Mint Julep (Southern Style),2.0, Water,True,Fl Oz
-Limestone,, Lime Juice,False,garnish
+Limestone,1, Lime Juice,False,garnish
 Grounds For Divorce,0.25, Cynar,True,Fl Oz
 Gentleman's Cocktail,0.5, Creme de Menthe,True,Fl Oz
 Victory Collins,1.0, Fresh lemon juice,True,Fl Oz
@@ -2142,7 +2142,7 @@ Fancy Whiskey,0.25, Triple Sec,True,Fl Oz
 Underneath The Mango Tree,0.5, Peach liqueur,True,Fl Oz
 Fancy-Free Cocktail,1.0, Angostura Bitters,True,Fl Oz
 Honeymoon Cocktail,0.75, Fresh lemon juice,True,Fl Oz
-Twister,, Lime wedge,False,garnish
+Twister,1, Lime wedge,False,garnish
 Everybody's Irish Cocktail,1.0, Green Chartreuse,True,Fl Oz
 Trident,1.0, Dry Sherry,True,Fl Oz
 Top Banana,2.0, Orange juice,True,Fl Oz
@@ -2153,7 +2153,7 @@ Eastern Sour,1.0, Fresh Lime Juice,True,Fl Oz
 K. C. B. Cocktail,0.25, Mr. Boston Apricot Flavored Brandy,True,Fl Oz
 Easter Elchies,0.5, Punt e Mes,True,Fl Oz
 Dufftown Flip,0.5, Demerara Syrup,True,Fl Oz
-Harvard Cooler,, Soda water or ginger ale,False,garnish
+Harvard Cooler,1, Soda water or ginger ale,False,garnish
 The Duboudreau Cocktail,0.25, Fernet-Branca,True,Fl Oz
 Irish Whisky ,0.25, Maraschino,True,Fl Oz
 Dubliner,0.5, Grand Marnier,True,Fl Oz
@@ -2181,7 +2181,7 @@ The Delmarva Cocktail,0.5, White creme de menthe,True,Fl Oz
 Sputnik,3.0, Fresh orange juice,True,Fl Oz
 Gotham,3.0, Peach bitters,True,Fl Oz
 De La Louisiane,0.75, Benedictine,True,Fl Oz
-The Debonair,, Lemon twist,False,garnish
+The Debonair,1, Lemon twist,False,garnish
 Soviet,0.5, Dry Vermouth,True,Fl Oz
 Daisy Dueller,0.75, Simple Syrup,True,Fl Oz
 Sonic Blaster,0.5, Creme de banana,True,Fl Oz
@@ -2232,7 +2232,7 @@ Bull And Bear,1.0, Fresh lemon juice,True,Fl Oz
 Brooklyn,1.0, Amer Picon or Torani Amer,True,Fl Oz
 Brighton Punch,0.75, Benedictine,True,Fl Oz
 Bourbon Renewal,0.5, Creme de Cassis,True,Fl Oz
-Bourbon Highball,, Lemon twist,False,garnish
+Bourbon Highball,1, Lemon twist,False,garnish
 Bourbon And Elder,1.0, Angostura Bitters,True,Fl Oz
 Bourbon Crusta,0.5, Triple Sec,True,Fl Oz
 Bourbon Cooler,0.5, Grapefruit Juice,True,Fl Oz
@@ -2252,7 +2252,7 @@ Lemonade (Egg),1.0, Whole Egg,True,Fl Oz
 Bensonhurst,1.0, Dry Vermouth,True,Fl Oz
 Chocolate Daisy,1.0, Grenadine,True,Fl Oz
 The Beautiful Day,2.0, Cold brewed green tea,True,Fl Oz
-French Quarter,, Lemon quarter-wheel,False,garnish
+French Quarter,1, Lemon quarter-wheel,False,garnish
 Creme de Gin Cocktail,1.0, Egg White,True,Fl Oz
 Creamy Screwdriver,6.0, Orange Juice,True,Fl Oz
 Creamy Orange,0.75, Brandy,True,Fl Oz
@@ -2289,7 +2289,7 @@ Canadian Pineapple,1.0, Lemon Juice,True,Fl Oz
 Calm Voyage,1.0, Passion Fruit Syrup,True,Fl Oz
 Pink Lemonade,0.25, Fresh Lime Juice,True,Fl Oz
 Caledonia,1.0, Milk,True,Fl Oz
-Caf_ di Amaretto ,, Whipped cream,False,garnish
+Caf_ di Amaretto ,1, Whipped cream,False,garnish
 Cafe De Paris Cocktail,1.0, Light cream,True,Fl Oz
 Aztec's Mark,0.25, Benedictine,True,Fl Oz
 Fontainebleau Special,0.5, Dry Vermouth,True,Fl Oz
@@ -2300,7 +2300,7 @@ Soul Kiss Cocktail,0.75, Dry Vermouth,True,Fl Oz
 Pickled Martini,0.75, Sweet pickle brine,True,Fl Oz
 Sloe Gin Flip,1.0, Sloe gin,True,Fl Oz
 Angel's Share,0.25, Creme de Cassis,True,Fl Oz
-Silver Stallion Fizz,, Carbonated Water,False,garnish
+Silver Stallion Fizz,1, Carbonated Water,False,garnish
 Silver King Cocktail,1.5, Gin,True,Fl Oz
 American Trilogy,1.0, Applejack,True,Fl Oz
 Silver Fizz,2.0, Gin,True,Fl Oz
@@ -2320,18 +2320,18 @@ Savannah,1.0, White creme de cacao,True,Fl Oz
 Pink Rose Fizz,1.0, Egg White,True,Fl Oz
 Ninotchka Cocktail,0.25, Fresh lemon juice,True,Fl Oz
 Prairie Oyster,1.0, Catsup,True,Fl Oz
-Prairie Chicken,, Pepper and Salt,False,garnish
+Prairie Chicken,1, Pepper and Salt,False,garnish
 Pousse L'Amour,0.5, Benedictine,True,Fl Oz
 Puerto Apple,1.0, Lime Juice,True,Fl Oz
 Akogare,0.75," Cold brewed black tea, preferably Japanese",True,Fl Oz
 Prado,1.0, Maraschino,True,Fl Oz
 Port Wine Flip,1.5, Port,True,Fl Oz
-Port Wine Cobbler,,shaved ice,False,garnish
+Port Wine Cobbler,1,shaved ice,False,garnish
 Nijinksy Blini,1.0, Peach puree,True,Fl Oz
 Affinity Cocktail (whisky),1.0, Sweet Vermouth,True,Fl Oz
 Plain Vermouth Cocktail,1.0, Orange Bitters,True,Fl Oz
 Ping-Pong Cocktail,2.0, Sloe gin,True,Fl Oz
-Moscow Mule,, Ginger beer,False,garnish
+Moscow Mule,1, Ginger beer,False,garnish
 Phoebe Snow,0.5, Anis,True,Fl Oz
 Affinity Cocktail,0.75, Fresh lemon juice,True,Fl Oz
 Peggy Cocktail,0.25, Anis,True,Fl Oz
@@ -2368,7 +2368,7 @@ L'italienne,0.25, Ramazzotti Amaro,True,Fl Oz
 Rum Dubonnet,1.0, Lemon Juice,True,Fl Oz
 Ruby Fizz,1.0, Egg White,True,Fl Oz
 Limoncello Manzanilla Marmalade Sour,0.75, Manzanilla sherry,True,Fl Oz
-Royal Purple Punch,,lemon,False,garnish
+Royal Purple Punch,1,lemon,False,garnish
 Royal Gin Fizz,2.0, Gin,True,Fl Oz
 Royal Cocktail,0.5, Powdered Sugar,True,Fl Oz
 Royal Clover Club Cocktail,1.0, Egg Yolk,True,Fl Oz
@@ -2420,7 +2420,7 @@ Tequila Cocktail,4.0, Grenadine,True,Fl Oz
 Temptation Cocktail,0.5, Anis,True,Fl Oz
 Tahitian Tea,0.5, Vodka,True,Fl Oz
 Limey ,0.5, Triple Sec,True,Fl Oz
-Headless Horseman,, Ginger ale,False,garnish
+Headless Horseman,1, Ginger ale,False,garnish
 Love Cocktail,0.5, Lemon Juice,True,Fl Oz
 Los Angeles Cocktail,1.0, Whole Egg,True,Fl Oz
 Long Island Tea,0.5, Light Rum,True,Fl Oz
@@ -2446,7 +2446,7 @@ Green Fizz,0.5, Juice of a Lemon,True,Fl Oz
 Godchild,1.0, Heavy cream,True,Fl Oz
 Grape Vodka Froth,1.0, Egg White,True,Fl Oz
 Grapefruit Nog,1.0, Lemon Juice,True,Fl Oz
-Golden Freindship,, Light Rum,False,garnish
+Golden Freindship,1, Light Rum,False,garnish
 Golden Frappe,1.0, Sugar,True,Fl Oz
 Glass Tower,1.0, White rum,True,Fl Oz
 Golden Fizz,1.5, Gin,True,Fl Oz
@@ -2456,11 +2456,11 @@ Georgia Peach,1.0, Grenadine,True,Fl Oz
 Georgia Mule,0.5, Fresh lemon juice,True,Fl Oz
 Gentle Ben,1.0, Blanco tequila,True,Fl Oz
 East India Cocktail No. 1,0.5, Triple Sec,True,Fl Oz
-General Harrison's Eggnog,, Red wine,False,garnish
+General Harrison's Eggnog,1, Red wine,False,garnish
 Gables Collins,0.5, Fresh lemon juice,True,Fl Oz
 Frozen Brandy and Rum,1.0, Lemon Juice,True,Fl Oz
 Frozen Apple,1.0, Sugar,True,Fl Oz
-Frisky Witch,, Black licorice stick,False,garnish
+Frisky Witch,1, Black licorice stick,False,garnish
 Froth Blower Cocktail,1.0, Grenadine,True,Fl Oz
 French Martini,0.75, Pineapple Juice,True,Fl Oz
 Flatiron Martini,1.5, Lillet Blanc,True,Fl Oz
@@ -2469,7 +2469,7 @@ Electric Jam,1.0, Simple Syrup,True,Fl Oz
 Fairy Belle Cocktail,0.75, Apricot-Flavored Brandy,True,Fl Oz
 Duke Cocktail,2.0, Lemon Juice,True,Fl Oz
 Dreamy Dorini Smoking Martini,4.0, Pastis,True,Fl Oz
-Dubonnet Highball,,carbonated water,False,garnish
+Dubonnet Highball,1,carbonated water,False,garnish
 Dubonnet Fizz,1.0, cherry-flavored brandy,True,Fl Oz
 Dubonnet Cocktail,1.0, Orange Bitters (if desired),True,Fl Oz
 Doctor Cook,1.0, Maraschino,True,Fl Oz
@@ -2525,13 +2525,13 @@ Third-Rail Cocktail,0.75, Brandy,True,Fl Oz
 Tahiti Club,0.5, Fresh Lime Juice,True,Fl Oz
 Barton Special,0.25, Gin,True,Fl Oz
 Barnaby's Buffalo Blizzard,1.0, Galliano,True,Fl Oz
-Susie Taylor,, Ginger ale,False,garnish
+Susie Taylor,1, Ginger ale,False,garnish
 Baltimore Bracer,1.0, Egg White,True,Fl Oz
 Bachelor's Bait Cocktail,1.0, Orange Bitters,True,Fl Oz
 Bushranger,1.0, Bitters,True,Fl Oz
 Sunset at Gowanus,0.5, Maple Syrup,True,Fl Oz
 Buckjones,0.5, Juice of a Lime,True,Fl Oz
-Stormy Colada,, Ginger beer,False,garnish
+Stormy Colada,1, Ginger beer,False,garnish
 Bronx SIlver Cocktail,0.5, Dry Vermouth,True,Fl Oz
 Bronx Golden Cocktail,0.5, Dry Vermouth,True,Fl Oz
 Stone Wall,1.5, Fresh apple cider,True,Fl Oz
@@ -2562,18 +2562,18 @@ After Supper Cocktail,0.5, Lemon Juice,True,Fl Oz
 Rum Sour,0.75, Simple Syrup,True,Fl Oz
 Acapulco,1.5, Triple Sec,True,Fl Oz
 Ambrosia,1.0, Triple Sec,True,Fl Oz
-Rum Rickey,, Soda water,False,garnish
+Rum Rickey,1, Soda water,False,garnish
 Rum Relaxer,0.5, Grenadine,True,Fl Oz
 Rum Old-Fashioned,1.0, Simple Syrup,True,Fl Oz
-Rum Martini,, Lemon twist,False,garnish
-Rum Highball,, Lemon twist,False,garnish
+Rum Martini,1, Lemon twist,False,garnish
+Rum Highball,1, Lemon twist,False,garnish
 Rum Fix,0.5, Simple Syrup,True,Fl Oz
 Rum Daisy,1.0, Simple Syrup,True,Fl Oz
 D'artagnan,1.0, Simple Syrup,True,Fl Oz
 Rum Cooler,2.0, Soda water,True,Fl Oz
 Rum Collins,0.5, Simple Syrup,True,Fl Oz
 Seaboabd,1.0, Lemon Juice,True,Fl Oz
-Rum Cobbler,, Soda water,False,garnish
+Rum Cobbler,1, Soda water,False,garnish
 Robson Cocktail,0.5, Fresh orange juice,True,Fl Oz
 Rio Fix,0.5, Maraschino liqueur,True,Fl Oz
 Ringo Starr,6.0,Fresh mint leaves,False,garnish
@@ -2598,7 +2598,7 @@ Palmetto Cocktail,2.0, Angostura Bitters,True,Fl Oz
 Paddington,0.5, Lillet Blanc,True,Fl Oz
 The Old Cuban,0.75, Fresh Lime Juice,True,Fl Oz
 "Oh, Gosh!",1.0, Fresh Lime Juice,True,Fl Oz
-Night Cap,, Warm milk,False,garnish
+Night Cap,1, Warm milk,False,garnish
 New Orleans Buck,0.5, Fresh lemon juice,True,Fl Oz
 Nevada Cocktail,0.75, Fresh Lime Juice,True,Fl Oz
 Moonquake Shake,0.25, Fresh lemon juice,True,Fl Oz
@@ -2610,21 +2610,21 @@ Thunder and Lightning Cocktail,1.5, Old Mr. Boston Five Star Brandy,True,Fl Oz
 Casco Bay Lemonade,2.0, Fresh lemon juice,True,Fl Oz
 Caribbean Cruise,0.25, Coconut-flavored rum,True,Fl Oz
 Cappuccino Cocktail,0.75, half-and-half,True,Fl Oz
-Cape Codder,, Lime wedge,False,garnish
+Cape Codder,1, Lime wedge,False,garnish
 Baltimore Bracer Cocktail,1.0, Egg White,True,Fl Oz
 Caesar,4.0, Tomato-clam juice,True,Fl Oz
 Bull Shot,1.0, Worcestershire Sauce,True,Fl Oz
-Bullfrog,, Lime wheel,False,garnish
+Bullfrog,1, Lime wheel,False,garnish
 Boston Gold,2.0, Fresh orange juice,True,Fl Oz
 Corpse Reviver No. 1,1.0, Sweet Vermouth,True,Fl Oz
 Thanksgiving Special Cocktail,0.75, Dry Vermouth,True,Fl Oz
 Tequini Cocktail,1.0, Bitters,True,Fl Oz
-Bordeaux Cocktail,, Lemon twist,False,garnish
+Bordeaux Cocktail,1, Lemon twist,False,garnish
 Bolshoi Punch,0.5, Simple Syrup,True,Fl Oz
 Blue Lagoon,0.5, Fresh lemon juice,True,Fl Oz
 Bloody Mary,0.25, Fresh Lime Juice,True,Fl Oz
 Bloody Bull,2.0, Cold beef bouillon,True,Fl Oz
-The Blood Orange,, Blood or navel orange half-wheel,False,garnish
+The Blood Orange,1, Blood or navel orange half-wheel,False,garnish
 Black Magic,0.25, Fresh lemon juice,True,Fl Oz
 Black Cherry Chocolate,0.75, Black cherry juice,True,Fl Oz
 Victor Collins,3.0, Lemon Juice,True,Fl Oz
@@ -2639,18 +2639,18 @@ Beer Buster,2.0, Hot red pepper sauce,True,Fl Oz
 Basil 8,1.5, Vodka,True,Fl Oz
 Shamrock Cocktail,1.0, Old Mr. Boston Green Creme de Menthe,True,Fl Oz
 Aqueduct,0.5, White curacao or triple sec,True,Fl Oz
-Scotch Whisky Highball,,lemon twist,False,garnish
+Scotch Whisky Highball,1,lemon twist,False,garnish
 Alfie Cocktail,0.5, Triple Sec,True,Fl Oz
 Admiral Perry,1.0, Dry Vermouth,True,Fl Oz
 Yellow Rose Of Texas,0.5, Simple Syrup,True,Fl Oz
 St. Patrick's Day Cocktail,0.75, Irish Whiskey,True,Fl Oz
-Purple Twister,,lemon slice,False,garnish
+Purple Twister,1,lemon slice,False,garnish
 Waiting On Summer,0.5, Fresh Lime Juice,True,Fl Oz
-Cognac Highball,, Lemon twist (optional),False,garnish
+Cognac Highball,1, Lemon twist (optional),False,garnish
 Prince's Smile Cocktail,1.0, Old Mr. Boston Dry Gin,True,Fl Oz
 Viva Villa,1.0, Fresh Lime Juice,True,Fl Oz
 Praire Oyster Cocktail,1.0, Tomato Catsup,True,Fl Oz
-Praire Chicken,, Pepper and Salt,False,garnish
+Praire Chicken,1, Pepper and Salt,False,garnish
 Venial Sin,0.5, Yellow Chartreuse,True,Fl Oz
 Vagabundo,1.5, Fresh celery juice,True,Fl Oz
 The 21st Century,1.5, Blanco tequila,True,Fl Oz
@@ -2661,7 +2661,7 @@ Pink Lady Cocktail,1.0, Sweet Cream,True,Fl Oz
 Tijuana Taxi,1.0, Tropical fruit schnapps,True,Fl Oz
 Tia Juanathan,0.5, Aperol,True,Fl Oz
 Phoebe Snow Cocktail,0.5, Absinthe Substitute,True,Fl Oz
-Tequonic,, Tonic water,False,garnish
+Tequonic,1, Tonic water,False,garnish
 Tequini,1.0, Angostura bitters,True,Fl Oz
 Passion Daiquiri Cocktail,1.0, Powdered Sugar,True,Fl Oz
 Parisian Blonde Cocktail,0.75, Jamaica Rum,True,Fl Oz
@@ -2696,7 +2696,7 @@ Queen Elizabeth Cocktail,1.5, Benedictine,True,Fl Oz
 Silk Stockings,1.5, Heavy cream,True,Fl Oz
 Orchid Cocktail,1.0, Creme Yvette,True,Fl Oz
 Orange Milk Fizz,2.0, Old Mr. Boston Orange Flavored Gin ,True,Fl Oz
-Orange Gin Highball,,lemon twist,False,garnish
+Orange Gin Highball,1,lemon twist,False,garnish
 Orange Gin Fizz,2.0, Old Mr. Boston Orange Flavored Gin ,True,Fl Oz
 Sidewinder,0.5," Vanilla syrup, preferably B.A. Reynold's",True,Fl Oz
 Orange Blossom Cocktail,0.25, Powdered Sugar,True,Fl Oz
@@ -2727,7 +2727,7 @@ Mai-Tai (Trader Vic Version),1.0, Fresh lime juice (reserve 1/2 lime shell for g
 Jersey Lightning Cocktail,1.0, Juice of a Lime,True,Fl Oz
 Lumination,2.0, Dark rum,True,Fl Oz
 Jamaica Glow Cocktail,1.0, Orange Juice,True,Fl Oz
-Lounge Lizard,, Cola,False,garnish
+Lounge Lizard,1, Cola,False,garnish
 Jack-in-the-Box Cocktail,1.0, Bitters,True,Fl Oz
 Irish Whisky Cocktail,0.25, Maraschino,True,Fl Oz
 Look Out Below,0.25, Grenadine,True,Fl Oz
@@ -2749,7 +2749,7 @@ Jade,0.5, Green creme de menthe,True,Fl Oz
 Jacqueline,1.0, Fresh Lime Juice,True,Fl Oz
 Jack Sparrow Flip,0.75, Simple Syrup,True,Fl Oz
 Irresistible,0.25, Benedictine,True,Fl Oz
-Carroll Cocktail,, Maraschino cherry,False,garnish
+Carroll Cocktail,1, Maraschino cherry,False,garnish
 Hush and Wonder,0.75, Fresh Lime Juice,True,Fl Oz
 Hurricane Leah,1.5, Simple Syrup,True,Fl Oz
 Gimlet Cocktail,1.5, Old Mr. Boston Dry Gin,True,Fl Oz
@@ -2770,9 +2770,9 @@ Traditional Martini (Dry),1.0, Orange Bitters,True,Fl Oz
 Pina Agave,1.0, Pineapple Juice,True,Fl Oz
 Grande Guignol,0.75, Cherry Heering,True,Fl Oz
 Pancho Villa,0.75, Sweet Vermouth,True,Fl Oz
-Paloma (Natural),, Soda water,False,garnish
+Paloma (Natural),1, Soda water,False,garnish
 Golden Friendship,1.0, Amaretto,True,Fl Oz
-Paloma,, Lime wedge,False,garnish
+Paloma,1, Lime wedge,False,garnish
 Pacific Sunshine,1.5, Blue curacao,True,Fl Oz
 Golden Eclipse,0.5, Fresh lemon juice,True,Fl Oz
 Diplomat Cocktail,2.0, Bitters,True,Fl Oz
@@ -2818,7 +2818,7 @@ Frostbite,0.75, Heavy cream,True,Fl Oz
 Flower Power,0.5, Agave nectar,True,Fl Oz
 Cablegram Highball,2.0, Old Thompson Blended Whiskey,True,Fl Oz
 Cabaret Cocktail,0.5, Dry Vermouth,True,Fl Oz
-Bulla's Eye,, Ginger ale,False,garnish
+Bulla's Eye,1, Ginger ale,False,garnish
 El Oso (The Bear),0.5, Maraschino liqueur,True,Fl Oz
 El Ni_o,0.75, Simple Syrup,True,Fl Oz
 El Molino,0.25, Allspice liqueur (pimento dram),True,Fl Oz
@@ -2836,7 +2836,7 @@ Camino Del Ray,0.5, Drambuie,True,Fl Oz
 Cactus Berry,1.25, Red wine,True,Fl Oz
 Bolero Cocktail,0.25, Sweet Vermouth,True,Fl Oz
 Bum's Rush,0.75, Honey liqueur,True,Fl Oz
-Brave Bull,, Lemon twist,False,garnish
+Brave Bull,1, Lemon twist,False,garnish
 Blue Margarita,0.5, Blue curacao,True,Fl Oz
 Bloody Maria,0.25, Fresh lemon juice,True,Fl Oz
 Pineapple Dream Cocktail,1.0, Old Mr. Boston Imported Rum,True,Fl Oz
@@ -2874,7 +2874,7 @@ Fort Lauderdale,0.25, Juice of a Lime,True,Fl Oz
 Cool Carlos,1.0, Orange curacao,True,Fl Oz
 John Collins,1.0, Soda water,True,Fl Oz
 Casa Blanca,1.5, Maraschino,True,Fl Oz
-Amber Amour,, Soda water,False,garnish
+Amber Amour,1, Soda water,False,garnish
 The Joe Lewis,0.5, Fresh lemon juice,True,Fl Oz
 Apple Pie No. 1,0.5, Grenadine,True,Fl Oz
 Yolanda,1.0, Sweet Vermouth,True,Fl Oz
@@ -2887,12 +2887,12 @@ Amaretto Sour,1.0, Orange half-wheel,False,garnish
 Tailspin Cocktail,1.0, Orange Bitters,True,Fl Oz
 Jitterbug Sour,0.5, Honey Syrup,True,Fl Oz
 Smiler Cocktail,1.0, Bitters,True,Fl Oz
-Amaretto Rose,, Soda water,False,garnish
-Japanese,, Lemon twist,False,garnish
+Amaretto Rose,1, Soda water,False,garnish
+Japanese,1, Lemon twist,False,garnish
 Pollyanna Cocktai,0.5, Sweet Vermouth,True,Fl Oz
 Irish Whiskey Cocktail,0.25, Maraschino liqueur,True,Fl Oz
 Nineteenth Hole,1.0, Bitters,True,Fl Oz
-Monte Carlo Imperial Highball,, Chilled Champagne,False,garnish
+Monte Carlo Imperial Highball,1, Chilled Champagne,False,garnish
 Irish Shillelagh,1.0, Fresh lemon juice,True,Fl Oz
 Irish Rickey,1.0, Lime wedge,True,Fl Oz
 Kup's Indispensable Cocktail,1.0, Bitters,True,Fl Oz
@@ -2905,7 +2905,7 @@ West Side,6.0, Fresh mint leaves,False,garnish
 Free Silver,0.5, Dark rum,True,Fl Oz
 Frankenjack Cocktail,1.0, Triple Sec,True,Fl Oz
 Fog Horn,1.0, Triple Sec,True,Fl Oz
-Hoot Mon Cocktail,, Lemon twist,False,garnish
+Hoot Mon Cocktail,1, Lemon twist,False,garnish
 Favorite Cocktail,0.25, Lemon Juice,True,Fl Oz
 Farmer's Cocktail,2.0, Bitters,True,Fl Oz
 Warsaw Cocktail,1.0, Fresh lemon juice,True,Fl Oz
@@ -2917,11 +2917,11 @@ Blue Devil Cocktail,0.5, Blue curacao,True,Fl Oz
 Bijou Cocktail,1.0, Orange Bitters,True,Fl Oz
 Vodka Sour,0.75, Simple Syrup,True,Fl Oz
 Apricot Anisette Collins,1.0, Lemon Juice,True,Fl Oz
-Highland Cooler,, Lemon and/or orange zest spiral(s),False,garnish
+Highland Cooler,1, Lemon and/or orange zest spiral(s),False,garnish
 Adam and Eve,1.0, Lemon Juice,True,Fl Oz
-Vodka Sling,, Orange twist,False,garnish
+Vodka Sling,1, Orange twist,False,garnish
 Vodka Grasshopper,0.75, half-and-half,True,Fl Oz
-Singapore Sling,, Club Soda,False,garnish
+Singapore Sling,1, Club Soda,False,garnish
 Saratoga Cocktail,1.0, Pineapple Juice,True,Fl Oz
 High Cotton,2.0, Peach bitters,True,Fl Oz
 Polonaise,1.0, Lemon Juice,True,Fl Oz
@@ -2929,20 +2929,20 @@ Hebrides,2.0, Apple juice,True,Fl Oz
 Vodka Daisy,1.0, Grenadine,True,Fl Oz
 Heavenly Dram,0.25, Honey Syrup,True,Fl Oz
 Classic Cocktail,1.0, Brandy,True,Fl Oz
-Vodka Cooler,, Orange and/or lemon zest spiral,False,garnish
+Vodka Cooler,1, Orange and/or lemon zest spiral,False,garnish
 Button Hook Cocktail,0.5, Brandy,True,Fl Oz
 Heather's Kiss,1.0, Absinthe,True,Fl Oz
-Brandy Squirt,, Club Soda,False,garnish
-Vodka Collins,, Soda water,False,garnish
+Brandy Squirt,1, Club Soda,False,garnish
+Vodka Collins,1, Soda water,False,garnish
 Brandy Crusta Cocktail,0.5, Triple Sec,True,Fl Oz
-Heather Blush,, Whole strawberry,False,garnish
-Jack Maples,, Cinnamon stick,False,garnish
+Heather Blush,1, Whole strawberry,False,garnish
+Jack Maples,1, Cinnamon stick,False,garnish
 Apricot Cocktail,1.0, Gin,True,Fl Oz
 Harvest Moon,0.25, Green Chartreuse,True,Fl Oz
 Red Raider,1.0, Grenadine,True,Fl Oz
 Mint Julep (Southern Style),2.5, Bourbon,True,Fl Oz
 Grounds For Divorce,0.5, Amaro,True,Fl Oz
-Gentleman's Cocktail,, Club Soda,False,garnish
+Gentleman's Cocktail,1, Club Soda,False,garnish
 Victory Collins,0.5, Simple Syrup,True,Fl Oz
 Bourbon Cobbler,1.5, Almond extract,True,Fl Oz
 Greenpoint,1.0, Angostura Bitters,True,Fl Oz
@@ -2958,17 +2958,17 @@ Fancy Whiskey,0.25, Simple Syrup,True,Fl Oz
 Underneath The Mango Tree,0.75, Fresh Lime Juice,True,Fl Oz
 Fancy-Free Cocktail,1.0, Orange Bitters,True,Fl Oz
 Honeymoon Cocktail,0.5, Triple Sec,True,Fl Oz
-Twister,, Lemon-lime soda,False,garnish
+Twister,1, Lemon-lime soda,False,garnish
 Everybody's Irish Cocktail,1.0, Green olive,True,Fl Oz
 Trident,2.0, Peach bitters,True,Fl Oz
 Emperor Norton's Mistress,0.25, Triple Sec,True,Fl Oz
-Easterner,, Grapefruit twist,False,garnish
+Easterner,1, Grapefruit twist,False,garnish
 Toasted Drop,0.25, Amaretto,True,Fl Oz
 Eastern Sour,0.25, orgeat or almond syrup,True,Fl Oz
 K. C. B. Cocktail,0.25, Lemon Juice,True,Fl Oz
 Easter Elchies,1.0, Orange Bitters,True,Fl Oz
 Dufftown Flip,0.5, Almond milk,True,Fl Oz
-Harvard Cooler,, Orange and/or lemon zest spiral,False,garnish
+Harvard Cooler,1, Orange and/or lemon zest spiral,False,garnish
 The Duboudreau Cocktail,0.25, Elderflower liqueur,True,Fl Oz
 Irish Whisky ,1.0, Bitters,True,Fl Oz
 Dubliner,2.0, Orange Bitters,True,Fl Oz
@@ -2977,33 +2977,33 @@ Dixie Whiskey Cocktail,0.25, Simple Syrup,True,Fl Oz
 The Titian,0.5, Fresh Lime Juice,True,Fl Oz
 Tiger Tanaka,0.5, Limoncello,True,Fl Oz
 Thyme Collins,1.0, Thyme sprig,True,Fl Oz
-Tabby Cat,, Lemon twist,False,garnish
+Tabby Cat,1, Lemon twist,False,garnish
 Dirty Harry,0.25, Maraschino liqueur,True,Fl Oz
 Harvard Cocktail,1.0, Grenadine,True,Fl Oz
 Surf Rider,0.5, Fresh lemon juice,True,Fl Oz
-Dinah Cocktail,, Fresh mint leaf,False,garnish
+Dinah Cocktail,1, Fresh mint leaf,False,garnish
 The Summer Of Love,0.25, Black raspberry liqueur,True,Fl Oz
 Devil's Soul,0.25, Aperol,True,Fl Oz
 Deshler,2.0, Angostura Bitters,True,Fl Oz
 Stupid Cupid,1.0, Fresh lemon juice,True,Fl Oz
-Derby,, Lemon twist,False,garnish
+Derby,1, Lemon twist,False,garnish
 Stockholm 75,0.75, Fresh lemon juice,True,Fl Oz
 The Delmarva Cocktail,0.5, Fresh lemon juice,True,Fl Oz
 Sputnik,3.0, half-and-half,True,Fl Oz
-Gotham,, Lemon twist,False,garnish
+Gotham,1, Lemon twist,False,garnish
 De La Louisiane,3.0, Absinthe or pastis,True,Fl Oz
-Soviet,, Lemon twist,False,garnish
+Soviet,1, Lemon twist,False,garnish
 Daisy Dueller,0.5, Triple Sec,True,Fl Oz
 Sonic Blaster,1.0, Pineapple Juice,True,Fl Oz
-Creole Lady,, Maraschino cherry,False,garnish
-Rum Coooler,,ginger ale,False,garnish
+Creole Lady,1, Maraschino cherry,False,garnish
+Rum Coooler,1,ginger ale,False,garnish
 Siberian Sleighride,3.0, half-and-half,True,Fl Oz
 Cotton Club Flip,1.0, Egg White,True,Fl Oz
 Golden Dawn,1.0, Fresh orange juice,True,Fl Oz
 Sidecar,1.5, Vodka,True,Fl Oz
 Shalom,2.0, Bourbon Whiskey,True,Fl Oz
 Commodore Cocktail,1.0, Grenadine,True,Fl Oz
-Sea Breeze,, Lime wedge,False,garnish
+Sea Breeze,1, Lime wedge,False,garnish
 Coffee Old-Fashioned,1.0, Cold brewed coffee,True,Fl Oz
 Dr. Cook,1.0, Egg White,True,Fl Oz
 Chi-Town Flip,0.75, Vanilla liqueur and 3 oz,True,Fl Oz
@@ -3016,7 +3016,7 @@ Ruby Red,1.0, Fresh orange juice,True,Fl Oz
 Chaplin,1.0, Triple Sec,True,Fl Oz
 Rouxby Red,0.75, Grapefruit Juice,True,Fl Oz
 Rosemary Clementine Sparkle,0.75, Honey Syrup,True,Fl Oz
-Chapel Hill,, Orange twist,False,garnish
+Chapel Hill,1, Orange twist,False,garnish
 Chancellor Cocktail,1.0, Peychaud's Bitters,True,Fl Oz
 Carre Reprise,0.5, Elderflower liqueur,True,Fl Oz
 Gilroy Cocktail,0.5, Fresh lemon juice,True,Fl Oz
@@ -3038,21 +3038,21 @@ Bull And Bear,0.25, Grenadine,True,Fl Oz
 Brooklyn,1.0, Maraschino liqueur,True,Fl Oz
 Brighton Punch,2.0, Orange juice,True,Fl Oz
 Bourbon Renewal,0.5, Simple Syrup,True,Fl Oz
-Bourbon And Elder,, Lemon twist,False,garnish
+Bourbon And Elder,1, Lemon twist,False,garnish
 Bourbon Crusta,1.0, Maraschino liqueur,True,Fl Oz
 Bourbon Cooler,0.5, Orgeat Syrup,True,Fl Oz
 The Bone,3.0, Hot red pepper sauce,True,Fl Oz
-Bobby Burns Cocktail,, Lemon twist,False,garnish
+Bobby Burns Cocktail,1, Lemon twist,False,garnish
 Bloody Scotsman,1c, ketchup,False,garnish
 Blood and Sand,0.5, Orange juice,True,Fl Oz
-The Blinker,, Grapefruit twist or skewered raspberry,False,garnish
+The Blinker,1, Grapefruit twist or skewered raspberry,False,garnish
 Pike's Peak Cooler,1.0, Whole Egg,True,Fl Oz
 Blarney Stone Cocktail,0.5, Maraschino liqueur,True,Fl Oz
-Pacman,, Ginger ale,False,garnish
+Pacman,1, Ginger ale,False,garnish
 Lemonade (Golden),6.0, Water,True,Fl Oz
 Bensonhurst,0.25, Maraschino liqueur,True,Fl Oz
 Chocolate Daisy,1.5, Brandy,True,Fl Oz
-The Beautiful Day,, Edible flowers,False,garnish
+The Beautiful Day,1, Edible flowers,False,garnish
 Creme de Gin Cocktail,2.0, Lemon Juice,True,Fl Oz
 Creamy Screwdriver,1.0, Sugar,True,Fl Oz
 Creamy Orange,1.0, Light cream,True,Fl Oz
@@ -3065,7 +3065,7 @@ Coffee Flip,1.0, Port,True,Fl Oz
 Coffee Cocktail,1.0, Brandy,True,Fl Oz
 Clover Leaf Cocktail,1.5, Gin,True,Fl Oz
 Clover Club Cocktail,1.5, Gin,True,Fl Oz
-Priority Cocktail,, Lemon twist,False,garnish
+Priority Cocktail,1, Lemon twist,False,garnish
 Chocolate Flip,0.75, Brandy,True,Fl Oz
 Chocolate Cocktail,1.0, Powdered Sugar,True,Fl Oz
 Chicago Fizz,1.0, Port,True,Fl Oz
@@ -3087,13 +3087,13 @@ Pickled Martini,1.0, Sweet pickle slice,False,garnish
 Sloe Gin Flip,2.0, Light Cream (if desired),True,Fl Oz
 Angel's Share,1.0, Orange Bitters,True,Fl Oz
 Silver King Cocktail,0.5, Powdered Sugar,True,Fl Oz
-American Trilogy,, Orange twist,False,garnish
+American Trilogy,1, Orange twist,False,garnish
 Silver Fizz,1.0, Egg White,True,Fl Oz
 Sherry Twist Cocktail,0.5, Triple Sec,True,Fl Oz
-Sherry Sangaree,, Carbonated Water,False,garnish
+Sherry Sangaree,1, Carbonated Water,False,garnish
 Petit Zinc,0.5, Orange juice,True,Fl Oz
 Sherry Flip,2.0, Light Cream (if desired),True,Fl Oz
-Americana,, Chilled American sparkling wine,False,garnish
+Americana,1, Chilled American sparkling wine,False,garnish
 Allegheny,0.5, Fresh lemon juice,True,Fl Oz
 Sevilla Cocktail,1.0, Light Rum,True,Fl Oz
 September Morn Cocktail,1.0, Grenadine,True,Fl Oz
@@ -3111,7 +3111,7 @@ Port Wine Flip,2.0, Light Cream (if desired),True,Fl Oz
 Port Wine Cobbler,3.0, port,True,Fl Oz
 Nijinksy Blini,0.25, Fresh lemon juice,True,Fl Oz
 Affinity Cocktail (whisky),3.0, Orange Bitters,True,Fl Oz
-Moscow Mule,, Lime wedge,False,garnish
+Moscow Mule,1, Lime wedge,False,garnish
 Affinity Cocktail,2.0, Orange Bitters,True,Fl Oz
 Peggy Cocktail,0.25, Dubonnet,True,Fl Oz
 Peach Blow Fizz,2.0, Gin,True,Fl Oz
@@ -3133,21 +3133,21 @@ Merry Widow Fizz,1.0, Powdered Sugar,True,Fl Oz
 Manila Fizz,2.0, Root Beer,True,Fl Oz
 1626,2.0, Angostura Bitters,True,Fl Oz
 Maracuya Mosquito,0.5, Fresh Lime Juice,True,Fl Oz
-Madras,, Lime wedge,False,garnish
+Madras,1, Lime wedge,False,garnish
 Absinthe Cocktail,1.0, Orange Bitters,True,Fl Oz
 Lychee Lucy,0.5, Pineapple Juice,True,Fl Oz
-The Loop,, Grated bittersweet chocolate,False,garnish
+The Loop,1, Grated bittersweet chocolate,False,garnish
 Long Island Iced Tea,0.75, Light Rum,True,Fl Oz
 Fallen Leaves,1.0, Brandy,True,Fl Oz
 L'italienne,1.0, Orange Bitters,True,Fl Oz
 Ruby Fizz,1.0, Grenadine,True,Fl Oz
 Limoncello Manzanilla Marmalade Sour,0.75, Fresh lemon juice,True,Fl Oz
-Royal Purple Punch,,whole cloves,False,garnish
+Royal Purple Punch,1,whole cloves,False,garnish
 Royal Gin Fizz,1.0, Whole Egg,True,Fl Oz
 Royal Cocktail,1.5, Gin,True,Fl Oz
 Royal Clover Club Cocktail,1.5, Gin,True,Fl Oz
 Lights On The Plaza,1.5, Acai berry flavored vodka,True,Fl Oz
-Rock & Rye Cooler,, Bitter lemon soda,False,garnish
+Rock & Rye Cooler,1, Bitter lemon soda,False,garnish
 Le Paradini,1.0, Chilled Champagne,True,Fl Oz
 Red Swizzle,2.0, Gin,True,Fl Oz
 Lemon Drop,0.25, Simple Syrup,True,Fl Oz
@@ -3161,7 +3161,7 @@ Whiskey Flip,2.0, Light Cream (if desired),True,Fl Oz
 L.A. Sunrise,2.0, Pineapple Juice,True,Fl Oz
 White Rose Cocktail,0.5, Maraschino,True,Fl Oz
 Kretchma Cocktail,0.25, Grenadine,True,Fl Oz
-Whiskey Skin,,lemon peel,False,garnish
+Whiskey Skin,1,lemon peel,False,garnish
 Katana,0.75, Fresh Lime Juice,True,Fl Oz
 Wembley Cocktail,0.5, Apple Brandy,True,Fl Oz
 Weep-No-More Cocktail,0.25, Maraschino,True,Fl Oz
@@ -3575,7 +3575,7 @@ Tahitian Tea,1.0, 7-Up,True,Fl Oz
 Los Angeles Cocktail,1.5, Blended whiskey,True,Fl Oz
 Long Island Tea,0.5, Juice of a Lemon,True,Fl Oz
 Lil Naue,1.0, Egg Yolk,True,Fl Oz
-El Profesor,, Lemon twist,False,garnish
+El Profesor,1, Lemon twist,False,garnish
 Lady Love Fizz,2.0, Light cream,True,Fl Oz
 Hyatt's Jamaican Banana,1.0, half-and-half,True,Fl Oz
 Grapefruit Gimlet Royale,2.0, Chilled Champagne,True,Fl Oz
@@ -3584,20 +3584,20 @@ Grapefruit Nog,1.0, Whole Egg,True,Fl Oz
 Glass Tower,0.5, Sambuca,True,Fl Oz
 Gloom Lifter,0.5, Sugar,True,Fl Oz
 Glogg,25.0,cloves,False,garnish
-Georgia Mule,, Ginger beer,False,garnish
-Gentle Ben,," Orange wheel, maraschino cherry",False,garnish
+Georgia Mule,1, Ginger beer,False,garnish
+Gentle Ben,1," Orange wheel, maraschino cherry",False,garnish
 East India Cocktail No. 1,1.0, Angostura Bitters,True,Fl Oz
-Gables Collins,, Soda water,False,garnish
+Gables Collins,1, Soda water,False,garnish
 Frozen Brandy and Rum,1.0, Powdered Sugar,True,Fl Oz
-Electric Jam,, Lime soda,False,garnish
+Electric Jam,1, Lime soda,False,garnish
 Duke Cocktail,1.0, Whole Egg,True,Fl Oz
 Derby Fizz,1.0, Triple Sec,True,Fl Oz
 Cubeltini,1.0, Fresh Lime Juice,True,Fl Oz
 Crocodile Cooler,1.0, Fresh lemon juice,True,Fl Oz
-Cosmopolitan,, Lime wheel,False,garnish
+Cosmopolitan,1, Lime wheel,False,garnish
 Jean Lafitte Cocktail,1.0, Egg Yolk,True,Fl Oz
 Japanese Fizz,1.0, Egg White,True,Fl Oz
-Citronella Cooler,, Lime wedge,False,garnish
+Citronella Cooler,1, Lime wedge,False,garnish
 The Cinquecento,1.0, Angostura Bitters,True,Fl Oz
 New Orleans Gin Fizz,2.0, Gin,True,Fl Oz
 Zombie,2.0, Demerara Syrup,True,Fl Oz
@@ -3608,31 +3608,31 @@ Eggnog Supreme,25.3, Cognac,False,garnish
 Egg Sour,0.25, Triple Sec,True,Fl Oz
 White Lion Cocktail,2.0, Angostura Bitters,True,Fl Oz
 The Vacation Cocktail,0.5," each Cranberry Juice, orange juice, spiced rum",True,Fl Oz
-Dolores,, Freshly grated nutmeg,False,garnish
+Dolores,1, Freshly grated nutmeg,False,garnish
 Vesuvio,0.5, Sweet Vermouth,True,Fl Oz
-Urban Anxiety,," Grapefruit twist, flamed",False,garnish
-Tropica Cocktail,, Pineapple wedge,False,garnish
+Urban Anxiety,1," Grapefruit twist, flamed",False,garnish
+Tropica Cocktail,1, Pineapple wedge,False,garnish
 Three Miller Cocktail,1.0, Angostura Bitters,True,Fl Oz
 Bird-of-Paradise Fizz,2.0, Gin,True,Fl Oz
 Tahiti Club,0.25, Maraschino liqueur,True,Fl Oz
 Barnaby's Buffalo Blizzard,1.0, Grenadine,True,Fl Oz
 Sunset at Gowanus,0.25, Yellow Chartreuse,True,Fl Oz
-Stone Wall,, Jamaican ginger beer,False,garnish
+Stone Wall,1, Jamaican ginger beer,False,garnish
 Apricot Lady,1.0, Egg White,True,Fl Oz
 Sloppy Joe's Cocktail No. 1,0.5, Grenadine,True,Fl Oz
 Sir Walter Cocktail,1.0, Fresh lemon juice,True,Fl Oz
-Sargasso,, Orange twist,False,garnish
-Saint Lucy Bracer,," Edible flower, such as nasturtium",False,garnish
-S & V,, Lime wheel,False,garnish
-Rum Swizzle,, Soda water,False,garnish
+Sargasso,1, Orange twist,False,garnish
+Saint Lucy Bracer,1," Edible flower, such as nasturtium",False,garnish
+S & V,1, Lime wheel,False,garnish
+Rum Swizzle,1, Soda water,False,garnish
 Acapulco,1.0, Egg White,False,garnish
-Ambrosia,, Chilled Champagne,False,garnish
-Rum Relaxer,," Orange wheel, maraschino cherry",False,garnish
-Rum Old-Fashioned,, Lemon twist,False,garnish
-Rum Daisy,, Fresh seasonal fruit,False,garnish
+Ambrosia,1, Chilled Champagne,False,garnish
+Rum Relaxer,1," Orange wheel, maraschino cherry",False,garnish
+Rum Old-Fashioned,1, Lemon twist,False,garnish
+Rum Daisy,1, Fresh seasonal fruit,False,garnish
 D'artagnan,3.0, Chilled Champagne,True,Fl Oz
-Rum Cooler,, Orange and/or lemon zest,False,garnish
-Rum Collins,," Lemon wheel, maraschino cherry",False,garnish
+Rum Cooler,1, Orange and/or lemon zest,False,garnish
+Rum Collins,1," Lemon wheel, maraschino cherry",False,garnish
 Rio Fix,0.5, Pineapple Juice,True,Fl Oz
 Ringo Starr,2.0, African rum,True,Fl Oz
 Puerto Rican Rum Daisy,1.0, Angostura Bitters,True,Fl Oz
@@ -3640,55 +3640,55 @@ Prohibition Punch,0.25, Fresh lemon juice,True,Fl Oz
 Prairie Oyster Cocktail,1.0, Pepper,True,Fl Oz
 Planter's Punch No. 2,0.25," each Fresh lemon juice, triple sec",True,Fl Oz
 Planter's Punch No. 1,1.0, Grenadine,True,Fl Oz
-Pink Paradise,," Pineapple wedge, maraschino cherry",False,garnish
-Pink Creole,, Rum-soaked black cherry,False,garnish
-Pearl Button,," Pineapple wedge, maraschino cherry",False,garnish
-The Crux,, Orange twist,False,garnish
-Paris When It Sizzles,, Lime wedge,False,garnish
+Pink Paradise,1," Pineapple wedge, maraschino cherry",False,garnish
+Pink Creole,1, Rum-soaked black cherry,False,garnish
+Pearl Button,1," Pineapple wedge, maraschino cherry",False,garnish
+The Crux,1, Orange twist,False,garnish
+Paris When It Sizzles,1, Lime wedge,False,garnish
 Paddington,0.5, Fresh lemon juice,True,Fl Oz
 The Old Cuban,2.0, Angostura Bitters,True,Fl Oz
 Nevada Cocktail,1.0, Angostura Bitters,True,Fl Oz
-Mojito,, Soda water,False,garnish
-Casco Bay Lemonade,, Lemon-lime soda,False,garnish
+Mojito,1, Soda water,False,garnish
+Casco Bay Lemonade,1, Lemon-lime soda,False,garnish
 Caribbean Cruise,4.0, Pineapple Juice,True,Fl Oz
 Cappuccino Cocktail,5.0, Cranberry Juice,True,Fl Oz
 Cape Codder,1.0, Old Mr. Boston Five Star Brandy,True,Fl Oz
 Caesar,1.0," each Worcestershire Sauce, salt, ground black pepper",True,Fl Oz
 Bull Shot,1.0, Freshly ground black pepper,True,Fl Oz
 Bolshoi Punch,0.5, Creme de Cassis,True,Fl Oz
-Blue Lagoon,, Maraschino cherry,False,garnish
+Blue Lagoon,1, Maraschino cherry,False,garnish
 Bloody Mary,2 - 3 drops,hot red pepper sauce,False,garnish
 Bikini,0.5, Simple Syrup,True,Fl Oz
-The Big Crush,, Chilled Champagne,False,garnish
+The Big Crush,1, Chilled Champagne,False,garnish
 Bianca,1.0, Simple Syrup,True,Fl Oz
 Bella Fragolia,1.0, Simple Syrup,True,Fl Oz
 Basil 8,1.0," each Simple Syrup, angostura bitters",True,Fl Oz
-Aqueduct,, Orange twist,False,garnish
-Admiral Perry,, Thin pear slice,False,garnish
+Aqueduct,1, Orange twist,False,garnish
+Admiral Perry,1, Thin pear slice,False,garnish
 Yellow Rose Of Texas,3.0, Rose water,True,Fl Oz
 Waiting On Summer,0.75, Simple Syrup,True,Fl Oz
 Praire Oyster Cocktail,1.0, Pepper,True,Fl Oz
 Venial Sin,0.25, Maraschino liqueur,True,Fl Oz
-Vagabundo,, Lime wheel,False,garnish
+Vagabundo,1, Lime wheel,False,garnish
 The 21st Century,0.75, White creme de cacao,True,Fl Oz
-Tijuana Taxi,," Orange wheel, maraschino cherry",False,garnish
-Tia Juanathan,, Soda water,False,garnish
+Tijuana Taxi,1," Orange wheel, maraschino cherry",False,garnish
+Tia Juanathan,1, Soda water,False,garnish
 Tequila Smash,0.5, Fresh Lime Juice,True,Fl Oz
-Tequila Old-Fashioned,, Lemon twist,False,garnish
+Tequila Old-Fashioned,1, Lemon twist,False,garnish
 Tequila Mockingbird,1.0, Fresh Lime Juice,True,Fl Oz
-Tequila Collins,,"lemon wheel, orange wheel, maraschino cherry",False,garnish
+Tequila Collins,1,"lemon wheel, orange wheel, maraschino cherry",False,garnish
 Tequila Canyon,1.0, Orange juice,True,Fl Oz
 Chicago Cocktail,0.25, Maraschino liqueur,True,Fl Oz
-Sunday Confession,, Lemon wedge,False,garnish
+Sunday Confession,1, Lemon wedge,False,garnish
 Strawberry Margarita,0.75, Triple Sec,True,Fl Oz
 Spice Of Life,0.75, Fresh Lime Juice,True,Fl Oz
 Smoked Margarita,0.5, Fresh Lime Juice,True,Fl Oz
-Silk Stockings,, Ground cinnamon,False,garnish
+Silk Stockings,1, Ground cinnamon,False,garnish
 Sidewinder,0.25, Mezcal,True,Fl Oz
-Shady Lady,, Lime wedge; honeydew melon wedge or maraschino cherry,False,garnish
+Shady Lady,1, Lime wedge; honeydew melon wedge or maraschino cherry,False,garnish
 Cherry Blossom,0.25, Triple Sec,True,Fl Oz
 The Sfozando,1.0, Chocolate bitters,True,Fl Oz
-Satin Sheets,, Lime wheel,False,garnish
+Satin Sheets,1, Lime wheel,False,garnish
 Santana Sling,3.0, Ginger beer,True,Fl Oz
 Rosita,1.0, Angostura Bitters,True,Fl Oz
 Mariposa Cocktail,1.0, Grenadine,True,Fl Oz
@@ -3704,231 +3704,231 @@ Lumination,1.0," each Fresh lemon juice, Angostura bitters",True,Fl Oz
 Irish Whisky Cocktail,2.0, Irish Whiskey,True,Fl Oz
 Champs Elysees Cocktail,1.0, Angostura Bitters,True,Fl Oz
 Level headed Cocktail,2.0, Angostura Bitters,True,Fl Oz
-La Vita Dulce,, Ground cinnamon,False,garnish
+La Vita Dulce,1, Ground cinnamon,False,garnish
 Ko Adang,0.5, Cream of coconut,True,Fl Oz
 Knickerbocker Special Cocktail,1.0, Raspberry Syrup,True,Fl Oz
 Jamaican Ginger,4.0, Angostura Bitters,True,Fl Oz
 Green Dragon Cocktail,4.0, Orange Bitters,True,Fl Oz
 Jade,0.5, Simple Syrup Scant,True,Fl Oz
 Jack Sparrow Flip,2.0, Angostura Bitters,True,Fl Oz
-Irresistible,, Lemon twist,False,garnish
+Irresistible,1, Lemon twist,False,garnish
 Hush and Wonder,3.0, Grapefruit bitters,True,Fl Oz
 Hurricane Leah,3.0, Fresh orange juice,True,Fl Oz
 Hurricane,0.5," each Simple Syrup, grenadine",True,Fl Oz
 The Holy Roller,2.0, Angostura Bitters,True,Fl Oz
 Hemingway's Nog,3.0," tiki bitters, such as Bittermen's Elemakule",True,Fl Oz
 Harvest Nectar,1.0, Lemon-lime soda,True,Fl Oz
-The Poncho,, Maraschino cherry,False,garnish
+The Poncho,1, Maraschino cherry,False,garnish
 Hai Karate,1.0, Maple Syrup,True,Fl Oz
 Pina Agave,0.5, Agave nectar,True,Fl Oz
-Grande Guignol,, Lime wheel,False,garnish
-Pancho Villa,, Grapefruit twist,False,garnish
-Golden Friendship,," Orange zest spiral, maraschino cherry",False,garnish
+Grande Guignol,1, Lime wheel,False,garnish
+Pancho Villa,1, Grapefruit twist,False,garnish
+Golden Friendship,1," Orange zest spiral, maraschino cherry",False,garnish
 Pacific Sunshine,0.75, Fresh lemon juice,True,Fl Oz
 Golden Eclipse,3.0, Sparkling apple cider,True,Fl Oz
 Oldest Temptation,0.25, Simple Syrup,True,Fl Oz
-Ginger Grapefruit Rickey,, Soda water,False,garnish
-The Oaxaca Old-Fashioned,," Orange twist, flamed",False,garnish
-Gaugin,, Maraschino cherry,False,garnish
+Ginger Grapefruit Rickey,1, Soda water,False,garnish
+The Oaxaca Old-Fashioned,1," Orange twist, flamed",False,garnish
+Gaugin,1, Maraschino cherry,False,garnish
 The Nomad South,0.5, Fresh Lime Juice,True,Fl Oz
-No. 8,, Lemon twist,False,garnish
+No. 8,1, Lemon twist,False,garnish
 Fog Cutter,1.0, each Orange juice and sweet sherry,True,Fl Oz
 Floridita No. 3,0.5, Simple Syrup,True,Fl Oz
-Mexican Monk,, Lemon twist,False,garnish
+Mexican Monk,1, Lemon twist,False,garnish
 Floridita No. 1,1.0, Grenadine,True,Fl Oz
-Mexican Madras,, Orange wheel,False,garnish
-Fireman's Sour,, Soda water (optional),False,garnish
-Fat Like Buddha,," Orange twist, flamed",False,garnish
+Mexican Madras,1, Orange wheel,False,garnish
+Fireman's Sour,1, Soda water (optional),False,garnish
+Fat Like Buddha,1," Orange twist, flamed",False,garnish
 Cherry Blossom Cocktail,2.0, Lemon Juice,True,Fl Oz
 Mexican Firing Squad,2.0, Angostura Bitters,True,Fl Oz
 Lillypad,0.25, Agave nectar,True,Fl Oz
 La Ultima Palabra,0.75, Maraschino liqueur,True,Fl Oz
-Bull's Milk,," Freshly grated nutmeg, ground cinnamon",False,garnish
+Bull's Milk,1," Freshly grated nutmeg, ground cinnamon",False,garnish
 La Bomba,1.5, Orange juice,True,Fl Oz
-Jinx Cocktail,," Grapefruit twist, flamed",False,garnish
+Jinx Cocktail,1," Grapefruit twist, flamed",False,garnish
 The Interesting Cocktail,1.0, Grapefruit twist,True,Fl Oz
 Hot Pants,2.0, Simple Syrup,True,Fl Oz
 High Plains Drifter No. 1,1.0, Angostura Bitters,True,Fl Oz
 Hairy Sunrise,1.0, Fresh grenadine,True,Fl Oz
 Flower Power,3.0, Orange blossom water,True,Fl Oz
-El Oso (The Bear),, Dehydrated Orange Wheel,False,garnish
+El Oso (The Bear),1, Dehydrated Orange Wheel,False,garnish
 El Ni_o,5.0, Rose water,True,Fl Oz
 Dirty Daisy,1.0, Fresh Lime Juice,True,Fl Oz
-Diablo,, Lime wheel,False,garnish
-Count Camillo's Paloma,, Rosemary sprig,False,garnish
+Diablo,1, Lime wheel,False,garnish
+Count Camillo's Paloma,1, Rosemary sprig,False,garnish
 Company B,0.5, Fresh lemon juice,True,Fl Oz
 Chupa Cabra,0.5, Simple Syrup,True,Fl Oz
-Chinchona,, Orange twist,False,garnish
-Chapala,, Orange blossoms (optional): orange wedge,False,garnish
+Chinchona,1, Orange twist,False,garnish
+Chapala,1, Orange blossoms (optional): orange wedge,False,garnish
 Catalina Margarita,2.0, Fresh lemon juice,True,Fl Oz
-Camino Del Ray,, Lemon twist,False,garnish
+Camino Del Ray,1, Lemon twist,False,garnish
 Cactus Berry,0.25," each Fresh lemon juice, fresh lime juice",True,Fl Oz
 Bum's Rush,1.0, Fresh apple cider,True,Fl Oz
 Bloody Maria,1.0, Celery Salt,True,Fl Oz
-Big Red Hooter,, Maraschino cherry,False,garnish
-Bravo,, Grapefruit twist,False,garnish
+Big Red Hooter,1, Maraschino cherry,False,garnish
+Bravo,1, Grapefruit twist,False,garnish
 Amante Picante,1.0, Simple Syrup,True,Fl Oz
 Barbary Coast Cocktail,0.5, Sweet Cream,True,Fl Oz
 The Winkle,0.5, Simple Syrup,True,Fl Oz
 The Wink,2.0, Peychaud's Bitters,True,Fl Oz
 Apple Pie Cocktail,1.0, Lemon Juice,True,Fl Oz
-Water Lily,, Orange twist,False,garnish
+Water Lily,1, Orange twist,False,garnish
 Vow Of Silence,0.25, Amaro,True,Fl Oz
-Jocose Julep,, Soda water,False,garnish
+Jocose Julep,1, Soda water,False,garnish
 Jitterbug Sour,1 dash, Angostura Bitters,False,garnish
 Irish Whiskey Cocktail,1.0, Green olive,False,garnish
 Irish Shillelagh,1.0," Fresh raspberries and strawberries, 2 peach slices, maraschino cherry",False,garnish
-Free Silver,, Club Soda,False,garnish
+Free Silver,1, Club Soda,False,garnish
 Frankenjack Cocktail,1.5, Gin & ginger ale,True,Fl Oz
 Hebrides,1.0, Angostura Bitters,True,Fl Oz
-Harvest Moon,, Orange twist,False,garnish
-Greenpoint,, Lemon twist,False,garnish
-Grandfather,, Maraschino cherry,False,garnish
-Gilchrist,, Lemon twist,False,garnish
-Francis The Mule,, Lemon twist,False,garnish
+Harvest Moon,1, Orange twist,False,garnish
+Greenpoint,1, Lemon twist,False,garnish
+Grandfather,1, Maraschino cherry,False,garnish
+Gilchrist,1, Lemon twist,False,garnish
+Francis The Mule,1, Lemon twist,False,garnish
 Underneath The Mango Tree,2.0, Ginger ale,True,Fl Oz
 Toasted Drop,1.0, Egg White,True,Fl Oz
-Eastern Sour,, Orange and lime wheels,False,garnish
-Dufftown Flip,, Freshly grated nutmeg,False,garnish
+Eastern Sour,1, Orange and lime wheels,False,garnish
+Dufftown Flip,1, Freshly grated nutmeg,False,garnish
 Double Standard Sour,0.25, Simple Syrup,True,Fl Oz
-The Titian,, Fresh raspberry,False,garnish
+The Titian,1, Fresh raspberry,False,garnish
 Thyme Collins,2.0, Long thyme sprigs,True,Fl Oz
-Surf Rider,," Orange half-wheel, maraschino cherry",False,garnish
-Devil's Soul,," Orange twist, flamed",False,garnish
-De La Louisiane,, Maraschino cherry,False,garnish
-Daisy Dueller,, Orange and lemon wheels,False,garnish
+Surf Rider,1," Orange half-wheel, maraschino cherry",False,garnish
+Devil's Soul,1," Orange twist, flamed",False,garnish
+De La Louisiane,1, Maraschino cherry,False,garnish
+Daisy Dueller,1, Orange and lemon wheels,False,garnish
 Sonic Blaster,1.0, Cranberry Juice,True,Fl Oz
-Cotton Club Flip,, Stick of cotton candy,False,garnish
+Cotton Club Flip,1, Stick of cotton candy,False,garnish
 Sidecar,0.5, Fresh orange juice and orange wheel,True,Fl Oz
 Shalom,0.5, Fresh lemon juice,True,Fl Oz
-Coffee Old-Fashioned,," Orange wheel, maraschino cherry",False,garnish
+Coffee Old-Fashioned,1," Orange wheel, maraschino cherry",False,garnish
 Chi-Town Flip,1.0, Whole Egg and grated nutmet,True,Fl Oz
-Sampan Shipwreck A,, Pineapple wedge,False,garnish
-Chas,, Orange twist,False,garnish
-Chaplin,, Lemon twist,False,garnish
+Sampan Shipwreck A,1, Pineapple wedge,False,garnish
+Chas,1, Orange twist,False,garnish
+Chaplin,1, Lemon twist,False,garnish
 Rouxby Red,0.5, Simple Syrup,True,Fl Oz
 Rosemary Clementine Sparkle,1.0, Chilled sparkling wine or Champagne,True,Fl Oz
 Carre Reprise,1.0, Peychaud's Bitters,True,Fl Oz
-Redhead Martini,, Strawberry,False,garnish
-Purple Ruby,, Grapefruit twist,False,garnish
+Redhead Martini,1, Strawberry,False,garnish
+Purple Ruby,1, Grapefruit twist,False,garnish
 Purple Passion Iced Tea,0.75, Fresh lemon juice and 3 oz,True,Fl Oz
 California Lemonade,1.0," Soda water, Orange and lemon wheels, maraschino cherry",True,Fl Oz
-Brighton Punch,," Soda water, orange and lemon wheels",False,garnish
+Brighton Punch,1," Soda water, orange and lemon wheels",False,garnish
 Bourbon Crusta,2.0, Orange Bitters,True,Fl Oz
 Bloody Scotsman,3.0," Simple Syrup, 3/4 oz",True,Fl Oz
 Blarney Stone Cocktail,1.0," Orange twist, green olive",True,Fl Oz
-Back Porch Swizzle,, Fresh mint sprig,False,garnish
+Back Porch Swizzle,1, Fresh mint sprig,False,garnish
 Pink Lemonade,2.0," Cranberry Juice, lemon wheel",True,Fl Oz
-Autumn Leaves,, Orange twist,False,garnish
-Peach Iced Tea,," Peach slice, lemon wheel",False,garnish
-Mr. 404,, Orange twist,False,garnish
+Autumn Leaves,1, Orange twist,False,garnish
+Peach Iced Tea,1," Peach slice, lemon wheel",False,garnish
+Mr. 404,1, Orange twist,False,garnish
 Academic Review,2.0, Mole bitters 1 oz,True,Fl Oz
 Maracuya Mosquito,1.0," Passion Fruit Juice, basil leaf",True,Fl Oz
-Lychee Lucy,, Canned pitted lychee nut stuffed with a small pineapple leaf,False,garnish
+Lychee Lucy,1, Canned pitted lychee nut stuffed with a small pineapple leaf,False,garnish
 Long Island Iced Tea,0.5," Simple Syrup, 1/2 oz",True,Fl Oz
-Limoncello Manzanilla Marmalade Sour,, Orange twist,False,garnish
+Limoncello Manzanilla Marmalade Sour,1, Orange twist,False,garnish
 Lights On The Plaza,1.0," Sparkling wine, raspberry and cucumber",True,Fl Oz
 Red Swizzle,1.0, Grenadine,True,Fl Oz
 Ramos Fizz,0.5, Triple Sec,True,Fl Oz
 Sand-Martini Cocktail,1.0, Sake,True,Fl Oz
-Leaves Of Grass,, Celery stick,False,garnish
-L.A. Sunrise,," Lime wheel, maraschino cherry",False,garnish
+Leaves Of Grass,1, Celery stick,False,garnish
+L.A. Sunrise,1," Lime wheel, maraschino cherry",False,garnish
 Katana,1.0, Cucumber,True,Fl Oz
-Jungle Juice,," Orange wheel, maraschino cherry",False,garnish
-Jackie-O,," Chilled Champagne,  Orange half-wheel, lime wheel",False,garnish
-Italian Screwdriver,, Lime wheel,False,garnish
+Jungle Juice,1," Orange wheel, maraschino cherry",False,garnish
+Jackie-O,1," Chilled Champagne,  Orange half-wheel, lime wheel",False,garnish
+Italian Screwdriver,1, Lime wheel,False,garnish
 Ibiza,1.0," Apple schnapps, grapefruit twist",True,Fl Oz
 Tahitian Tea,1.0, each Cranberry Juice and orange juice,True,Fl Oz
 Hyatt's Jamaican Banana,1.0, Banana,True,Fl Oz
 Green Hornet (Dry),1.0, Powdered Sugar,True,Fl Oz
-Glass Tower,," Lime soda, orange wheel, maraschino cherry",False,garnish
+Glass Tower,1," Lime soda, orange wheel, maraschino cherry",False,garnish
 Gloom Lifter,0.5, Egg White,True,Fl Oz
-Georgia Mule,, Peach slice,False,garnish
-East India Cocktail No. 1,," Lemon twist, maraschino cherry",False,garnish
-Gables Collins,," Lemon wheel, pineapple chunk",False,garnish
-Duke Cocktail,, Chilled Champagne,False,garnish
-Cubeltini,, Fresh mint sprig,False,garnish
-Crocodile Cooler,," Lime soda, pineapple wedge, maraschino cherry or lime wheel",False,garnish
-The Cinquecento,, Grapefruit twist,False,garnish
+Georgia Mule,1, Peach slice,False,garnish
+East India Cocktail No. 1,1," Lemon twist, maraschino cherry",False,garnish
+Gables Collins,1," Lemon wheel, pineapple chunk",False,garnish
+Duke Cocktail,1, Chilled Champagne,False,garnish
+Cubeltini,1, Fresh mint sprig,False,garnish
+Crocodile Cooler,1," Lime soda, pineapple wedge, maraschino cherry or lime wheel",False,garnish
+The Cinquecento,1, Grapefruit twist,False,garnish
 New Orleans Gin Fizz,1.0," Light cream, 1/2 oz",True,Fl Oz
 Zombie,1.0, Tiki (such as Bittermen's 'Elemakule) or Angostura bitters (optional) Garnish: Fresh mint sprig,True,Fl Oz
 Eye-Opener,2.0, Light Rum,True,Fl Oz
-Wiki Waki Woo,," Orange wheel, maraschino cherry",False,garnish
-Eggnog Supreme,, Powdered Nutmeg,False,garnish
-The Vacation Cocktail,, Mango slice,False,garnish
-Tahiti Club,, Lemon wheel,False,garnish
-Barnaby's Buffalo Blizzard,, Whipped cream and 3/4 oz,False,garnish
-Stone Wall,," Green apple slice, lime wedge",False,garnish
+Wiki Waki Woo,1," Orange wheel, maraschino cherry",False,garnish
+Eggnog Supreme,1, Powdered Nutmeg,False,garnish
+The Vacation Cocktail,1, Mango slice,False,garnish
+Tahiti Club,1, Lemon wheel,False,garnish
+Barnaby's Buffalo Blizzard,1, Whipped cream and 3/4 oz,False,garnish
+Stone Wall,1," Green apple slice, lime wedge",False,garnish
 Applejack Punch,1.0, Whole Egg,True,Fl Oz
 Rum Toddy (Cold),0.5, Brandy,True,Fl Oz
 Deauville Cocktail,1.0, Dry Vermouth,True,Fl Oz
-D'artagnan,, orange zest ,False,garnish
+D'artagnan,1, orange zest ,False,garnish
 Restless Native,1.5, Light Rum,True,Fl Oz
-Puerto Rican Rum Daisy,," Freshly grated nutmeg, orange wheel",False,garnish
+Puerto Rican Rum Daisy,1," Freshly grated nutmeg, orange wheel",False,garnish
 Prohibition Punch,2.0, Champagne,True,Fl Oz
 Prairie Oyster Cocktail,1.0," Egg Yolk, 1 oz",True,Fl Oz
-Planter's Punch No. 2,," Lemon, orange, and pineapple slices; maraschino cherry; fresh mint sprig dipped in sugar",False,garnish
-Planter's Punch No. 1,," Lemon, orange, and pineapple slices; maraschino cherry",False,garnish
+Planter's Punch No. 2,1," Lemon, orange, and pineapple slices; maraschino cherry; fresh mint sprig dipped in sugar",False,garnish
+Planter's Punch No. 1,1," Lemon, orange, and pineapple slices; maraschino cherry",False,garnish
 Paddington,1.0," Orange marmalade, grapefruit twist",True,Fl Oz
 The Old Cuban,2.0," Champagne, chopped fresh mint",True,Fl Oz
-Mojito,, Fresh mint sprig,False,garnish
-Casco Bay Lemonade,, Lemon wheel,False,garnish
-Caribbean Cruise,," Pineapple wedge, maraschino cherry",False,garnish
-Cappuccino Cocktail,, Lime wedge,False,garnish
+Mojito,1, Fresh mint sprig,False,garnish
+Casco Bay Lemonade,1, Lemon wheel,False,garnish
+Caribbean Cruise,1," Pineapple wedge, maraschino cherry",False,garnish
+Cappuccino Cocktail,1, Lime wedge,False,garnish
 Cape Codder,1.0, Egg White,True,Fl Oz
-Caesar,," Celery stalk, lemon wedge",False,garnish
-Bloody Mary,," Freshly ground black pepper to taste, lime wedge, celery stalk",False,garnish
-Bikini,, Lemon twist,False,garnish
-The Big Crush,, Fresh blackberries and raspberries,False,garnish
+Caesar,1," Celery stalk, lemon wedge",False,garnish
+Bloody Mary,1," Freshly ground black pepper to taste, lime wedge, celery stalk",False,garnish
+Bikini,1, Lemon twist,False,garnish
+The Big Crush,1, Fresh blackberries and raspberries,False,garnish
 Bianca,1.0," Fresh lemon juice, lemon twiste, fresh pomegranate seeds",True,Fl Oz
-Bella Fragolia,," Soda water, strawberry slide, fresh basil leaf",False,garnish
-Basil 8,, Ginger ale,False,garnish
+Bella Fragolia,1," Soda water, strawberry slide, fresh basil leaf",False,garnish
+Basil 8,1, Ginger ale,False,garnish
 Waiting On Summer,3.0," Ginger ale, strawberry slice",True,Fl Oz
-Tia Juanathan,, Orange half-wheel,False,garnish
-Tequila Smash,, Lime wheel skewered with blueberry and Bing cherry,False,garnish
-Tequila Mockingbird,, Lime wheel,False,garnish
-Tequila Canyon,, Lime wheel,False,garnish
+Tia Juanathan,1, Orange half-wheel,False,garnish
+Tequila Smash,1, Lime wheel skewered with blueberry and Bing cherry,False,garnish
+Tequila Mockingbird,1, Lime wheel,False,garnish
+Tequila Canyon,1, Lime wheel,False,garnish
 Strawberry Margarita,0.75," Fresh Lime Juice, whole strawberry",True,Fl Oz
-Spice Of Life,," Cucumber slice, fresh mint sprig",False,garnish
-Smoked Margarita,, Lime wedge,False,garnish
+Spice Of Life,1," Cucumber slice, fresh mint sprig",False,garnish
+Smoked Margarita,1, Lime wedge,False,garnish
 Sidewinder,2.0," Ginger beer, 1 oz",True,Fl Oz
 Cherry Blossom,0.25," Grenadine, maraschino cherry",True,Fl Oz
-The Sfozando,, Orange twist,False,garnish
-Rosita,, Lemon twist,False,garnish
-Quetzalcoatl,, Grapefruit twist,False,garnish
+The Sfozando,1, Orange twist,False,garnish
+Rosita,1, Lemon twist,False,garnish
+Quetzalcoatl,1, Grapefruit twist,False,garnish
 Purple Pancho,1.0," each Fresh lemon juice, simple syrup, 1 lime wheel",True,Fl Oz
-Mai-Tai (Trader Vic Version),, Fresh mint sprig; pineapple wedge skewered with maraschino cherry,False,garnish
-Lumination,, Lemon twist,False,garnish
+Mai-Tai (Trader Vic Version),1, Fresh mint sprig; pineapple wedge skewered with maraschino cherry,False,garnish
+Lumination,1, Lemon twist,False,garnish
 Ko Adang,0.5," Fresh Lime Juice, lime wheel",True,Fl Oz
-Knickerbocker Special Cocktail,, Small pineapple slice,False,garnish
-Jamaican Ginger,," Ginger ale, lime wheel",False,garnish
-Jade,, Lime wheel,False,garnish
-Jack Sparrow Flip,, Freshly grated nutmeg,False,garnish
-Hurricane Leah,, Orange wheel,False,garnish
-Hurricane,," Orange half-wheel, maraschino cherry",False,garnish
+Knickerbocker Special Cocktail,1, Small pineapple slice,False,garnish
+Jamaican Ginger,1," Ginger ale, lime wheel",False,garnish
+Jade,1, Lime wheel,False,garnish
+Jack Sparrow Flip,1, Freshly grated nutmeg,False,garnish
+Hurricane Leah,1, Orange wheel,False,garnish
+Hurricane,1," Orange half-wheel, maraschino cherry",False,garnish
 The Holy Roller,0.5," Champagne or sparkling wine, mint sprig",True,Fl Oz
-Hemingway's Nog,, Freshly grated nutmeg,False,garnish
+Hemingway's Nog,1, Freshly grated nutmeg,False,garnish
 Hai Karate,1.0, Angostura Bitters,True,Fl Oz
-Pina Agave,," Lemon-lime soda, cucumber slice",False,garnish
+Pina Agave,1," Lemon-lime soda, cucumber slice",False,garnish
 Pacific Sunshine,1.0, Angostura Bitters,True,Fl Oz
-Golden Eclipse,, Golden Delicious apple wedge,False,garnish
+Golden Eclipse,1, Golden Delicious apple wedge,False,garnish
 Oldest Temptation,1.0," Angostura Bitters, flamed lemon twist",True,Fl Oz
 The Nomad South,1.0, Whiskey barrel bitters,True,Fl Oz
 Fog Cutter,1.5, Almond or orgeat syrup,True,Fl Oz
-Floridita No. 3,, Lime wheel,False,garnish
-Floridita No. 1,, Lime twist,False,garnish
-Fireman's Sour,," Lemon half-wheel, maraschino cherry",False,garnish
-Mexican Firing Squad,, Lime wheel,False,garnish
-Lillypad,, Blood orange wheel,False,garnish
-La Ultima Palabra,, Grapefruit twist,False,garnish
+Floridita No. 3,1, Lime wheel,False,garnish
+Floridita No. 1,1, Lime twist,False,garnish
+Fireman's Sour,1," Lemon half-wheel, maraschino cherry",False,garnish
+Mexican Firing Squad,1, Lime wheel,False,garnish
+Lillypad,1, Blood orange wheel,False,garnish
+La Ultima Palabra,1, Grapefruit twist,False,garnish
 La Bomba,2.0," Grenadine, lime wheel",True,Fl Oz
-Hairy Sunrise,, Lime wedge,False,garnish
+Hairy Sunrise,1, Lime wedge,False,garnish
 Flower Power,2.0, Peychaud's Bitters,True,Fl Oz
 Company B,0.25," Agave nectar, strawberry slice",True,Fl Oz
 Chupa Cabra,1.0," Angostura Bitters, lime wheel",True,Fl Oz
 Cactus Berry,1.0, Lemon-lime soda,True,Fl Oz
-Bum's Rush,, Lime wedge,False,garnish
-Bloody Maria,, Lemon wheel,False,garnish
+Bum's Rush,1, Lime wedge,False,garnish
+Bloody Maria,1, Lemon wheel,False,garnish
 Amante Picante,2.0," Jalapeno hot pepper sauce, cucumber slice",True,Fl Oz
 Betsy Ross Cocktail,1.25, Old Mr. Boston Dry Gin,True,Fl Oz
 The Winkle,4.0," Raspberries, lemon twist",True,Fl Oz
