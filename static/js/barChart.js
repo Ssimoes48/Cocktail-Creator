@@ -1,5 +1,3 @@
-
-
 d3.csv("/RUT-SOM-DATA-PT-09-2020-U-C/Cocktail-Creator/Data/mr_boston_flattened_cleaned.csv").then(function (cocktailData) {
     cocktailData.forEach(function(data) {
         if (data.name == "Dry Martini") {
@@ -38,3 +36,32 @@ d3.csv("/RUT-SOM-DATA-PT-09-2020-U-C/Cocktail-Creator/Data/mr_boston_flattened_c
     });
 })
 
+function init() {
+    // Read json data
+    d3.csv("/RUT-SOM-DATA-PT-09-2020-U-C/Cocktail-Creator/Data/mr_boston_flattened_cleaned.csv").then(function(cocktailData) {
+        
+        names = cocktailData.map(data => data.name);
+        console.log(names);
+
+
+        // Add dropdown option for each sample
+        var dropdownMenu = d3.select("#selCocktail");
+
+        dropdownMenu.selectAll("option")
+            .data(names)
+            .enter()
+            .append("option")
+            .attr("value", name => name)
+            .text(name => name);
+        
+        var currentSelection = dropdownMenu.node().value;
+
+    });
+}
+
+function optionChanged(newSample){
+    
+}
+
+
+init()
