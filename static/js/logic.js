@@ -15,12 +15,15 @@ function choosePic(cocktail) {
     return pic;
 
 };
-
-d3.json("Cocktail-Creator/Data/combined_state.geojson", function (data) {
+d3.json("/data", function (data) {
+    console.log("data from database by web API");
+    console.log(data);
+})
+// d3.json("Data/combined_state.geojson", function (data) {
     // Once we get a response, send the data.features object to the createFeatures function
-    console.log(data.features)
-    createFeatures(data.features);
-});
+    console.log(myData.features)
+    createFeatures(myData.features);
+// });
 
 function createFeatures(stateData) {
 
