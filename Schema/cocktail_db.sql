@@ -43,7 +43,7 @@ CREATE TABLE recipe (
 
 CREATE TABLE measure (
     ingredient VARCHAR   ,
-    measure FLOAT   ,
+    measure VARCHAR  ,
     cocktail VARCHAR   ,
     unit varchar   ,
     CONSTRAINT pk_measure PRIMARY KEY (
