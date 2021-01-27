@@ -1,9 +1,8 @@
-d3.csv("/RUT-SOM-DATA-PT-09-2020-U-C/Cocktail-Creator/Data/mr_boston_flattened_cleaned.csv").then(buildBar);
 
-function buildBar(cocktailData) {
 
+d3.csv("/RUT-SOM-DATA-PT-09-2020-U-C/Cocktail-Creator/Data/mr_boston_flattened_cleaned.csv").then(function (cocktailData) {
     cocktailData.forEach(function(data) {
-        if (data.name == "Gauguin") {
+        if (data.name == "Dry Martini") {
 
             var traces = [];
 
@@ -13,17 +12,29 @@ function buildBar(cocktailData) {
             for (i=0; i<6; i++) {
                 if (data[ingredientColumns[i]]) {
                     var trace = {
-                        x: data.name,
+                        x: [data.name],
                         y: [parseFloat(data[measurementColumns[i]])],
-                        name: [data[ingredientColumns[i]]],
-                        type: 'bar'
+                        name: `oz ${data[ingredientColumns[i]]}`,
+                        type: 'bar',
+                        width: 0.2,
                     };
                     
                     traces.push(trace);
                 }
             }
             console.log(traces);
-            Plotly.newPlot('bar', traces, {barmode: 'stack'});
+            layout = {
+                barmode: 'stack',
+                // xaxis: {
+                //     visible: false,
+                // },
+                yaxis: {
+                    visible: false,
+                },
+                showlegend: false
+            }
+            Plotly.newPlot('bar', traces, layout);
         }
     });
-}
+})
+
