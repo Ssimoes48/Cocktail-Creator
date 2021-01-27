@@ -26,6 +26,12 @@ body {
   background:black;
   }
   
+  .container {
+    width: auto;
+    margin: auto;
+    padding: 20px;
+  }
+  
   h2 {
     padding: 20px;
     margin-left: 200px;
@@ -34,6 +40,8 @@ body {
     background:black;
     color: white;
     font-size: 30px;
+    opacity: 0.8;
+    border-radius: 10px;
   }
   h3 {
     padding: 10px;
@@ -47,6 +55,13 @@ body {
     font-size: 30px;
   }
 
+  .selDataset {
+    width: 280px;
+    float: right;
+    margin-right: 12px;
+    height: 35px;
+    margin-top: 11px; 
+  }
   
   .dropdown-styles{
     width: 280px;
@@ -54,6 +69,7 @@ body {
       margin-right: 12px;
       height: 35px;
       margin-top: 11px;
+      margin-bottom: 25px;
   }
   
   
