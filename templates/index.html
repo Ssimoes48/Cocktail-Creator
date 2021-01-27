@@ -7,17 +7,17 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sample Flask Website</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-   <!-- Leaflet CSS -->
-   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin="" />>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />>
 
- <!--D3 cdn-->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+  <!--D3 cdn-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
- <!-- Our CSS -->
- <link rel="stylesheet" type="text/css" href="static/css/style.css">
- </head>
+  <!-- Our CSS -->
+  <link rel="stylesheet" type="text/css" href="../static/style.css">
+</head>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -49,21 +49,26 @@
         </select>
       </li>
     </ul>
-  
+
   </nav>
-  <div class="content">
-    <h2>Cocktail DB Landing Page JavaScript Visualizations!</h2>
-    <br>
-    <div>
-      <img src="../Images/cocktail_bg.jpg">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container fluid">
+          <h2 style="text-align: center"> Cocktail Creator! </h2>
+          <br>
+          <div>
+            <img
+              src="https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif">;
+          </div>
+        </div>
+        <!-- The div where we will inject our map -->
+        <div class="container">
+          <div id="mapid"></div>
+        </div>
+      </div>
     </div>
   </div>
-  <!-- The div where we will inject our map -->
-  <div class="container">
-    <div id="mapid"></div>  
-  </div>
-  
-
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
     integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
@@ -72,7 +77,7 @@
   <script type="text/javascript" src="static/combined_state.js"></script>
   <script type="text/javascript" src="static/js/config.js"></script>
   <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
-  
+
   <!-- Our JS -->
   <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
