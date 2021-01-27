@@ -4,17 +4,17 @@
 
 
 CREATE TABLE ingredients (
-    name VARCHAR   NOT NULL,
-    type VARCHAR   NOT NULL,
+    name VARCHAR   ,
+    type VARCHAR   ,
     CONSTRAINT pk_ingredients PRIMARY KEY (
         name
      )
 );
 
 CREATE TABLE cocktail (
-    name VARCHAR   NOT NULL,
-    type VARCHAR   NOT NULL,
-    image_src URL   NOT NULL,
+    name VARCHAR   ,
+    type VARCHAR   ,
+    image_src VARCHAR   ,
     CONSTRAINT pk_cocktail PRIMARY KEY (
         name
      )
@@ -22,30 +22,30 @@ CREATE TABLE cocktail (
 
 CREATE TABLE state (
     state VARCHAR   NOT NULL,
-    abbr VARCHAR   NOT NULL,
-    latitude long   NOT NULL,
-    longitude long   NOT NULL,
-    cocktail VARCHAR   NOT NULL,
+    abbr VARCHAR   ,
+    latitude BIGINT   ,
+    longitude BIGINT  ,
+    cocktail VARCHAR   ,
     CONSTRAINT pk_state PRIMARY KEY (
         state
      )
 );
 
 CREATE TABLE recipe (
-    cocktail VARCHAR   NOT NULL,
-    glass_type VARCHAR   NOT NULL,
-    glass_size VARCHAR   NOT NULL,
-    instructions VARCHAR   NOT NULL,
+    cocktail VARCHAR   ,
+    glass_type VARCHAR   ,
+    glass_size VARCHAR   ,
+    instructions VARCHAR   ,
     CONSTRAINT pk_recipe PRIMARY KEY (
         cocktail
      )
 );
 
 CREATE TABLE measure (
-    ingredient VARCHAR   NOT NULL,
-    measure FLOAT   NOT NULL,
-    cocktail VARCHAR   NOT NULL,
-    unit varchar   NOT NULL,
+    ingredient VARCHAR   ,
+    measure FLOAT   ,
+    cocktail VARCHAR   ,
+    unit varchar   ,
     CONSTRAINT pk_measure PRIMARY KEY (
         ingredient,cocktail
      )
