@@ -20,3 +20,5 @@ var data = [
   Plotly.newPlot('my-chart', data);
 
   console.log(myData);
+  
+

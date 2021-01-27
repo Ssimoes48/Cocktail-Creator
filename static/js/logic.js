@@ -15,14 +15,15 @@ function choosePic(cocktail) {
     return pic;
 
 };
-d3.json("/data", function (data) {
-    console.log("data from database by web API");
-    console.log(data);
+d3.json("/static/combined_state.js", function (data) {
+    console.log("data from combined state");
+    createFeatures(data);
+    //console.log(data);
 })
 // d3.json("Data/combined_state.geojson", function (data) {
     // Once we get a response, send the data.features object to the createFeatures function
-    console.log(myData.features)
-    createFeatures(myData.features);
+    //console.log(myData.features)
+   
 // });
 
 function createFeatures(stateData) {
