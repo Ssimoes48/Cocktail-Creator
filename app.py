@@ -1,11 +1,12 @@
 from flask import Flask, jsonify, render_template, redirect
+# from geopy.geocoders import GoogleV3
 import psycopg2
 import numpy as np
-conn=psycopg2.connect(
+conn = psycopg2.connect(
     host="localhost",
-    database = "cocktail_db",
-    user = "postgres",
-    password = "agent",
+    database="cocktail_db",
+    user="postgres",
+    password="postgres",
 
 )
 mycursor = conn.cursor()
@@ -14,15 +15,28 @@ mycursor = conn.cursor()
 app = Flask(__name__)
 
 # Route to render most basic index.html template
+
+
 @app.route("/", methods=['post', 'get'])
 def home():
+    # mycursor.execute("static/js/combined_state.js")
+    # if request.method == 'POST':
+    #     address = request.form['address']
+    #     geolocator = GoogleV3()
+    #     location = geolocator.geocode(address)
+    #     userlat = location.latitude
+    #     userlng = location.longitude
+    #     return render_template('address.html', userlat=userlat, userlng=userlng)
+    # return render_template('index.html')
     # Return template and data
     return render_template("index.html")
 
 # Route to create an HTML table by passing a list of dictionaries to the template
+
+
 @app.route("/data", methods=['post', 'get'])
 def data():
-    mycursor.execute("select * from type")
+    mycursor.execute("select * from cocktail")
     db_query = mycursor.fetchall()
     db_query = list(np.ravel(db_query))
     return jsonify(db_query)
@@ -33,14 +47,17 @@ def data():
 #     return render_template("js-variables.html")
 
 # Route to create an Plotly Chart using data through JS Templating
+
+
 @app.route("/js-templating")
 def js_templating():
-    mycursor.execute("select * from type")
+    mycursor.execute("select * from cocktail")
     db_query = mycursor.fetchall()
-   
+
     #color_data_from_db = get_color_data_dict_from_db()
 
-    return render_template("js-templating.html", db_data=db_query) # db data extracted and storres in db_query
+    # db data extracted and storres in db_query
+    return render_template("js-templating.html", db_data=db_query)
 
 
 # Route that will return Web API JSON data

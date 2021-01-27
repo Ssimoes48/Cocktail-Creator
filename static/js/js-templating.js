@@ -8,12 +8,12 @@ cocktail_data.forEach(cocktail => {
 
 var data = [
     {
-      x: myName,
-      y: myType,
+      x: myType,
+      y: myName,
       marker:{
         color: myName,
       },
-      type: 'bar'
+      type: 'scatter'
     }
   ];
   

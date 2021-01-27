@@ -15,15 +15,17 @@ function choosePic(cocktail) {
     return pic;
 
 };
-d3.json("/static/combined_state.js", function (data) {
+
+
+d3.json("/static/js/combined_state.js", function (data) {
     console.log("data from combined state");
     createFeatures(data);
-    //console.log(data);
+    console.log(myData);
 })
 // d3.json("Data/combined_state.geojson", function (data) {
-    // Once we get a response, send the data.features object to the createFeatures function
-    //console.log(myData.features)
-   
+// Once we get a response, send the data.features object to the createFeatures function
+//console.log(myData.features)
+
 // });
 
 function createFeatures(stateData) {
@@ -35,7 +37,7 @@ function createFeatures(stateData) {
         var cocktail = feature.properties.cocktail;
         layer.bindPopup("<h2 style=text-align:center;>" + feature.properties.state +
             "</h2><hr><p style=text-align:center;>" + cocktail + "</p>"
-            + "<p>" +  "<a href=" + "http://www.google.com" + ">" +
+            + "<p>" + "<a href=" + "http://www.google.com" + ">" +
             "<img src='" + choosePic(cocktail) + "' alt='squirrels' width='126' height='auto'>" + "</a>" + "</p>"
         );
 
