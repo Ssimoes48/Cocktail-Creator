@@ -14,7 +14,6 @@ CREATE TABLE ingredients (
 CREATE TABLE cocktail (
     name VARCHAR   ,
     type VARCHAR   ,
-    image_src VARCHAR   ,
     CONSTRAINT pk_cocktail PRIMARY KEY (
         name
      )
@@ -26,6 +25,7 @@ CREATE TABLE state (
     latitude BIGINT   ,
     longitude BIGINT  ,
     cocktail VARCHAR   ,
+    image_src VARCHAR   ,
     CONSTRAINT pk_state PRIMARY KEY (
         state
      )
