@@ -34,26 +34,41 @@
         <a class="nav-link" href="/js-using-web-api">JS Web API</a>
       </li>
     </ul>
-  
+
   </nav>
-  <div class="content">
-    <h2>Plotly Visualization Created Using JavaScript Templating</h2>
-    <br>
-    <div id="my-chart"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content">
+          <div class="container">
+            <img src="../Images/chalkboard3.jpg" alt="Snow">
+            <div class="centered">
+              <img src="../Images/logo2.jpg" alt="Snow">
+            </div>
+          </div>
+          <div class="content">
+            <h2>Plotly Visualization Created Using JavaScript Templating</h2>
+            <br>
+            <div id="my-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  
 </body>
 
 <script>
   var cocktail_data = [
-      {% for cocktail in db_data %}
-        {
-          "name": "{{ cocktail.name }}",
-          "type": "{{ cocktail.type }}"
-        },
-      {% endfor %}
+    {% for cocktail in db_data %}
+  {
+    "name": "{{ cocktail.name }}",
+      "type": "{{ cocktail.type }}"
+  },
+  {% endfor %}
       ];
 </script>
-<script src = "/static/combined_state.js"></script>
+<script src="/static/combined_state.js"></script>
 <script src="/static/js/js-templating.js"></script>
 
 </html>

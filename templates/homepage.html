@@ -45,48 +45,49 @@
     <div class="row">
       <div class="col-md-12">
         <div class="container fluid">
-          <h2 style="text-align: center"> Cocktail Creator!
-            <br>
-            <img src="../Images/logo1.PNG">
-          </h2>
-          <br>
-          <div>
-            <img src="../Images/cocktail_bg.jpg">;
+          <img src="../Images/chalkboard3.jpg" alt="Snow">
+          <div class="centered">
+            <img src="../Images/logo2.jpg" alt="Snow">
           </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="container-fluid">
-                  <section id="Cocktail_dropdown">
-                    <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
-                      <option selected="">Select your Cocktail</option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </section>
-                  <h3>Select Your Cocktail</h3>
-                  <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <br>
+        <div>
+          <img src="../Images/cocktail_bg.jpg">;
+        </div>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="container-fluid">
+                <section id="Cocktail_dropdown">
+                  <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
+                    <option selected="">Select your Cocktail</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </section>
+                <h3>Select Your Cocktail</h3>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Cocktail Recipe</h3>
                 </div>
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Cocktail Recipe</h3>
-                  </div>
-                  <div id="recipe" class="panel-body"></div>
-                </div>
+                <div id="recipe" class="panel-body"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- The div where we will inject our map -->
-    <div class="container">
-      <div id="mapid"></div>
-    </div>
+  <!-- The div where we will inject our map -->
+  <div class="container">
+    <div id="mapid"></div>
+  </div>
   </div>
   </div>
   </div>
