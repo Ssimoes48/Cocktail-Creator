@@ -4,6 +4,12 @@ body {
     margin: 0px;
     
   }
+
+#mapid,
+body,
+html {
+  height: 100%;
+}
   
   .navbar{
   height:60px;

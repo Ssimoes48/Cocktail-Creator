@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="agent",
+    password="postgres",
 
 )
 mycursor = conn.cursor()
@@ -48,6 +48,18 @@ def data():
 
     #  print("responding to /postgresql route request")
     return jsonify(db_query)
+
+# Route that will return Web API JSON data
+# @app.route("/leaflet-web-api")
+# def leaflet_web_api():
+#     myData = "static/js/combined_state.js"
+
+#     return jsonify(myData)
+
+@app.route("/leaflet-map")
+def leaflet_map():
+    return render_template("leaflet-map.html")
+
 
 # # Route to illustrate how JavaScript variables are shared between scripts
 # @app.route("/js-variables")

@@ -37,8 +37,8 @@ function createFeatures(stateData) {
         var cocktail = feature.properties.cocktail;
         layer.bindPopup("<h2 style=text-align:center;>" + feature.properties.state +
             "</h2><hr><p style=text-align:center;>" + cocktail + "</p>"
-            + "<p>" + "<a href=" + "http://www.google.com" + ">" +
-            "<img src='" + choosePic(cocktail) + "' alt='squirrels' width='126' height='auto'>" + "</a>" + "</p>"
+            + "<p>" +
+            "<img src='" + choosePic(cocktail) + "' alt='squirrels' width='126' height='126'>" + "</p>"
         );
 
         // layer.on('mouseover', function (e) {
@@ -51,7 +51,7 @@ function createFeatures(stateData) {
 
     // Create a GeoJSON layer containing the features array on the stateData object
     // Run the onEachFeature function once for each piece of data in the array
-    var states = L.geoJSON(stateData, {
+    var states = L.geoJSON(myData, {
         onEachFeature: onEachFeature
     });
 
