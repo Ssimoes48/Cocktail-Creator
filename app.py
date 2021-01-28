@@ -1,15 +1,27 @@
 from flask import Flask, jsonify, render_template, redirect
 # from geopy.geocoders import GoogleV3
+import os
 import psycopg2
 import numpy as np
+import socket
+
+db_name = "cocktail_db"
 conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="postgres",
+    password="agent",
 
 )
 mycursor = conn.cursor()
+
+#check if we're running in heroku and my environmental variable exist
+if 'DATABASE_URL' in os.environ:
+    postgres_url = os.environ['DATABASE_URL']
+else:
+    #if we're not running in heroku then try and get my local config password
+    from db import config
+    postgres_url = f"postgresql://postgres:{config.postgres_pwd}@127.0.0.1:5432/{db_name}"
 
 # Create an instance of Flask
 app = Flask(__name__)
@@ -19,15 +31,7 @@ app = Flask(__name__)
 
 @app.route("/", methods=['post', 'get'])
 def home():
-    # mycursor.execute("static/js/combined_state.js")
-    # if request.method == 'POST':
-    #     address = request.form['address']
-    #     geolocator = GoogleV3()
-    #     location = geolocator.geocode(address)
-    #     userlat = location.latitude
-    #     userlng = location.longitude
-    #     return render_template('address.html', userlat=userlat, userlng=userlng)
-    # return render_template('index.html')
+    print("responding to home route request")
     # Return template and data
     return render_template("index.html")
 
@@ -36,9 +40,13 @@ def home():
 
 @app.route("/data", methods=['post', 'get'])
 def data():
-    mycursor.execute("select * from cocktail")
+    
+    mycursor.execute("select * from measure")
     db_query = mycursor.fetchall()
     db_query = list(np.ravel(db_query))
+   # conn.close()
+
+    #  print("responding to /postgresql route request")
     return jsonify(db_query)
 
 # # Route to illustrate how JavaScript variables are shared between scripts
@@ -51,7 +59,7 @@ def data():
 
 @app.route("/js-templating")
 def js_templating():
-    mycursor.execute("select * from cocktail")
+    mycursor.execute("select * from measure")
     db_query = mycursor.fetchall()
 
     #color_data_from_db = get_color_data_dict_from_db()

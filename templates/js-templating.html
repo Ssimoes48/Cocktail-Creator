@@ -47,8 +47,8 @@
   var cocktail_data = [
       {% for cocktail in db_data %}
         {
-          "name": "{{ cocktail.name }}",
-          "type": "{{ cocktail.type }}"
+          "ingredient": "{{ cocktail.ingredient }}",
+          "measure": "{{ cocktail.measure }}"
         },
       {% endfor %}
       ];
