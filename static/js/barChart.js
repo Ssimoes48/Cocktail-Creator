@@ -88,8 +88,6 @@ function cocktailNames() {
     });
 }
 
-cocktailNames().then(function(names) {
-    return names;
-});
+
 
 init();
