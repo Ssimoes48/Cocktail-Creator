@@ -16,24 +16,16 @@ body {
     height: auto;
   }
 
-  /* #container {
-    background-image: url("../Images/chalkboard.jpg");
-    background-size: cover;
-    background-position: center;
-}
 
-svg {
-    opacity: 0.9;
-    width: 7.5em;
-    height: 1.5em; 
+
+#svg_box {
     text-align: center;
-    font: 900 500%/1.2 'Coming Soon', cursive;
-   
+    position: relative;
 }
 
-text {
+/* text {
     fill: url(#wall4);
-} */
+} */ */
 
   #Age.image {
     width: 50%;
@@ -77,6 +69,7 @@ text {
     text-align: center;
     color: white;
     font-size: 30px;
+    font-family: Brush Script MT;
   }
   
   h1 {
