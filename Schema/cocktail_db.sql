@@ -22,8 +22,8 @@ CREATE TABLE cocktail (
 CREATE TABLE state (
     state VARCHAR   NOT NULL,
     abbr VARCHAR   ,
-    latitude BIGINT   ,
-    longitude BIGINT  ,
+    latitude  DOUBLE PRECISION,
+    longitude DOUBLE PRECISION,
     cocktail VARCHAR   ,
     image_src VARCHAR   ,
     CONSTRAINT pk_state PRIMARY KEY (
