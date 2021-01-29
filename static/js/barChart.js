@@ -1,21 +1,17 @@
-ingredientColumns = ["ingredient-1", "ingredient-2", "ingredient-3", "ingredient-4", "ingredient-5", "ingredient-6"];
-measurementColumns = ["measurement-1", "measurement-2", "measurement-3", "measurement-4", "measurement-5", "measurement-6"];
-
-
 function init() {
 
-    d3.csv("../Data/mr_boston_flattened.csv").then(function(cocktailData) {
+    d3.csv("../Data/ingredients.csv").then(function(cocktailData) {
 
         ingredients = [];
-        cocktailData.forEach(function(data) {
-            for (i=0; i<6; i++) {
-                if ((data[ingredientColumns[i]]) && !(ingredients.includes(data[ingredientColumns[i]]))) {
-                    ingredients.push(data[ingredientColumns[i]]);
-                }
-            }
-        });
+        // cocktailData.forEach(function(data) {
+        //     for (i=0; i<6; i++) {
+        //         if ((data[ingredientColumns[i]]) && !(ingredients.includes(data[ingredientColumns[i]]))) {
+        //             ingredients.push(data[ingredientColumns[i]]);
+        //         }
+        //     }
+        // });
 
-        names = cocktailData.map(data => data.name);
+        names = cocktailData.map(data => data.cocktail);
 
         // Add dropdown option for each sample
         var cocktailDropdown = d3.select("#selCocktail");
@@ -38,31 +34,35 @@ function cocktailChanged(newCocktail){
 }
 
 function buildBarChart(cocktail) {
-    d3.csv("../Data/mr_boston_flattened.csv").then(function (cocktailData) {
+    d3.csv("../Data/ingredients.csv").then(function (cocktailData) {
         
-        var currentCocktail = cocktailData.filter(d => d.name === cocktail);
+        // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
         measurements = [];
 
         var traces = [];
+
+        var currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
     
-        for (i=0; i<6; i++) {
-            if (currentCocktail[0][ingredientColumns[i]]) {
-                var trace = {
-                    x: [currentCocktail[0].name],
-                    y: [parseFloat(currentCocktail[0][measurementColumns[i]])],
-                    name: `oz ${currentCocktail[0][ingredientColumns[i]]}`,
-                    type: 'bar',
-                    width: 0.2,
-                };
-                
-                traces.push(trace);
-            }
+        for (i=0; i<currentCocktail.length; i++) {
+            measurements.push(cocktailData[i].measure);
+            ingredients.push(cocktailData[i].ingredient);
+
+            var trace = {
+                x: [currentCocktail[0].cocktail],
+                y: [parseFloat(measurements[i])],
+                name: `oz ${[ingredients[i]]}`,
+                type: 'bar',
+                width: 0.2,
+            };
+            
+            traces.push(trace);
+
         }
 
         layout = {
             barmode: 'stack',
-            title: currentCocktail[0].name,
+            title: currentCocktail[0].cocktail,
             xaxis: {
                 visible: false,
             },
@@ -77,15 +77,11 @@ function buildBarChart(cocktail) {
 }
 
 
-function cocktailNames() {
+// function cocktailNames(cocktailData) {
 
-    return d3.csv("../Data/mr_boston_flattened.csv").then(function(cocktailData) {
-        var promises = cocktailData.map(function(data) {
-            return data.name;
-        });
-        return Promise.all(promises);
-    });
-}
+//     return cocktailData.name;
+
+// }
 
 
 

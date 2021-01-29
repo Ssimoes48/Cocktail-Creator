@@ -34,7 +34,7 @@
           $("#autocomplete").selectAutocomplete({
             showCancelButton: true,
             cancelButtonText: "Remove",
-            data: cocktailNames().then(names => names),
+            data: ["Hello world"],
             minLength: 1,
             onSelect: function(e, value) {
               console.log("Item selected! Id: " + value);
