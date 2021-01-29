@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="postgres",
+    password="agent",
 
 )
 mycursor = conn.cursor()
@@ -33,7 +33,7 @@ app = Flask(__name__)
 def home():
     print("responding to home route request")
     # Return template and data
-    return render_template("index.html")
+    return render_template("homepage.html")
 
 # Route to create an HTML table by passing a list of dictionaries to the template
 
@@ -41,7 +41,10 @@ def home():
 @app.route("/data", methods=['post', 'get'])
 def data():
     
-    mycursor.execute("select * from measure")
+    mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit .\
+                    FROM state s INNER JOIN measure m ON (s.cocktail = m.cocktail).\
+                    GROUP BY s.cocktail, m.ingredient, m.measure, m.unit.\
+                    ORDER BY s.cocktail DESC;")
     db_query = mycursor.fetchall()
     db_query = list(np.ravel(db_query))
    # conn.close()
@@ -69,15 +72,19 @@ def leaflet_map():
 # Route to create an Plotly Chart using data through JS Templating
 
 
-@app.route("/js-templating")
-def js_templating():
-    mycursor.execute("select * from measure")
+@app.route("/bubble")
+def data():
+    
+    mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit .\
+                    FROM state s INNER JOIN measure m ON (s.cocktail = m.cocktail).\
+                    GROUP BY s.cocktail, m.ingredient, m.measure, m.unit.\
+                    ORDER BY s.cocktail DESC;")
     db_query = mycursor.fetchall()
+    db_query = list(np.ravel(db_query))
+   # conn.close()
 
-    #color_data_from_db = get_color_data_dict_from_db()
-
-    # db data extracted and storres in db_query
-    return render_template("js-templating.html", db_data=db_query)
+    #  print("responding to /postgresql route request")
+    return jsonify(db_query)
 
 
 # Route that will return Web API JSON data
