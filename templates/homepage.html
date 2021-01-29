@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sample Flask Website</title>
+  <title>Cocktail Creator</title>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
@@ -16,7 +18,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="../static/style.css">
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
 
 <body>
@@ -24,82 +26,109 @@
     <!-- Links -->
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/homepage">Home</a>
+        <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/bubble">Top 20 Ingredients</a>
+        <a class="nav-link" href="/bubble">Top Ingredients</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/leaflet-map">US Cocktails</a>
       </li>
-      <!-- 
-      <li class="nav-item">
-        <a class="nav-link" href="/raw-web-api">Raw Web API</a>
-      </li> --> -->
     </ul>
-
   </nav>
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <div class="container fluid">
-          <img src="../Images/logo3.jpg" alt="Snow">
+          <img src="../static/Images/logo3.jpg" alt="Snow">
           <div class="centered"> </div>
         </div>
         <br>
         <div>
-          <img src="../Images/cocktail_bg.jpg">;
+          <img src="../static/Images/cocktail_bg.jpg">
         </div>
-        <script src="../static/js/barChart.js"></script>
-        <div class="row">
-          <div class="col-md-8">
-            <div class="container-fluid">
-              <section id="Cocktail_dropdown">
-                <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
-                  <option selected="">Select your Cocktail</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </select>
-              </section>
-              <h3>Select Your Cocktail</h3>
-
-              <select id="selCocktail" onchange="optionChanged(this.value)"></select>
-            </div>
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 id="panel-title">Cocktail Recipe</h3>
-              </div>
-              <div id="recipe" class="panel-body"></div>
-              <img src="../Images/chalkboard2jpg.jpg" id="recipe_table">;
-            </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="container fluid">
+          <script src="../static/js/barChart.js"></script>
+          <div class="wrap">
+            <input id="autocomplete" type="text" name="search" onsubmit="cocktailChanged(this.value)" />
           </div>
+          <script src="https://code.jquery.com/jquery-1.8.0.js"
+            integrity="sha256-00Fh8tkPAe+EmVaHFpD+HovxWk7b97qwqVi7nLvjdgs=" crossorigin="anonymous"></script>
+          <script src="../static/js/jquery.select-autocomplete.js"></script>
+          <script>
+            $(document).ready(function () {
+              $("#autocomplete").selectAutocomplete({
+                showCancelButton: true,
+                cancelButtonText: "Remove",
+                data: ["Hello world"],
+                minLength: 1,
+                onSelect: function (e, value) {
+                  console.log("Item selected! Id: " + value);
+                },
+                onCancel: function (e) {
+                  console.log("Cancel button clicked!");
+                }
+              });
+            });
+          </script>
+          <div id="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <section id="Cocktail_dropdown">
+            <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
+              <option selected="">Select your Cocktail</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </section>
+          <h3>Select Your Cocktail</h3>
+
+          <select id="selCocktail" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 id="panel-title">Cocktail Recipe</h3>
+          </div>
+          <div id="recipe" class="panel-body"></div>
+          <img src="../static/Images/chalkboard2jpg.jpg" id="recipe_table">
         </div>
       </div>
     </div>
   </div>
   </div>
+  </div>
+  </div>
 
-  <!-- The div where we will inject our map -->
-  <div class="container">
-    <div id="mapid"></div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-    crossorigin=""></script>
-  <!-- API key -->
-  <script type="text/javascript" src="static/combined_state.js"></script>
-  <script type="text/javascript" src="static/js/config.js"></script>
-  <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
+  < !--The div where we will inject our map-->
+    <div class="container">
+      <div id="mapid"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    < !--Leaflet JS-->
+      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+        crossorigin=""></script>
+      <!-- API key -->
 
-  <!-- Our JS -->
-  <script type="text/javascript" src="static/js/logic.js"></script>
+      <script type="text/javascript" src="static/js/config.py"></script>
+      <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <!-- Our JS -->
+      <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
 
 </html>
