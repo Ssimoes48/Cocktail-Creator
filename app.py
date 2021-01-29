@@ -29,6 +29,12 @@ def state_data():
     result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_scr": result[5]} for result in results]
     return jsonify(result_dicts)
 
+<<<<<<< HEAD
+    
+
+app = Flask(__name__)
+
+=======
 # Create an instance of Flask for bubble
 def bubble_data():
     mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit FROM state s \
@@ -42,11 +48,18 @@ def bubble_data():
 app = Flask(__name__)
 
 # Route to render leaflet map on home
+>>>>>>> 414c745de7371088343f704b72951985b9810384
 @app.route("/raw-web-api")
 def scrape():
     map_data = state_data()
     print("responding to raw-web-api route: ")
     return (map_data)
+<<<<<<< HEAD
+
+# Route to render most basic index.html template
+
+=======
+>>>>>>> 414c745de7371088343f704b72951985b9810384
 
 @app.route("/", methods=['post', 'get'])
 def home():
@@ -72,15 +85,32 @@ def home():
 #     return jsonify(db_query)
 
 # Route that will return Web API JSON data
-# @app.route("/leaflet-web-api")
+# @app.route("/leaflet-web-api", methods=['post', 'get'])
 # def leaflet_web_api():
-#     myData = "static/js/combined_state.js"
+#     mycursor.execute("select * from state")
+#     db_query = mycursor.fetchall()
+#     db_query = list(np.ravel(db_query))
 
-#     return jsonify(myData)
+#     return jsonify(db_query)
+
 
 @app.route("/leaflet-map")
 def leaflet_map():
+    # map_data = state_data()
+    # mycursor.execute("select * from state")
+    # results = mycursor.fetchall()
+    # # results = cursor.fetchall()
+    # result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_scr": result[5]} for result in results]
+    # # db_query = list(np.ravel(db_query))
     return render_template("leaflet-map.html")
+    # return jsonify(result_dicts)
+
+# @app.route("/leaflet-web-api", methods=['post', 'get'])
+# def leaflet_web_api():
+    # mycursor.execute("select * from state")
+    # db_query = mycursor.fetchall()
+    # db_query = list(np.ravel(db_query))
+    # return jsonify(db_query)
 
 # # Route to illustrate how JavaScript variables are shared between scripts
 # @app.route("/js-variables")
