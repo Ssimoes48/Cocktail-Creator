@@ -1,7 +1,8 @@
 d3.json("/cocktail-name-data", function(cocktailData) {
-    console.log(cocktailData);
-    names = cocktailData.map(data => data.name);
-
+    names = []
+    cocktailData.forEach(function(data) {
+        names.push(data.cocktail)});
+    console.log(names);
 
     // Add dropdown option for each sample
     var cocktailDropdown = d3.select("#selCocktail");
@@ -20,21 +21,24 @@ d3.json("/cocktail-name-data", function(cocktailData) {
 
 function buildBarChart(cocktail) {
     d3.json("/measure-data", function(cocktailData) {
-        
+        console.log(cocktailData);
         // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
         measurements = [];
 
         var traces = [];
-
+        cocktailData.forEach(function(data) {
+            if (data.cocktail === cocktail) {
+                ingredients.push(data.ingredient);
+                measurements.push(data.measure);
+            }
+        })
         var currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
     
-        for (i=0; i<currentCocktail.length; i++) {
-            measurements.push(currentCocktail[i].measure);
-            ingredients.push(currentCocktail[i].ingredient);
+        for (i=0; i<ingredients.length; i++) {
 
             var trace = {
-                x: [currentCocktail[0].cocktail],
+                x: [cocktail],
                 y: [parseFloat(measurements[i])],
                 name: `${measurements[i]} oz ${ingredients[i]}`,
                 type: 'bar',
@@ -46,7 +50,7 @@ function buildBarChart(cocktail) {
 
         layout = {
             barmode: 'stack',
-            title: currentCocktail[0].cocktail,
+            title: cocktail,
             xaxis: {
                 visible: false,
             },
