@@ -8,7 +8,7 @@
   <title>Sample Flask Website</title>
   <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="../static/style.css">
 </head>
 
 <body>
@@ -27,7 +27,6 @@
       <!-- 
       <li class="nav-item">
         <a class="nav-link" href="/raw-web-api">Raw Web API</a>
-<<<<<<< HEAD:templates/js-templating.html
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="/js-using-web-api">JS Web API</a>
@@ -38,30 +37,35 @@
       <li class="nav-item">
         <a class="nav-link" href="/leaflet-web-api">Web API</a>
       </li>
-=======
-      </li> --> -->
->>>>>>> 414c745de7371088343f704b72951985b9810384:templates/bubble.html
+      </li> -->
     </ul>
-  
+
   </nav>
-  <div class="content">
+  <div class="content" style="margin-left: 12%;">
     <h2>Plotly Visualization Created Using JavaScript Templating</h2>
     <br>
-    <div id="my-chart"></div>
+    <div id="bubble"></div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/bubble.js"></script>
+
 </body>
 
-<script>
+<!-- <script>
   var cocktail_data = [
-      {% for cocktail in db_data %}
-        {
-          "ingredient": "{{ cocktail.ingredient }}",
-          "measure": "{{ cocktail.measure }}"
-        },
-      {% endfor %}
+    {% for cocktail in db_data %}
+  {
+    "ingredient": "{{ cocktail.ingredient }}",
+      "measure": "{{ cocktail.measure }}"
+  },
+  {% endfor %}
       ];
-</script>
-<script src = "/static/js/combined_state.js"></script>
-<script src="/static/js/js-templating.js"></script>
+</script> -->
+<!-- <script src="/static/js/combined_state.js"></script> -->
+<!-- <script src="/static/js/js-templating.js"></script> -->
+
+
 
 </html>

@@ -5,7 +5,7 @@
 d3.json("/raw-web-api", function (leafletData) {
   // Creating map object
   var myMap = L.map("mapid", {
-    center: [40.7, -73.95],
+    center: [37.09, -95.71],
     zoom: 5
   });
 

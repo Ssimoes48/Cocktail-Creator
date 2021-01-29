@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="Prasanna@09",
+    password="postgres",
 ​
 )
 mycursor = conn.cursor()
