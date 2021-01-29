@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sample Flask Website</title>
-  <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="/static/css/style.css">
 </head>
@@ -43,32 +42,27 @@
           <div class="container">
             <img src="../Images/chalkboard3.jpg" alt="Snow">
             <div class="centered">
-              <img src="../Images/logo3.jpg" alt="Snow">
+              <img src="../Images/logo2.jpg" alt="Snow">
             </div>
           </div>
-          <div class="content">
-            <h2>Plotly Visualization Created Using JavaScript Templating</h2>
-            <br>
-            <div id="my-chart"></div>
-          </div>
+          <br>
+          <table class="table table-hover center">
+            <tr>
+              <th>Color</th>
+              <th>Votes</th>
+            </tr>
+
+            {% for votes_color in color_data %}
+            <tr>
+              <td>{{ votes_color.color }}</td>
+              <td>{{ votes_color.votes }}</td>
+            </tr>
+            {% endfor %}
+          </table>
         </div>
       </div>
     </div>
   </div>
-
 </body>
-
-<script>
-  var cocktail_data = [
-    {% for cocktail in db_data %}
-  {
-    "name": "{{ cocktail.name }}",
-      "type": "{{ cocktail.type }}"
-  },
-  {% endfor %}
-      ];
-</script>
-<script src="/static/combined_state.js"></script>
-<script src="/static/js/js-templating.js"></script>
 
 </html>
