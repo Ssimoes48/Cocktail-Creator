@@ -4,7 +4,7 @@ measurementColumns = ["measurement-1", "measurement-2", "measurement-3", "measur
 
 function init() {
 
-    d3.csv("../Data/mr_boston_flattened_cleaned.csv").then(function(cocktailData) {
+    d3.csv("../Data/mr_boston_flattened.csv").then(function(cocktailData) {
 
         ingredients = [];
         cocktailData.forEach(function(data) {
@@ -30,7 +30,6 @@ function init() {
         var currentCocktail = cocktailDropdown.node().value;
 
         buildBarChart(currentCocktail);
-        return names;
     });
 }
 
@@ -39,7 +38,7 @@ function cocktailChanged(newCocktail){
 }
 
 function buildBarChart(cocktail) {
-    d3.csv("../Data/mr_boston_flattened_cleaned.csv").then(function (cocktailData) {
+    d3.csv("../Data/mr_boston_flattened.csv").then(function (cocktailData) {
         
         var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
@@ -80,7 +79,7 @@ function buildBarChart(cocktail) {
 
 function cocktailNames() {
 
-    return d3.csv("../Data/mr_boston_flattened_cleaned.csv").then(function(cocktailData) {
+    return d3.csv("../Data/mr_boston_flattened.csv").then(function(cocktailData) {
         var promises = cocktailData.map(function(data) {
             return data.name;
         });
