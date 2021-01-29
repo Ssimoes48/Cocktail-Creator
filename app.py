@@ -41,8 +41,12 @@ def bubble_data():
     
 app = Flask(__name__)
 
-# Route to render most basic index.html template
-
+# Route to render leaflet map on home
+@app.route("/raw-web-api")
+def scrape():
+    map_data = state_data()
+    print("responding to raw-web-api route: ")
+    return (map_data)
 
 @app.route("/", methods=['post', 'get'])
 def home():
@@ -77,7 +81,6 @@ def home():
 @app.route("/leaflet-map")
 def leaflet_map():
     return render_template("leaflet-map.html")
-
 
 # # Route to illustrate how JavaScript variables are shared between scripts
 # @app.route("/js-variables")
