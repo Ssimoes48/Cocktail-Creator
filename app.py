@@ -69,14 +69,15 @@ def home():
 
 @app.route("/measure-data")
 def measure():
-    measure_data = measure_data()
+    ingred_data = measure_data()
     print("responding to ingredients route request")
-    return (measure_data)
+    return (ingred_data)
 
 @app.route("/cocktail-name-data")
 def names():
     name_data = cocktail_name_data()
     print("responding to cocktail names request")
+    return (name_data)
 
 # Route to create an HTML table by passing a list of dictionaries to the template
 

@@ -1,28 +1,25 @@
-function init() {
-    d3.json("/cocktail-name-data").then(function(cocktailData) {
-        console.log(cocktailData);
-        names = cocktailData.map(data => data.cocktail);
-        names = names.filter(onlyUnique);
+d3.json("/cocktail-name-data", function(cocktailData) {
+    console.log(cocktailData);
+    names = cocktailData.map(data => data.name);
 
 
-        // Add dropdown option for each sample
-        var cocktailDropdown = d3.select("#selCocktail");
+    // Add dropdown option for each sample
+    var cocktailDropdown = d3.select("#selCocktail");
 
-        cocktailDropdown.selectAll("option")
-            .data(names.sort())
-            .enter()
-            .append("option")
-            .attr("value", name => name)
-            .text(name => name);
-        
-        var currentCocktail = cocktailDropdown.node().value;
+    cocktailDropdown.selectAll("option")
+        .data(names.sort())
+        .enter()
+        .append("option")
+        .attr("value", name => name)
+        .text(name => name);
+    
+    var currentCocktail = cocktailDropdown.node().value;
 
-        buildBarChart(currentCocktail);
-    });
-}
+    buildBarChart(currentCocktail);
+});
 
 function buildBarChart(cocktail) {
-    d3.json("/measure-data").then(function (cocktailData) {
+    d3.json("/measure-data", function(cocktailData) {
         
         // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
@@ -79,4 +76,3 @@ function onlyUnique(value, index, self) {
 //     });
 // }
 
-init();
