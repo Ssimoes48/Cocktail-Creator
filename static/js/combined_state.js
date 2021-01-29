@@ -11,7 +11,8 @@ var myData = {
     "properties": {
     "abbr":"AL",
     "state":"Alabama",
-    "cocktail":" Hurricane"
+    "cocktail":" Hurricane",
+    "image_url":"https://www.recipegirl.com/wp-content/uploads/2018/06/Hurricane-1.jpg"
     }
   },
   {
