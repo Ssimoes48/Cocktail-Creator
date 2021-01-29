@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="agent",
+    password="postgres",
 
 )
 mycursor = conn.cursor()
@@ -29,12 +29,6 @@ def state_data():
     result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_scr": result[5]} for result in results]
     return jsonify(result_dicts)
 
-<<<<<<< HEAD
-    
-
-app = Flask(__name__)
-
-=======
 # Create an instance of Flask for bubble
 def bubble_data():
     mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit FROM state s \
@@ -48,18 +42,11 @@ def bubble_data():
 app = Flask(__name__)
 
 # Route to render leaflet map on home
->>>>>>> 414c745de7371088343f704b72951985b9810384
 @app.route("/raw-web-api")
 def scrape():
     map_data = state_data()
     print("responding to raw-web-api route: ")
     return (map_data)
-<<<<<<< HEAD
-
-# Route to render most basic index.html template
-
-=======
->>>>>>> 414c745de7371088343f704b72951985b9810384
 
 @app.route("/", methods=['post', 'get'])
 def home():
@@ -119,7 +106,7 @@ def leaflet_map():
 
 # Route to create an Plotly Chart using data through JS Templating
 @app.route("/bubble")
-def scrape():
+def scrape2():
     bub_data = bubble_data()
     print("responding to raw-web-api route: ")
     return jsonify(bub_data)
