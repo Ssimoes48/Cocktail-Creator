@@ -64,7 +64,7 @@
               $("#autocomplete").selectAutocomplete({
                 showCancelButton: true,
                 cancelButtonText: "Remove",
-                data: ["Hello world"],
+                data: loadAutocompleteData(),
                 minLength: 1,
                 onSelect: function (e, value) {
                   console.log("Item selected! Id: " + value);

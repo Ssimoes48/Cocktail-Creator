@@ -2,7 +2,6 @@ d3.json("/cocktail-name-data", function(cocktailData) {
     names = []
     cocktailData.forEach(function(data) {
         names.push(data.cocktail)});
-    console.log(names);
 
     // Add dropdown option for each sample
     var cocktailDropdown = d3.select("#selCocktail");
@@ -21,7 +20,6 @@ d3.json("/cocktail-name-data", function(cocktailData) {
 
 function buildBarChart(cocktail) {
     d3.json("/measure-data", function(cocktailData) {
-        console.log(cocktailData);
         // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
         measurements = [];
@@ -80,3 +78,13 @@ function onlyUnique(value, index, self) {
 //     });
 // }
 
+function loadAutocompleteData() {
+    d3.json("/cocktail-name-data", function(data) {
+        names = [];
+        cocktailData.forEach(function(data) {
+        names.push(data.cocktail);  
+        });
+    });
+    
+    return names;
+}
