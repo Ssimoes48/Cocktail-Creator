@@ -1,6 +1,6 @@
 function init() {
-    d3.csv("../Data/ingredients.csv").then(function(cocktailData) {
-
+    d3.json("/cocktail-name-data").then(function(cocktailData) {
+        console.log(cocktailData);
         names = cocktailData.map(data => data.cocktail);
         names = names.filter(onlyUnique);
 
@@ -22,7 +22,7 @@ function init() {
 }
 
 function buildBarChart(cocktail) {
-    d3.csv("../Data/ingredients.csv").then(function (cocktailData) {
+    d3.json("/measure-data").then(function (cocktailData) {
         
         // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
@@ -71,6 +71,12 @@ function onlyUnique(value, index, self) {
     return self.indexOf(value) === index;
 }
 
-
+// function cocktailNames() {
+//     d3.json("/measure-data").then(function (cocktailData) {
+//         names = cocktailData.map(data => data.cocktail);
+//         names = names.filter(onlyUnique);
+//         return names;
+//     });
+// }
 
 init();

@@ -38,6 +38,19 @@ def bubble_data():
     results = mycursor.fetchall()
     result_dicts = [ {"cocktail": result[0], "ingredient": result[1], "measure": result[2], "unit": result[3]} for result in results]
     return (result_dicts)
+
+def measure_data():
+    mycursor.execute("SELECT * FROM measure;")
+    results = mycursor.fetchall()
+    result_dicts = [ {"cocktail": result[2], "ingredient": result[0], "measure": result[1], "unit": result[3]} for result in results]
+    return jsonify(result_dicts)
+
+def cocktail_name_data():
+    mycursor.execute("SELECT * FROM cocktail;")
+    results = mycursor.fetchall()
+    result_dicts = [ {"cocktail": result[0], "category": result[1]} for result in results]
+    return jsonify(result_dicts)
+
     
 app = Flask(__name__)
 
@@ -53,6 +66,17 @@ def home():
     print("responding to home route request")
     # Return template and data
     return render_template("homepage.html")
+
+@app.route("/measure-data")
+def measure():
+    measure_data = measure_data()
+    print("responding to ingredients route request")
+    return (measure_data)
+
+@app.route("/cocktail-name-data")
+def names():
+    name_data = cocktail_name_data()
+    print("responding to cocktail names request")
 
 # Route to create an HTML table by passing a list of dictionaries to the template
 
