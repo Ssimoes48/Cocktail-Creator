@@ -1,0 +1,95 @@
+/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
+body {
+  /* background: rgb(241, 233, 225); */
+  background-image: url("../Images/old_oak.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0px;
+  
+}
+img {
+  border-radius: 8px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: atuo;
+  height: auto;
+}
+
+
+
+#svg_box {
+  text-align: center;
+  position: relative;
+}
+
+/* text {
+  fill: url(#wall4);
+} */ */
+
+#Age.image {
+  width: 50%;
+  height: 50%;
+}
+
+.navbar{
+height:60px;
+/* background:black; */
+}
+
+.container {
+  width: auto;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+  color: rgb(226, 223, 223);
+  font-size: 60px cursive ;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+h3 {
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-family: Brush Script MT;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.selDataset {
+  width: 280px;
+  float: right;
+  margin-right: 12px;
+  height: 35px;
+  margin-top: 11px; 
+}
+
+.dropdown-styles{
+  width: 280px;
+    float: right;
+    margin-right: 12px;
+    height: 35px;
+    margin-top: 11px;
+    margin-bottom: 25px;
+}
+

@@ -10,7 +10,7 @@ conn = psycopg2.connect(
     host="localhost",
     database="cocktail_db",
     user="postgres",
-    password="postgres",
+    password="agent",
 
 )
 mycursor = conn.cursor()
@@ -29,38 +29,60 @@ def state_data():
     result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_scr": result[5]} for result in results]
     return jsonify(result_dicts)
 
+<<<<<<< HEAD
     
 
 app = Flask(__name__)
 
+=======
+# Create an instance of Flask for bubble
+def bubble_data():
+    mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit FROM state s \
+                    INNER JOIN measure m ON (s.cocktail = m.cocktail) \
+                    GROUP BY s.cocktail, m.ingredient, m.measure, m.unit \
+                    ORDER BY s.cocktail DESC;")
+    results = mycursor.fetchall()
+    result_dicts = [ {"cocktail": result[0], "ingredient": result[1], "measure": result[2], "unit": result[3]} for result in results]
+    return (result_dicts)
+    
+app = Flask(__name__)
+
+# Route to render leaflet map on home
+>>>>>>> 414c745de7371088343f704b72951985b9810384
 @app.route("/raw-web-api")
 def scrape():
     map_data = state_data()
     print("responding to raw-web-api route: ")
     return (map_data)
+<<<<<<< HEAD
 
 # Route to render most basic index.html template
 
+=======
+>>>>>>> 414c745de7371088343f704b72951985b9810384
 
 @app.route("/", methods=['post', 'get'])
 def home():
     print("responding to home route request")
     # Return template and data
-    return render_template("index.html")
+    return render_template("homepage.html")
 
 # Route to create an HTML table by passing a list of dictionaries to the template
 
 
-@app.route("/data", methods=['post', 'get'])
-def data():
+# @app.route("/data", methods=['post', 'get'])
+# def data():
     
-    mycursor.execute("select * from measure")
-    db_query = mycursor.fetchall()
-    db_query = list(np.ravel(db_query))
-   # conn.close()
+#     mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit .\
+#                     FROM state s INNER JOIN measure m ON (s.cocktail = m.cocktail).\
+#                     GROUP BY s.cocktail, m.ingredient, m.measure, m.unit.\
+#                     ORDER BY s.cocktail DESC;")
+#     db_query = mycursor.fetchall()
+#     db_query = list(np.ravel(db_query))
+#    # conn.close()
 
-    #  print("responding to /postgresql route request")
-    return jsonify(db_query)
+#     #  print("responding to /postgresql route request")
+#     return jsonify(db_query)
 
 # Route that will return Web API JSON data
 # @app.route("/leaflet-web-api", methods=['post', 'get'])
@@ -90,24 +112,31 @@ def leaflet_map():
     # db_query = list(np.ravel(db_query))
     # return jsonify(db_query)
 
-
 # # Route to illustrate how JavaScript variables are shared between scripts
 # @app.route("/js-variables")
 # def js_variables():
 #     return render_template("js-variables.html")
 
 # Route to create an Plotly Chart using data through JS Templating
+@app.route("/bubble")
+def scrape():
+    bub_data = bubble_data()
+    print("responding to raw-web-api route: ")
+    return jsonify(bub_data)
 
+# @app.route("/bubble")
+# def data():
+    
+#     mycursor.execute("SELECT s.cocktail, m.ingredient, m.measure, m.unit .\
+#                     FROM state s INNER JOIN measure m ON (s.cocktail = m.cocktail).\
+#                     GROUP BY s.cocktail, m.ingredient, m.measure, m.unit.\
+#                     ORDER BY s.cocktail DESC;")
+#     db_query = mycursor.fetchall()
+#     db_query = list(np.ravel(db_query))
+#    # conn.close()
 
-@app.route("/js-templating")
-def js_templating():
-    mycursor.execute("select * from measure")
-    db_query = mycursor.fetchall()
-
-    #color_data_from_db = get_color_data_dict_from_db()
-
-    # db data extracted and storres in db_query
-    return render_template("js-templating.html", db_data=db_query)
+#     #  print("responding to /postgresql route request")
+#     return jsonify(db_query)
 
 
 # Route that will return Web API JSON data
