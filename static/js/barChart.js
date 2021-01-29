@@ -1,17 +1,9 @@
 function init() {
-
     d3.csv("../Data/ingredients.csv").then(function(cocktailData) {
 
-        ingredients = [];
-        // cocktailData.forEach(function(data) {
-        //     for (i=0; i<6; i++) {
-        //         if ((data[ingredientColumns[i]]) && !(ingredients.includes(data[ingredientColumns[i]]))) {
-        //             ingredients.push(data[ingredientColumns[i]]);
-        //         }
-        //     }
-        // });
-
         names = cocktailData.map(data => data.cocktail);
+        names = names.filter(onlyUnique);
+
 
         // Add dropdown option for each sample
         var cocktailDropdown = d3.select("#selCocktail");
@@ -29,10 +21,6 @@ function init() {
     });
 }
 
-function cocktailChanged(newCocktail){
-    buildBarChart(newCocktail);
-}
-
 function buildBarChart(cocktail) {
     d3.csv("../Data/ingredients.csv").then(function (cocktailData) {
         
@@ -45,19 +33,18 @@ function buildBarChart(cocktail) {
         var currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
     
         for (i=0; i<currentCocktail.length; i++) {
-            measurements.push(cocktailData[i].measure);
-            ingredients.push(cocktailData[i].ingredient);
+            measurements.push(currentCocktail[i].measure);
+            ingredients.push(currentCocktail[i].ingredient);
 
             var trace = {
                 x: [currentCocktail[0].cocktail],
                 y: [parseFloat(measurements[i])],
-                name: `oz ${[ingredients[i]]}`,
+                name: `${measurements[i]} oz ${ingredients[i]}`,
                 type: 'bar',
                 width: 0.2,
             };
             
             traces.push(trace);
-
         }
 
         layout = {
@@ -69,19 +56,20 @@ function buildBarChart(cocktail) {
             yaxis: {
                 visible: false,
             },
-            showlegend: false
+            showlegend: true
         }
 
         Plotly.newPlot('bar', traces, layout);
     })
 }
 
+function cocktailChanged(newCocktail){
+    buildBarChart(newCocktail);
+}
 
-// function cocktailNames(cocktailData) {
-
-//     return cocktailData.name;
-
-// }
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
 
 
 
