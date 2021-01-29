@@ -49,13 +49,29 @@
         </div>
       </div>
     </div>
+    <h3>Select Your Cocktail</h3>
+    <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
+
+
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-6">
+        <div class="container-fluid">
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 id="panel-title">Cocktail Recipe</h3>
+          </div>
+          <div id="recipe" class="panel-body"></div>
+          <img src="../static/Images/chalkboard2jpg.jpg" id="recipe_table">
+        </div>
+      </div>
+
+      <div class="col-md-6">
         <div class="container fluid">
           <script src="../static/js/barChart.js"></script>
-          <div class="wrap">
+          <!-- <div class="wrap">
             <input id="autocomplete" type="text" name="search" onsubmit="cocktailChanged(this.value)" />
-          </div>
+          </div> -->
           <script src="https://code.jquery.com/jquery-1.8.0.js"
             integrity="sha256-00Fh8tkPAe+EmVaHFpD+HovxWk7b97qwqVi7nLvjdgs=" crossorigin="anonymous"></script>
           <script src="../static/js/jquery.select-autocomplete.js"></script>
@@ -80,55 +96,15 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-8">
-        <div class="container-fluid">
-          <section id="Cocktail_dropdown">
-            <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
-              <option selected="">Select your Cocktail</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </section>
-          <h3>Select Your Cocktail</h3>
 
-          <select id="selCocktail" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 id="panel-title">Cocktail Recipe</h3>
-          </div>
-          <div id="recipe" class="panel-body"></div>
-          <img src="../static/Images/chalkboard2jpg.jpg" id="recipe_table">
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
 
-  < !--The div where we will inject our map-->
-    <div class="container">
-      <div id="mapid"></div>
-    </div>
-    </div>
-    </div>
-    </div>
-    < !--Leaflet JS-->
-      <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-        crossorigin=""></script>
-      <!-- API key -->
+    <!-- API key -->
 
-      <script type="text/javascript" src="static/js/config.py"></script>
-      <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
-      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-      <!-- Our JS -->
-      <script type="text/javascript" src="static/js/logic.js"></script>
+    <script type="text/javascript" src="static/js/config.py"></script>
+    <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Our JS -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
 
 </html>
