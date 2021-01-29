@@ -49,6 +49,8 @@
         </div>
       </div>
     </div>
+
+
     <div class="row">
       <div class="col-md-12">
         <div class="container fluid">
@@ -85,17 +87,11 @@
         <div class="container-fluid">
           <section id="Cocktail_dropdown">
             <select class="dropdown-styles" id="cocktail_cat" name="cocktail_cat">
-              <option selected="">Select your Cocktail</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+       
           </section>
           <h3>Select Your Cocktail</h3>
 
-          <select id="selCocktail" onchange="optionChanged(this.value)"></select>
+          <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
