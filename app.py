@@ -67,6 +67,12 @@ def scrape():
 def home():
     print("responding to home route request")
     # Return template and data
+    return render_template("index.html")
+
+@app.route("/homepage", methods=['post', 'get'])
+def home():
+    print("responding to home route request")
+    # Return template and data
     return render_template("homepage.html")
 
 @app.route("/measure-data")
