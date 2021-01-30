@@ -16,6 +16,7 @@ d3.json("/cocktail-name-data", function(cocktailData) {
     var currentCocktail = cocktailDropdown.node().value;
 
     buildBarChart(currentCocktail);
+    buildRecipe(currentCocktail);
 });
 
 
@@ -58,11 +59,36 @@ function buildBarChart(cocktail) {
         }
 
         Plotly.newPlot('bar', traces, layout);
+
+        // currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
+        // var recipeTable = d3.select("#recipe-table").append("table");
+        // var header = recipeTable.append("thead").append("tr");
+        // // var body = recipeTable.append("tbody");
+
+        // header.selectAll("th")
+        //     .data(Object.entries(currentCocktail[0]));
+        
+        // header.enter()
+        //     .append("th")
+        //     .merge(header)
+        //     .text((d,i) => {console.log(d[0]); return d[0]});
+
+        // header.exit()
+        //     .remove();
+
+        // row = body.append("tr").selectAll("")
+        // .data(ableData)
+        // .enter()
+        // .append("tr")
+
+        //     row.selectAll("td")
+        //         .data()
     })
 }
 
 function cocktailChanged(newCocktail){
     buildBarChart(newCocktail);
+    buildRecipe(newCocktail);
 }
 
 function onlyUnique(value, index, self) {
@@ -79,40 +105,22 @@ function onlyUnique(value, index, self) {
 
 function buildRecipe(cocktail) {
     d3.json("/recipe-data", function(cocktailData) {
-        headers = Object.keys(cocktailData);
-        console.log(headers)
+        currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
 
 
-        var recipeTable = d3.select("#recipe-table").append("table");
-        var header = recipeTable.append("thead");
-        var body = recipeTable.append("tbody");
+        createList = d3.select("#recipe-list").append("ul")
+        recipeList = d3.select("#recipe-list")
+            .selectAll("li")
+            .data(Object.entries(currentCocktail[0]));
 
-        header.append("tr")
-            .selectAll("th")
-            .data(headers)
-            .enter()
-            .append("th")
-            .text(d => d)
+        recipeList.enter()
+            .append("li")
+            .merge(recipeList)
+            .text((d,i) => `${d[0]}: ${d[1]}`);
 
-        cocktailData.forEach(function(data) {
-            if (data.cocktail === cocktail) {
-                row = body.selectAll("tr")
-                    .data()
-                    .enter()
-                    .append("tr")
+        recipeList.exit()
+            .remove();
 
-                row.selectAll("td")
-                    .data()
-
-            }
-        });
-
-        recipeTable.selectAll("tr")
-            .data(names.sort())
-            .enter()
-            .append("option")
-            .attr("value", name => name)
-            .text(name => name);
     })
 }
 
@@ -123,6 +131,6 @@ function loadAutocompleteData() {
             names.push(data.cocktail);  
         });
         return names;
+        
     });
 }
-
