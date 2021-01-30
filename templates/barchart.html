@@ -18,10 +18,17 @@
     <div>
         <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
     </div>
-
+    <form autocomplete="off" onsubmit="cocktailChanged(this.value)">
+      <div class="autocomplete" style="width:300px;">
+        <input id="cocktailAutocomplete" type="text" name="cocktailNames" placeholder="Cocktail">
+      </div>
+      <input type="submit">
+    </form>
 
     <script src="../static/js/barChart.js"></script>
-
+    <script>
+      autocomplete(document.getElementById("myInput"), countries);
+      </script>
     <div class="wrap">
         <input id="autocomplete" type="text" name="search" onsubmit="cocktailChanged(this.value)" />
       </div>
