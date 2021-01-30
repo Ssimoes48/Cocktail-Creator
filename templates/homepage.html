@@ -42,6 +42,21 @@
         <div class="container fluid">
           <img src="../static/Images/logo3.jpg" alt="Snow">
           <div class="centered"> </div>
+          <!--autofill -->
+          <div class="body" align ="center">
+            <div class="autoComplete_wrapper">
+              <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+                autocapitalize="off" maxlength="2048" tabindex="1">
+            </div>
+            <div class="mode">
+              <h4>mode</h4>
+              <div class="toggle">
+                <div class="toggler">Strict</div>
+              </div>
+            </div>
+            <div class="selection"></div>
+          </div>
+          <!-- auto -->
         </div>
         <br>
         <div>
@@ -76,7 +91,7 @@
       </div>
     </div>
 
-
+    
 
     <!-- API key -->
     <script src="../static/js/barChart.js"></script>
@@ -85,6 +100,18 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Our JS -->
     <script type="text/javascript" src="static/js/logic.js"></script>
-</body>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/css/autoComplete.min.css">
+    
+    <!-- for auto fill -->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script>
+
+<!-- auto style sheet -->
+<script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script>
+<script src="../static/js/index.js"></script>
+<!-- <script src="../static/js/autoComplete.js"></script> -->
+
+
+
+  </body>
 
 </html>
