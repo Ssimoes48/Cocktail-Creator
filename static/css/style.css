@@ -121,3 +121,25 @@ hr {
   background-image: url("../Images/chalkboard.jpg")
 }
 
+#panel-id {
+  background-image: url("../Images/chalkboard2jpg.jpg");
+  background-position: center;
+  margin: 0px;
+  height: 448px;
+  width: 652px;
+  background-size: 100%;
+}
+
+#recipe-list {
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: left;
+  color: rgb(226, 223, 223);
+  font-size: 20px cursive ;
+  border-radius: 20px;
+}
+
+#panel-title {
+  padding: 40px;
+}

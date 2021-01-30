@@ -34,7 +34,14 @@ function buildBarChart(cocktail) {
                 measurements.push(data.measure);
             }
         })
-    
+        colors = [
+            "#800000",
+            "#AC5924",
+            "#CC993D",
+            "#ECD957",
+            "#DF8234",
+            "#D6411A"
+        ]
         for (i=0; i<ingredients.length; i++) {
 
             var trace = {
@@ -43,6 +50,9 @@ function buildBarChart(cocktail) {
                 name: `${measurements[i]} oz ${ingredients[i]}`,
                 type: 'bar',
                 width: 0.4,
+                marker: {
+                    color: colors[i],
+                }
             };
             
             traces.push(trace);
@@ -111,17 +121,16 @@ function buildRecipe(cocktail) {
         currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
         console.log(currentCocktail);
 
-        createList = d3.select("#recipe-list").append("ul")
-        recipeList = d3.select("#recipe-list")
+        createList = d3.select("#recipe-list")
             .selectAll("li")
             .data(Object.entries(currentCocktail[0]));
 
-        recipeList.enter()
+        createList.enter()
             .append("li")
-            .merge(recipeList)
+            .merge(createList)
             .text((d,i) => `${d[0]}: ${d[1]}`);
 
-        recipeList.exit();
+        createList.exit();
 
     })
 }
