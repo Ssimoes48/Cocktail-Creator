@@ -1,9 +1,10 @@
 d3.json("/bubble-data", function(cocktailData) {
-  
+    console.log(cocktailData);
+
     var cocktails = [];
     var ingredients = [];
 
-    console.log(cocktailData);
+
 
     cocktailData.filter(object => {
       cocktails.push(object.cocktail);
