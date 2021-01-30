@@ -6,14 +6,6 @@ import numpy as np
 import socket
 
 db_name = "cocktail_db"
-conn = psycopg2.connect(
-    host="localhost",
-    database="cocktail_db",
-    user="postgres",
-    password="postgres"
-    )
-
-mycursor = conn.cursor()
 
 #check if we're running in heroku and my environmental variable exist
 if 'DATABASE_URL' in os.environ:
@@ -22,6 +14,9 @@ else:
     #if we're not running in heroku then try and get my local config password
     from db import config
     postgres_url = f"postgresql://postgres:{config.postgres_pwd}@127.0.0.1:5432/{db_name}"
+
+conn = psycopg2.connect(postgres_url)
+mycursor = conn.cursor()
 
 def state_data():
     mycursor.execute("select * from state")
