@@ -1,6 +1,6 @@
 # Cocktail Creator Flask App
 
-![logo](../static/Imageslogo3.JPG)
+![logo](static/Images/logo3.JPG)
 
 ## Table of contents
 * [General info](#general-info)
