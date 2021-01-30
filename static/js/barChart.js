@@ -12,11 +12,13 @@ d3.json("/cocktail-name-data", function(cocktailData) {
         .append("option")
         .attr("value", name => name)
         .text(name => name);
-    
-    var currentCocktail = cocktailDropdown.node().value;
 
-    buildBarChart(currentCocktail);
-    buildRecipe(currentCocktail);
+    cocktailDropdown.exit();
+    
+    var initialCocktail = cocktailDropdown.node().value;
+
+    buildBarChart(initialCocktail);
+    buildRecipe(initialCocktail);
 });
 
 
@@ -104,9 +106,10 @@ function onlyUnique(value, index, self) {
 // }
 
 function buildRecipe(cocktail) {
+    console.log(cocktail);
     d3.json("/recipe-data", function(cocktailData) {
         currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
-
+        console.log(currentCocktail);
 
         createList = d3.select("#recipe-list").append("ul")
         recipeList = d3.select("#recipe-list")
@@ -118,19 +121,18 @@ function buildRecipe(cocktail) {
             .merge(recipeList)
             .text((d,i) => `${d[0]}: ${d[1]}`);
 
-        recipeList.exit()
-            .remove();
+        recipeList.exit();
 
     })
 }
 
-function loadAutocompleteData() {
-    d3.json("/cocktail-name-data", function(cocktailData) {
-        names = [];
-        cocktailData.forEach(function(data) {
-            names.push(data.cocktail);  
-        });
-        return names;
+// function loadAutocompleteData() {
+//     d3.json("/cocktail-name-data", function(cocktailData) {
+//         names = [];
+//         cocktailData.forEach(function(data) {
+//             names.push(data.cocktail);  
+//         });
+//         return names;
         
-    });
-}
+//     });
+// }
