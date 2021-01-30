@@ -2,6 +2,8 @@
 
 ![logo](static/Images/logo3.JPG)
 
+[Cocktail Creator]( https://makeyourcocktails.herokuapp.com)
+
 ## Table of contents
 * [Cocktail Creator](#cocktail-creator)
 * [Technologies](#technologies)
@@ -11,7 +13,9 @@
 * [Load](#load)
 * [Deploy](deploy)
 * [Visualizations](#visualizations)
+* [HTML](html)
 * [Run Flask App](run-flask)
+* [Heroku](heroku)
 * [Resources](#resources)
 * [Contacts](#contacts)
 
@@ -57,17 +61,21 @@ In visual studio code using javascript, we created app routes to call our data q
  
 # Visualizations
 
-## Dropdown/Bar Chart
+![dropdown](static/Images/drop_down.JPG)
 
 We created several visualizations for our Cocktail Creator website. On our home page, we have a dropdown menu (d3) of our cocktail names which calls the cocktail recipe and how to make the drink. Next to the recipe, there is a stacked bar chart visualization (plotly) that shows the ingredients and their measurements and proportions in the cocktail. Both visualizations are called when you selected from the dropdown. 
 
-## Bubble Chart
+![bubble](static/Images/bubble.JPG)
 
 On a separate web page, we have a visualization of a bubble chart (plotly) that shows the top state cocktails and their most popular ingredients. The chart has ‘hover over’ functionality so you can clearly see the ingredient type and cocktail name. 
 
-## Map
+![map](static/Images/map.JPG)
 
 Our final visualization is an interactive map of the United States that shows the “Top Cocktail by State”. We created this using Leaflet.js and Mapbox. When you click each state, a popup appears that shows the state name, most popular cocktail type, and an image of the cocktail. 
+
+## HTML
+
+We designed our interactive Cocktail Creator website using css formatting. To make the site a seamless experience for the user, we formatted each page with a matching themed background image and user-friendly navigation bar. We also added image headers to each page for consistency. 
 
 ## Run Flask
 
@@ -90,10 +98,13 @@ To Deploy our Flask App, please follow the below steps :
 	* recipe_csv
 	* recipe_csv
 
-* step 8: make sure app.py has the right postgress url, username and password
+* step 8: make sure config.py has the right postgress url, username and password 
 
 * step 9: execute command python app.py and launch the server using URL: http://127.0.0.1:5000/
 
+## Heroku
+
+[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com)
 
 ## Resources
 
