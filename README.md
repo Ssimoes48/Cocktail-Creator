@@ -41,6 +41,7 @@ Target Market:
 * Javascript Libraries: leaflet, jquery, mapbox, plotly
 * HTML / CSS 
 * Jupyter Notebook / Pandas
+* New Library- [Autocomplete JS](https://github.com/TarekRaafat/autoComplete.js) 
 
 # Extract
 
@@ -68,6 +69,8 @@ In visual studio code using javascript, we created app routes to call our data q
 ![dropdown](static/Images/drop_down.JPG)
 
 We created several visualizations for our Cocktail Creator website. On our home page, we have a dropdown menu (d3) of our cocktail names which calls the cocktail recipe and how to make the drink. Next to the recipe, there is a stacked bar chart visualization (plotly) that shows the ingredients and their measurements and proportions in the cocktail. Both visualizations are called when you selected from the dropdown. 
+
+The dropdown also uses a new Javascript library called [Vanilla Autocomplete JS](https://github.com/TarekRaafat/autoComplete.js) which allows the drop down to start to auto complete as you begin to type. 
 
 ![barchart](static/Images/recipe_bar.png)
 
