@@ -1,25 +1,22 @@
-function init() {
-    d3.json("/cocktail-name-data", function(cocktailData) {
-        names = []
-        cocktailData.forEach(function(data) {
-            names.push(data.cocktail)
-        })
-        // Add dropdown option for each sample
-        var cocktailDropdown = d3.select("#selCocktail");
+d3.json("/cocktail-name-data", function(cocktailData) {
+    names = []
+    cocktailData.forEach(function(data) {
+        names.push(data.cocktail)
+    })
+    // Add dropdown option for each sample
+    var cocktailDropdown = d3.select("#selCocktail");
 
-        cocktailDropdown.selectAll("option")
-            .data(names.sort())
-            .enter()
-            .append("option")
-            .attr("value", name => name)
-            .text(name => name);
-        
-        var currentCocktail = cocktailDropdown.node().value;
+    cocktailDropdown.selectAll("option")
+        .data(names.sort())
+        .enter()
+        .append("option")
+        .attr("value", name => name)
+        .text(name => name);
+    
+    var currentCocktail = cocktailDropdown.node().value;
 
-        buildCocktailNamesArray(currentCocktail);
-        buildBarChart(currentCocktail);
-    });
-}
+    buildBarChart(currentCocktail);
+});
 
 
 function buildBarChart(cocktail) {
@@ -42,7 +39,7 @@ function buildBarChart(cocktail) {
                 y: [parseFloat(measurements[i])],
                 name: `${measurements[i]} oz ${ingredients[i]}`,
                 type: 'bar',
-                width: 0.2,
+                width: 0.4,
             };
             
             traces.push(trace);
@@ -58,7 +55,6 @@ function buildBarChart(cocktail) {
                 visible: false,
             },
             showlegend: true,
-            paper_bgcolor: "#fff",
         }
 
         Plotly.newPlot('bar', traces, layout);
@@ -116,14 +112,13 @@ function buildRecipe(cocktail) {
 }
 
 function loadAutocompleteData() {
-    d3.json("/cocktail-name-data", function(data) {
+    d3.csv("../Data/ingredients.csv").then(function(cocktailData) {
         names = [];
         cocktailData.forEach(function(data) {
             names.push(data.cocktail);  
         });
+        return names;
     });
     
-    return names;
 }
 
-init()
