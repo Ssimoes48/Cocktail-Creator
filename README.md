@@ -76,7 +76,7 @@ We created several visualizations for our Cocktail Creator website. On our home 
 
 On a separate web page, we have a visualization of a bubble chart (plotly) that shows the top state cocktails and their most popular ingredients. The chart has ‘hover over’ functionality so you can clearly see the ingredient type and cocktail name. 
 
-![bubble chart](static/Images/Bubble_chart.JPG)
+![bubble chart](static/Images/Bubble_chart.PNG)
 
 ![map](static/Images/map.JPG)
 
