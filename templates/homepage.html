@@ -10,9 +10,9 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-    crossorigin="" />>
+    crossorigin="" />> -->
 
   <!--D3 cdn-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
@@ -42,21 +42,7 @@
         <div class="container fluid">
           <img src="../static/Images/logo3.jpg" alt="Snow">
           <div class="centered"> </div>
-          <!--autofill -->
-          <div class="body" align ="center">
-            <div class="autoComplete_wrapper">
-              <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
-                autocapitalize="off" maxlength="2048" tabindex="1">
-            </div>
-            <div class="mode">
-              <h4>mode</h4>
-              <div class="toggle">
-                <div class="toggler">Strict</div>
-              </div>
-            </div>
-            <div class="selection"></div>
-          </div>
-          <!-- auto -->
+
         </div>
         <br>
         <div>
@@ -64,9 +50,25 @@
         </div>
       </div>
     </div>
-    <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
-
-
+    <!-- <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
+ -->
+  <br>
+  <br>
+    <!--autofill -->
+    <div class="body" align ="center">
+      <div class="autoComplete_wrapper">
+        <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+          autocapitalize="off" maxlength="2048" tabindex="1">
+      </div>
+      <div class="mode">
+        <h4>mode</h4>
+        <div class="toggle">
+          <div class="toggler">Strict</div>
+        </div>
+      </div>
+      <div class="selection" id="autocomplete-result"></div>
+    </div>
+    <!-- auto -->
     <div class="row">
       <div class="col-md-6">
         <div class="container-fluid">
@@ -99,7 +101,7 @@
     <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Our JS -->
-    <script type="text/javascript" src="static/js/logic.js"></script>
+    <!-- <script type="text/javascript" src="static/js/logic.js"></script> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/css/autoComplete.min.css">
     
     <!-- for auto fill -->

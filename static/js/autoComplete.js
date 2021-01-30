@@ -76,6 +76,9 @@ const autoCompleteJS = new autoComplete({
 		document.querySelector("#autoComplete").value = selection;
 		// Console log autoComplete data feedback
 		console.log(feedback);
+		
+		buildRecipe(selection);
+		buildBarChart(selection);
 	}
 });
 
