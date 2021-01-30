@@ -1,5 +1,5 @@
 function init() {
-    d3.json("/cocktail-name-data", function buildCocktailNamesArray(cocktailData) {
+    d3.json("/cocktail-name-data", function(cocktailData) {
         names = []
         cocktailData.forEach(function(data) {
             names.push(data.cocktail)
@@ -89,6 +89,7 @@ function buildRecipe(cocktail) {
 
         var recipeTable = d3.select("#recipe-table").append("table");
         var header = recipeTable.append("thead");
+        var body = recipeTable.append("tbody");
 
         header.append("tr")
             .selectAll("th")
@@ -98,9 +99,10 @@ function buildRecipe(cocktail) {
             .text(d => d)
 
         cocktailData.forEach(function(data) {
-            row = "hello";
             if (data.cocktail === cocktail) {
-
+                body.selectAll("tr")
+                .data()
+                .enter()
             }
         })
 
@@ -117,7 +119,7 @@ function loadAutocompleteData() {
     d3.json("/cocktail-name-data", function(data) {
         names = [];
         cocktailData.forEach(function(data) {
-        names.push(data.cocktail);  
+            names.push(data.cocktail);  
         });
     });
     

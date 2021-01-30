@@ -106,7 +106,7 @@ def bubble2():
 def recipes():
     recipe = recipe_data()
     print("responding to recipe-data request")
-    return jsonify(recipe)
+    return (recipe)
 
 
 
