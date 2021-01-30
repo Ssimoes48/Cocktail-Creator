@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Sample Flask Website</title>
-  <script src="https://cdn.plot.ly/plotly-1.2.0.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../static/css/style.css">
 </head>
@@ -43,8 +42,6 @@
       <div class="col-md-12">
         <div class="container fluid">
           <div id="bubble"></div>
-          <div class="centered"> </div>
-        </div>
       </div>
     </div>
   </div>
@@ -55,20 +52,4 @@
       <script src="../static/js/bubble.js"></script>
 
 </body>
-
-<!-- <script>
-  var cocktail_data = [
-    {% for cocktail in db_data %}
-  {
-    "ingredient": "{{ cocktail.ingredient }}",
-      "measure": "{{ cocktail.measure }}"
-  },
-  {% endfor %}
-      ];
-</script> -->
-<!-- <script src="/static/js/combined_state.js"></script> -->
-<!-- <script src="/static/js/js-templating.js"></script> -->
-
-
-
 </html>
