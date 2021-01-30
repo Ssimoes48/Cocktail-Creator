@@ -2,8 +2,6 @@
 
 ![logo](static/Images/logo3.JPG)
 
-![gif](https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif)
-
 [Cocktail Creator]( https://makeyourcocktails.herokuapp.com)
 
 ## Table of contents
@@ -20,6 +18,8 @@
 * [Heroku](heroku)
 * [Resources](#resources)
 * [Contacts](#contacts)
+
+![gif](https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif)
 
 ## Objective 
 
