@@ -6,19 +6,19 @@ d3.json("/cocktail-name-data", function(cocktailData) {
     // Add dropdown option for each sample
     var cocktailDropdown = d3.select("#selCocktail");
 
-    cocktailDropdown.selectAll("option")
+    choices = cocktailDropdown.selectAll("option")
         .data(names.sort())
         .enter()
         .append("option")
         .attr("value", name => name)
-        .text(name => name);
-
-    cocktailDropdown.exit();
+        .text(name => name)
+        .exit();
     
     var initialCocktail = cocktailDropdown.node().value;
 
-    buildBarChart(initialCocktail);
     buildRecipe(initialCocktail);
+    buildBarChart(initialCocktail);
+
 });
 
 
@@ -99,8 +99,9 @@ function buildBarChart(cocktail) {
 }
 
 function cocktailChanged(newCocktail){
-    buildBarChart(newCocktail);
     buildRecipe(newCocktail);
+    buildBarChart(newCocktail);
+
 }
 
 function onlyUnique(value, index, self) {
