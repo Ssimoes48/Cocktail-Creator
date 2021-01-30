@@ -11,7 +11,7 @@
 * [Load](#load)
 * [Deploy](deploy)
 * [Visualizations](#visualizations)
-* [Run Flask App](run-flask-app)
+* [Run Flask App](run-flask)
 * [Resources](#resources)
 * [Contacts](#contacts)
 
@@ -30,11 +30,11 @@ Target Market:
 
 ## Technologies
 
-* 1. SQL / Postgres DB
-* 2. Python
-* 3. Javascript Libraries: leaflet, jquery, mapbox, plotly
-* 4. HTML / CSS 
-* 5. Jupyter Notebook / Pandas
+* SQL / Postgres DB
+* Python
+* Javascript Libraries: leaflet, jquery, mapbox, plotly
+* HTML / CSS 
+* Jupyter Notebook / Pandas
 
 # Extract
 
@@ -69,30 +69,30 @@ On a separate web page, we have a visualization of a bubble chart (plotly) that 
 
 Our final visualization is an interactive map of the United States that shows the “Top Cocktail by State”. We created this using Leaflet.js and Mapbox. When you click each state, a popup appears that shows the state name, most popular cocktail type, and an image of the cocktail. 
 
-## Run Flask App
+## Run Flask
 
 To Deploy our Flask App, please follow the below steps :
-*step 1: Git clone our repository into your local
+* step 1: Git clone our repository into your local
 
-*step 2: make sure jupyter notebook is up and running with the env where you have the python libraries mentioned in the notebook installed
+* step 2: make sure jupyter notebook is up and running with the env where you have the python libraries mentioned in the notebook installed
 
-*step 3: make sure you have postgress app up and running in your machine
+* step 3: make sure you have postgress app up and running in your machine
 
-*step 4: make sure your postgress username and password along with the app id of your map-box is added to the config.py
+* step 4: make sure your postgress username and password along with the app id of your map-box is added to the config.py
 
-*step 5: create a database in postgres called 'cocktail_db'
+* step 5: create a database in postgres called 'cocktail_db'
 
-*step 6: use the cocktail_db.txt inside schema folder to run the create table commands
+* step 6: use the cocktail_db.txt inside schema folder to run the create table commands
 
-*step 7: run all the jupyter notebooks in the following order:
-	*category_table
-	*cocktail_cleanup_function
-	*recipe_csv
-	*recipe_csv
+* step 7: run all the jupyter notebooks in the following order:
+	* category_table
+	* cocktail_cleanup_function
+	* recipe_csv
+	* recipe_csv
 
-*step 8: make sure app.py has the right postgress url, username and password
+* step 8: make sure app.py has the right postgress url, username and password
 
-*step 9: execute command python app.py and launch the server using URL: http://127.0.0.1:5000/
+* step 9: execute command python app.py and launch the server using URL: http://127.0.0.1:5000/
 
 
 ## Resources
@@ -120,5 +120,6 @@ To Deploy our Flask App, please follow the below steps :
 [Tim Samson](https://github.com/timsamson)
 
 [Sara Simoes](https://github.com/Ssimoes48)
+
 
 ![thanks!](static/Images/thank_you.JPG)
