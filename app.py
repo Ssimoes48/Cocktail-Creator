@@ -50,6 +50,13 @@ def cocktail_name_data():
     results = mycursor.fetchall()
     result_dicts = [ {"cocktail": result[0], "category": result[1]} for result in results]
     return jsonify(result_dicts)
+
+def recipe_data():
+    mycursor.execute("SELECT * FROM recipe;")
+    results = mycursor.fetchall()
+    result_dicts = [ {"cocktail": result[0], "glass_type": result[1], "glass_size": result[2], "instructions": result[3]} for result in results]
+    return jsonify(result_dicts)
+
    
 app = Flask(__name__)
 
@@ -100,6 +107,13 @@ def scrape2():
 @app.route("/bubble")
 def bubble2():
     return render_template("bubble.html")
+
+@app.route("/recipe-data")
+def recipes():
+    recipe = recipe_data()
+    print("responding to recipe-data request")
+    return jsonify(recipe)
+
 
 
 if __name__ == "__main__":

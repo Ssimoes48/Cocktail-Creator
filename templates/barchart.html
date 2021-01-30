@@ -29,12 +29,13 @@
               integrity="sha256-00Fh8tkPAe+EmVaHFpD+HovxWk7b97qwqVi7nLvjdgs="
               crossorigin="anonymous"></script>
       <script src="../static/js/jquery.select-autocomplete.js"></script>
+      <script></script>
       <script>
         $(document).ready(function() {
           $("#autocomplete").selectAutocomplete({
             showCancelButton: true,
             cancelButtonText: "Remove",
-            data: ["Hello world"],
+            data: cocktailNames,
             minLength: 1,
             onSelect: function(e, value) {
               console.log("Item selected! Id: " + value);

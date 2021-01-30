@@ -63,6 +63,8 @@
           </div>
           <div id="recipe" class="panel-body"></div>
           <img src="../static/Images/chalkboard2jpg.jpg" id="recipe_table">
+          
+          <div id="recipe-table"></div>
         </div>
       </div>
 
@@ -80,7 +82,7 @@
               $("#autocomplete").selectAutocomplete({
                 showCancelButton: true,
                 cancelButtonText: "Remove",
-                data: ["Hello world"],
+                data: loadAutocompleteData(),
                 minLength: 1,
                 onSelect: function (e, value) {
                   console.log("Item selected! Id: " + value);
