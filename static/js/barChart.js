@@ -1,26 +1,29 @@
-d3.json("/cocktail-name-data", function(cocktailData) {
-    names = []
-    cocktailData.forEach(function(data) {
-        names.push(data.cocktail)});
+function init() {
+    d3.json("/cocktail-name-data", function buildCocktailNamesArray(cocktailData) {
+        names = []
+        cocktailData.forEach(function(data) {
+            names.push(data.cocktail)
+        })
+        // Add dropdown option for each sample
+        var cocktailDropdown = d3.select("#selCocktail");
 
-    // Add dropdown option for each sample
-    var cocktailDropdown = d3.select("#selCocktail");
+        cocktailDropdown.selectAll("option")
+            .data(names.sort())
+            .enter()
+            .append("option")
+            .attr("value", name => name)
+            .text(name => name);
+        
+        var currentCocktail = cocktailDropdown.node().value;
 
-    cocktailDropdown.selectAll("option")
-        .data(names.sort())
-        .enter()
-        .append("option")
-        .attr("value", name => name)
-        .text(name => name);
-    
-    var currentCocktail = cocktailDropdown.node().value;
+        buildCocktailNamesArray(currentCocktail);
+        buildBarChart(currentCocktail);
+    });
+}
 
-    buildBarChart(currentCocktail);
-});
 
 function buildBarChart(cocktail) {
     d3.json("/measure-data", function(cocktailData) {
-        // var currentCocktail = cocktailData.filter(d => d.name === cocktail);
         ingredients = [];
         measurements = [];
 
@@ -31,7 +34,6 @@ function buildBarChart(cocktail) {
                 measurements.push(data.measure);
             }
         })
-        var currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
     
         for (i=0; i<ingredients.length; i++) {
 
@@ -55,7 +57,8 @@ function buildBarChart(cocktail) {
             yaxis: {
                 visible: false,
             },
-            showlegend: true
+            showlegend: true,
+            paper_bgcolor: "#fff",
         }
 
         Plotly.newPlot('bar', traces, layout);
@@ -78,6 +81,38 @@ function onlyUnique(value, index, self) {
 //     });
 // }
 
+function buildRecipe(cocktail) {
+    d3.json("/recipe-data", function(cocktailData) {
+        headers = Object.keys(cocktailData);
+        console.log(headers)
+
+
+        var recipeTable = d3.select("#recipe-table").append("table");
+        var header = recipeTable.append("thead");
+
+        header.append("tr")
+            .selectAll("th")
+            .data(headers)
+            .enter()
+            .append("th")
+            .text(d => d)
+
+        cocktailData.forEach(function(data) {
+            row = "hello";
+            if (data.cocktail === cocktail) {
+
+            }
+        })
+
+        recipeTable.selectAll("tr")
+            .data(names.sort())
+            .enter()
+            .append("option")
+            .attr("value", name => name)
+            .text(name => name);
+    })
+}
+
 function loadAutocompleteData() {
     d3.json("/cocktail-name-data", function(data) {
         names = [];
@@ -88,3 +123,5 @@ function loadAutocompleteData() {
     
     return names;
 }
+
+init()
