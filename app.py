@@ -26,7 +26,7 @@ else:
 def state_data():
     mycursor.execute("select * from state")
     results = mycursor.fetchall()
-    result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_scr": result[5]} for result in results]
+    result_dicts = [ {"abbr": result[0], "latitude": result[1], "longitude": result[2], "state": result[3], "cocktail": result[4], "image_src": result[5]} for result in results]
     return jsonify(result_dicts)
 
 # Create an instance of Flask for bubble
@@ -76,11 +76,17 @@ def home():
     # Return template and data
     return render_template("index.html")
 
-@app.route("/homepage", methods=['post', 'get'])
-def home():
-    print("responding to home route request")
+@app.route("/homepage")
+def home2():
+    print("responding to homepage route request")
     # Return template and data
     return render_template("homepage.html")
+
+@app.route("/not_21")
+def not_21():
+    print("responding to 21 route request")
+    # Return template and data
+    return render_template("not_21.html")
 
 @app.route("/measure-data")
 def measure():
