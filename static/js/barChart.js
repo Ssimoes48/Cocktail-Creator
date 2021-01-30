@@ -96,11 +96,16 @@ function buildRecipe(cocktail) {
 
         cocktailData.forEach(function(data) {
             if (data.cocktail === cocktail) {
-                body.selectAll("tr")
-                .data()
-                .enter()
+                row = body.selectAll("tr")
+                    .data()
+                    .enter()
+                    .append("tr")
+
+                row.selectAll("td")
+                    .data()
+
             }
-        })
+        });
 
         recipeTable.selectAll("tr")
             .data(names.sort())
@@ -112,13 +117,12 @@ function buildRecipe(cocktail) {
 }
 
 function loadAutocompleteData() {
-    d3.csv("../Data/ingredients.csv").then(function(cocktailData) {
+    d3.json("/cocktail-name-data", function(cocktailData) {
         names = [];
         cocktailData.forEach(function(data) {
             names.push(data.cocktail);  
         });
         return names;
     });
-    
 }
 
