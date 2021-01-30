@@ -28,10 +28,10 @@ d3.json("/raw-web-api", function (leafletData) {
 
 
       .bindPopup(
-        "<h2 style=text-align:center;>" + leafletData[i].state +
-        "</h2><hr><h4><p style=text-align:center;>" + leafletData[i].cocktail + "</p></h4>"
+        "<h3 style=text-align:center;>" + leafletData[i].state +
+        "</h3><hr><h4><p style=text-align:center;>" + leafletData[i].cocktail + "</p></h4>"
         + "<br>" +
-        "<img src=" + leafletData[i].image_scr + " alt='cocktail' &previewImage='true'</img>"
+        "<img src='" + leafletData[i].image_scr + "'" + " class=popupImage " + "/>"
       ));
 
   }
