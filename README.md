@@ -76,6 +76,8 @@ We created several visualizations for our Cocktail Creator website. On our home 
 
 On a separate web page, we have a visualization of a bubble chart (plotly) that shows the top state cocktails and their most popular ingredients. The chart has ‘hover over’ functionality so you can clearly see the ingredient type and cocktail name. 
 
+![bubble chart](static/Images/Bubble_chart.JPG)
+
 ![map](static/Images/map.JPG)
 
 Our final visualization is an interactive map of the United States that shows the “Top Cocktail by State”. We created this using Leaflet.js and Mapbox. When you click each state, a popup appears that shows the state name, most popular cocktail type, and an image of the cocktail. 
