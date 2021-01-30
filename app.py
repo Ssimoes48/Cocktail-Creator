@@ -26,7 +26,7 @@ else:
 def state_data():
     mycursor.execute("select * from state")
     results = mycursor.fetchall()
-    result_dicts = [ {"abbr": result[0], "latitude": result[1], "longitude": result[2], "state": result[3], "cocktail": result[4], "image_src": result[5]} for result in results]
+    result_dicts = [ {"state": result[0], "abbr": result[1], "latitude": result[2], "longitude": result[3], "cocktail": result[4], "image_src": result[5]} for result in results]
     return jsonify(result_dicts)
 
 # Create an instance of Flask for bubble
