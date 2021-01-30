@@ -19,16 +19,6 @@
 
   <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-    $( function() {
-      var availableTags = loadAutocompleteData();
-      $( "#tags" ).autocomplete({
-        source: availableTags
-      });
-    } );
-  </script>
 </head>
 
 <body>
@@ -60,10 +50,7 @@
       </div>
     </div>
     <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
-    <div class="ui-widget">
-      <label for="tags">Tags: </label>
-      <input id="tags">
-    </div>
+
 
     <div class="row">
       <div class="col-md-6">
@@ -96,6 +83,8 @@
       </div>
     </div>
 
+
+
     <!-- API key -->
     <script src="../static/js/barChart.js"></script>
     <script type="text/javascript" src="static/js/config.py"></script>
@@ -103,7 +92,6 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <!-- Our JS -->
     <script type="text/javascript" src="static/js/logic.js"></script>
-
 </body>
 
 </html>
