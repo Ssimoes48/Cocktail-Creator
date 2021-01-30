@@ -2,6 +2,8 @@
 
 ![logo](static/Images/logo3.JPG)
 
+![gif](https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif)
+
 [Cocktail Creator]( https://makeyourcocktails.herokuapp.com)
 
 ## Table of contents
@@ -54,6 +56,8 @@ We combined data sets for state cocktail and geographic coordinates into one tab
 We chose to use a SLQ database in Postgres for our data because it is a more structured format. We had plans to have additional visualizations with more complicated queries, but we did not have time to complete them all. We mapped out our database using Quick Database Diagram and created a schema. The schema assigned keys and foreign keys to help link our data together in our queries. We used the cocktail name as a our primary key. 
 Once our schema was loaded into Postgres, we ran our jupyter notebooks to load the data. 
 
+![Schema](static/Images/Draft_Schema.png)
+
 # Deploy
 
 In visual studio code using javascript, we created app routes to call our data queries form the SQL database. Once the data was called properly, we were able to create visualizations for our website. 
@@ -65,6 +69,9 @@ In visual studio code using javascript, we created app routes to call our data q
 
 We created several visualizations for our Cocktail Creator website. On our home page, we have a dropdown menu (d3) of our cocktail names which calls the cocktail recipe and how to make the drink. Next to the recipe, there is a stacked bar chart visualization (plotly) that shows the ingredients and their measurements and proportions in the cocktail. Both visualizations are called when you selected from the dropdown. 
 
+![barchart](static/Images/recipe_bar.png)
+
+
 ![bubble](static/Images/bubble.JPG)
 
 On a separate web page, we have a visualization of a bubble chart (plotly) that shows the top state cocktails and their most popular ingredients. The chart has ‘hover over’ functionality so you can clearly see the ingredient type and cocktail name. 
@@ -73,9 +80,12 @@ On a separate web page, we have a visualization of a bubble chart (plotly) that 
 
 Our final visualization is an interactive map of the United States that shows the “Top Cocktail by State”. We created this using Leaflet.js and Mapbox. When you click each state, a popup appears that shows the state name, most popular cocktail type, and an image of the cocktail. 
 
+![map site](static/Images/state_map.JPG)
+
 ## HTML
 
 We designed our interactive Cocktail Creator website using css formatting. To make the site a seamless experience for the user, we formatted each page with a matching themed background image and user-friendly navigation bar. We also added image headers to each page for consistency. 
+
 
 ## Run Flask
 
