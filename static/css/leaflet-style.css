@@ -3,11 +3,6 @@ body {
     margin: 0;
   }
   
-/* #mapid,
-{
-  height: 500px;
-  width: 
-} */
 
 .leaflet-popup-content {
   text-align: center;

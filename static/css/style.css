@@ -123,11 +123,14 @@ hr {
 }
 
 #panel-id {
-  background-image: url("../Images/chalkboard2jpg.jpg");
+  background-image: url("../Images/chalkboard.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  border: whitesmoke;
+  border-width: 5pt;
+  border-style: inset;
   position: center;
-  height: 500px;
+  height: auto;
   width: auto;
   margin-top: 20px;
   margin-right: 20px;
@@ -141,13 +144,21 @@ hr {
   margin-left: 50px;
   margin-right: 40px;
   text-align: left;
+  text-overflow: ellipsis;
   color: rgb(226, 223, 223);
-  font-size: 24px ;
+  font-size: 16pt ;
   border-radius: 20px;
+  /* list-style-type: none; */
+  
 }
 
+
 #panel-title {
-  padding: 40px;
+  padding:
+    top 20px,
+    left 30px,
+    right 30px,
+    bottom 10px
 }
 
 #cocktail-search{
@@ -175,3 +186,17 @@ hr {
 #logo{
   position: center;
 }
+
+.divfoot {
+  width:100%;
+  position:absolute;
+  /* bottom:10px; */
+  height: 40px;
+  background-color: rgb(45, 44, 44);
+  z-index:0;
+  font-size: auto;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+

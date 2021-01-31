@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="../static/css/autoComplete.css">
 </head>
 
+
 <body>
   <div class="row navbar navbar-expand-sm bg-dark navbar-dark">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -39,86 +40,96 @@
   </div>
   <div class="row"><br>
   </div>
-  <div class="row">
-    <div class="col-md-3">
-    </div>
-
-    <div class="col-md-6">
-      <div class="logo">
-        <img src="../static/Images/Cocktail_Creator_logo.png" alt="Snow">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
       </div>
-    </div>
-    <div class="col-md-3">
-    </div>
-  </div>
-  <div class="row"><br></div>
-  <div class="row"> -->
-    <!-- <div class="col-md-12"> -->
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6" id="cocktail-search">
-      <div align="center">
-        <div class="body">
-          <div class="autoComplete_wrapper">
-            <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
-              autocapitalize="off" maxlength="2048" tabindex="1">
-          </div>
-          <div class="mode">
-            <h5>Search Mode</h5>
-            <div class="toggle">
-              <div class="toggler">Strict</div>
-            </div>
-          </div>
-          <div class="selection"></div>
+
+      <div class="col-md-8">
+        <div class="logo">
+          <img src="../static/Images/Cocktail_Creator_logo.png" style="width: 100%; height: auto" alt="Snow">
         </div>
       </div>
+      <div class="col-md-2">
+      </div>
     </div>
-    <div class="col-md-3">
+    <div class="row"><br></div>
+    <div class="row">
+      <!-- <div class="col-md-12"> -->
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-6" id="cocktail-search">
+        <div align="center">
+          <div class="body">
+            <div class="autoComplete_wrapper">
+              <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+                autocapitalize="off" maxlength="2048" tabindex="1">
+            </div>
+            <div class="mode">
+              <h5>Search Mode</h5>
+              <div class="toggle">
+                <div class="toggler">Strict</div>
+              </div>
+            </div>
+            <div class="selection"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+      </div>
     </div>
   </div>
-
-  <div class="row"><br></div>
+  <!-- <div class="row"></div> -->
   <!-- auto -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div aligh-"center">
+          <div class="container-fluid">
+            <div class="panel panel-primary" id="panel-id">
+              <div class="panel-heading">
+                <h3 id="panel-title">Cocktail Recipe</h3>
+              </div>
+              <div id="recipe" class="panel-body"></div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div aligh-"center">
-        <div class="container-fluid">
-          <div class="panel panel-primary" id="panel-id">
-            <div class="panel-heading">
-              <h3 id="panel-title">Cocktail Recipe</h3>
-            </div>
-            <div id="recipe" class="panel-body"></div>
-
-            <div id="recipe-table"></div>
-            <div>
-              <ul id="recipe-list"></ul>
+              <div id="recipe-table"></div>
+              <div>
+                <ul id="recipe-list"></ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-md-6">
-      <div align-"center">
-        <div class="container fluid">
-          <div id="bar"></div>
+      <div class="col-md-6">
+        <div align-"center">
+          <div class="container fluid">
+            <div id="bar"></div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="row"><br></div>
-  <!-- API key -->
-  <script src="../static/js/barChart.js"></script>
-  <script type="text/javascript" src="static/js/config.py"></script>
-  <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <!-- Our JS -->
+  <!-- <div class="container"> -->
+    <!-- <div class="row"><br></div> -->
 
-  <!-- auto style sheet -->
-  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script>
-  <script type="text/javascript" src="../static/js/index.js"></script>
-  <script type="text/javascript" src="../static/js/autoComplete.js"></script>
+    <!-- API key -->
+    <script src="../static/js/barChart.js"></script>
+    <script type="text/javascript" src="static/js/config.py"></script>
+    <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Our JS -->
+
+    <!-- auto style sheet -->
+    <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+    <script type="text/javascript" src="../static/js/autoComplete.js"></script>
+
+    <footer>
+      <div class="footer divfoot col-md-12">&copy; Copyright Upgraded Potatoes 2021</div>
+    </footer>
+
+  <!-- </div> -->
 
 </body>
 

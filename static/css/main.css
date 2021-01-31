@@ -2,7 +2,7 @@
   --transition-1: all 0.3s ease-in-out;
   --transition-2: all 0.2s ease-in-out;
 }
-
+/* 
 html {
   font-size: 1rem;
   font-family: "PT Sans", sans-serif;
@@ -11,20 +11,20 @@ html {
 body {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* .container {
   width: 100vw;
   height: 100vh;
 } */
 
-.header {
+/* .header {
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -webkit-touch-callout: none;
-}
+} */
 
 .no_result {
   margin: 0.3rem;
@@ -43,7 +43,7 @@ body {
   outline: none;
 }
 
-h1 {
+/* h1 {
   color: rgba(0, 0, 0, 0.373);
   transition: var(--transition-1);
 }
@@ -61,7 +61,7 @@ h1 > a::selection {
 h4 {
   margin-bottom: 5px;
   color: #ffffff;
-}
+} */
 
 h4::selection {
   color: #000000;
@@ -137,17 +137,19 @@ h4::selection {
   color: #64ceaa;
 }
 
-.footer {
+/* .footer {
   display: flex;
+  background-color: darkmagenta;
   width: 100vw;
+  height: 20px;
   position: absolute;
   bottom: 2rem;
   color: rgb(147, 147, 147);
   justify-content: center;
   transition: var(--transition-1);
-}
+} */
 
-.footer > div > a {
+/* .footer > div > a {
   text-decoration: none;
   color: rgb(147, 147, 147);
 }
@@ -170,18 +172,18 @@ h4::selection {
 
 .copyrights > *::selection {
   color: rgb(147, 147, 147);
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .selection {
     margin-top: 15vh;
   }
 
-  .footer {
+  /* .footer {
     bottom: 1.5rem;
     transition: var(--transition-1);
   }
-}
+} */
 
 @media only screen and (max-height: 500px) {
   .footer {
