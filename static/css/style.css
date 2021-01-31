@@ -142,7 +142,7 @@ hr {
   margin-right: 40px;
   text-align: left;
   color: rgb(226, 223, 223);
-  font-size: 20px cursive ;
+  font-size: 24px ;
   border-radius: 20px;
 }
 
@@ -156,8 +156,8 @@ hr {
   background-size: cover;
   padding-top: 20px;
   height: 300px; 
-  width: 800px;
-  padding: 20px;
+  width: auto
+  /* padding: 20px; */
   border-radius: 15px;
 }
 
@@ -170,4 +170,8 @@ hr {
 #bar{
   margin-right: ;
   margin-left: 20px;
+}
+
+#logo{
+  position: center;
 }
