@@ -1,33 +1,18 @@
-// d3.json("/cocktail-name-data", function(cocktailData) {
-//     names = []
-//     cocktailData.forEach(function(data) {
-//         names.push(data.cocktail)
-//     })
-//     // Add dropdown option for each sample
-//     var cocktailDropdown = d3.select("#selCocktail");
-
-//     choices = cocktailDropdown.selectAll("option")
-//         .data(names.sort())
-//         .enter()
-//         .append("option")
-//         .attr("value", name => name)
-//         .text(name => name)
-//         .exit();
-    
-//     var initialCocktail = cocktailDropdown.node().value;
-
-//     buildRecipe(initialCocktail);
-//     buildBarChart(initialCocktail);
-
-// });
-
 
 function buildBarChart(cocktail) {
     d3.json("/measure-data", function(cocktailData) {
-        var ingredients = [];
-        var measurements = [];
+        buildRecipe(cocktail)
+        ingredients = [];
+        measurements = [];
+
         var traces = [];
-        var colors = [
+        cocktailData.forEach(function(data) {
+            if (data.cocktail === cocktail) {
+                ingredients.push(data.ingredient);
+                measurements.push(data.measure);
+            }
+        })
+        colors = [
             "#800000",
             "#AC5924",
             "#CC993D",
@@ -35,14 +20,6 @@ function buildBarChart(cocktail) {
             "#DF8234",
             "#D6411A"
         ]
-
-        cocktailData.forEach(function(data) {
-            if (data.cocktail.trim().toLowerCase() == cocktail.trim().toLowerCase()) {
-                ingredients.push(data.ingredient);
-                measurements.push(data.measure);
-            }
-        })
-
         for (i=0; i<ingredients.length; i++) {
 
             var trace = {
@@ -72,13 +49,26 @@ function buildBarChart(cocktail) {
         }
 
         Plotly.newPlot('bar', traces, layout);
+
+     
     })
 }
+
+function cocktailChanged(newCocktail){
+    buildRecipe(newCocktail);
+    buildBarChart(newCocktail);
+
+}
+
+function onlyUnique(value, index, self) {
+    return self.indexOf(value) === index;
+}
+
 
 function buildRecipe(cocktail) {
     console.log(cocktail);
     d3.json("/recipe-data", function(cocktailData) {
-        currentCocktail = cocktailData.filter(d => d.cocktail.trim().toLowerCase() == cocktail.trim().toLowerCase());
+        currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
         console.log(currentCocktail);
 
         createList = d3.select("#recipe-list")
@@ -94,63 +84,4 @@ function buildRecipe(cocktail) {
 
     })
 }
-        // currentCocktail = cocktailData.filter(d => d.cocktail === cocktail);
-        // var recipeTable = d3.select("#recipe-table").append("table");
-        // var header = recipeTable.append("thead").append("tr");
-        // // var body = recipeTable.append("tbody");
 
-        // header.selectAll("th")
-        //     .data(Object.entries(currentCocktail[0]));
-        
-        // header.enter()
-        //     .append("th")
-        //     .merge(header)
-        //     .text((d,i) => {console.log(d[0]); return d[0]});
-
-        // header.exit()
-        //     .remove();
-
-        // row = body.append("tr").selectAll("")
-        // .data(ableData)
-        // .enter()
-        // .append("tr")
-
-        //     row.selectAll("td")
-        //         .data()
-
-// function cocktailChanged(newCocktail){
-//     buildRecipe(newCocktail);
-//     buildBarChart(newCocktail);
-
-// }
-
-// function onlyUnique(value, index, self) {
-//     return self.indexOf(value) === index;
-// }
-
-// function cocktailNames() {
-//     d3.json("/measure-data").then(function (cocktailData) {
-//         names = cocktailData.map(data => data.cocktail);
-//         names = names.filter(onlyUnique);
-//         return names;
-//     });
-// }
-
-
-
-// function loadAutocompleteData() {
-//     d3.json("/cocktail-name-data", function(cocktailData) {
-//         names = [];
-//         cocktailData.forEach(function(data) {
-//             names.push(data.cocktail);  
-//         });
-//         return names;
-        
-//     });
-// }
-
-//  = document.querySelector('#autcomplete-result');
-
-// button.addEventListener('click', ()=>{
-//   msg.classList.toggle('reveal');
-// })

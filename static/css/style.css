@@ -1,6 +1,5 @@
 /* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
-  /* background: rgb(241, 233, 225); */
   background-image: url("../Images/old_oak.jpg");
   background-size: cover;
   background-position: center;
@@ -16,15 +15,10 @@ img {
   height: auto;
 }
 
-
 #svg_box {
   text-align: center;
   position: relative;
 }
-
-/* text {
-  fill: url(#wall4);
-} */ */
 
 #Age.image {
   width: 50%;
@@ -33,7 +27,6 @@ img {
 
 .navbar{
 height:60px;
-/* background:black; */
 }
 
 .container {
@@ -79,6 +72,15 @@ h4 {
 
 }
 
+h5 {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #000000;
+  font-size: 40px;
+  font-family: Brush Script MT;
+
+}
+
 h1 {
   font-size: 30px;
 }
@@ -110,7 +112,6 @@ hr {
     margin-bottom: 25px;
 }
 
-
 .popupImage {
   max-width: 150px;
   max-height: 150px;
@@ -123,11 +124,16 @@ hr {
 
 #panel-id {
   background-image: url("../Images/chalkboard2jpg.jpg");
-  background-position: center;
-  margin: 0px;
-  height: 448px;
-  width: 652px;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: center;
+  height: 500px;
+  width: auto;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 10%;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 #recipe-list {
@@ -142,4 +148,26 @@ hr {
 
 #panel-title {
   padding: 40px;
+}
+
+#cocktail-search{
+  background-image: url("../Images/cocktail_bg.png");
+  background-repeat:space;
+  background-size: cover;
+  padding-top: 20px;
+  height: 300px; 
+  width: 800px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#cocktail-search-overlay{
+  background-color: #ffffff;
+  opacity: 70%;
+  padding-top: 20px;
+}
+
+#bar{
+  margin-right: ;
+  margin-left: 20px;
 }

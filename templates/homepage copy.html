@@ -6,21 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Cocktail Creator</title>
-  <!-- <script src="https://d3js.org/d3.v6.min.js"></script> -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
   <!--D3 cdn-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
-  <!-- CSS -->
+  <!-- Our CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+  <!-- link to auto complete CSS -->
   <link rel="stylesheet" type="text/css" href="../static/css/main.css">
   <link rel="stylesheet" type="text/css" href="../static/css/autoComplete.css">
 </head>
 
 <body>
-  <div class="row navbar navbar-expand-sm bg-dark navbar-dark">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Links -->
     <ul class="navbar-nav">
@@ -35,87 +36,85 @@
       </li>
     </ul>
   </nav>
-  </div>
-  <div class="row"><br></div>
   <div class="row">
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6">
-      <div align="center">
-        <img src="../static/Images/Cocktail_Creator_logo.png" alt="Snow">
+    <div class="col-md-12">
+      <div class="container fluid">
+        <img src="../static/Images/logo3.jpg" alt="Snow">
       </div>
-    </div>
-    <div class="col-md-3">
     </div>
   </div>
-  <div class="row"><br></div>
-  <div class="row"> -->
-    <!-- <div class="col-md-12"> -->
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-6" id="cocktail-search">
-      <div align="center">
-        <div class="body">
-          <div class="autoComplete_wrapper">
-            <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
-              autocapitalize="off" maxlength="2048" tabindex="1">
-          </div>
-          <div class="mode">
-            <h5>Search Mode</h5>
-            <div class="toggle">
-              <div class="toggler">Strict</div>
-            </div>
-          </div>
-          <div class="selection"></div>
-        </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="container fluid">
+        <img src="../static/Images/cocktail_bg.jpg">
       </div>
-    </div>
-    <div class="col-md-3">
     </div>
   </div>
 
-  <div class="row"><br></div>
+  <!-- <select id="selCocktail" onchange="cocktailChanged(this.value)"></select>
+ -->
+  <div class="row">
+    <div class="col-md-12">
+      <!--autofill -->
+      <div class="body" align="center">
+        <div class="autoComplete_wrapper">
+          <input id="autoComplete" type="text" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off"
+            autocapitalize="off" maxlength="2048" tabindex="1">
+        </div>
+        <div class="mode">
+          <h4>Search Mode</h4>
+          <div class="toggle">
+            <div class="toggler">Strict</div>
+          </div>
+        </div>
+        <div class="selection"></div>
+      </div>
+    </div>
+  </div>
   <!-- auto -->
-
   <div class="row">
     <div class="col-md-6">
-      <div aligh-"center">
-        <div class="container-fluid">
-          <div class="panel panel-primary" id="panel-id">
-            <div class="panel-heading">
-              <h3 id="panel-title">Cocktail Recipe</h3>
-            </div>
-            <div id="recipe" class="panel-body"></div>
+      <div class="container-fluid">
+      </div>
+      <div class="panel panel-primary" id="panel-id">
+        <div class="panel-heading">
+          <h3 id="panel-title">Cocktail Recipe</h3>
+        </div>
+        <div id="recipe" class="panel-body"></div>
+        <!-- <img src="../static/Images/chalkboard2jpg.jpg" id="recipe_table"> -->
 
-            <div id="recipe-table"></div>
-            <div>
-              <ul id="recipe-list"></ul>
-            </div>
-          </div>
+        <div id="recipe-table"></div>
+        <div>
+          <ul id="recipe-list"></ul>
         </div>
       </div>
     </div>
 
     <div class="col-md-6">
-      <div align-"center">
-        <div class="container fluid">
-          <div id="bar"></div>
-        </div>
+      <div class="container fluid">
+
+        <div id="bar"></div>
       </div>
     </div>
   </div>
-  <div class="row"><br></div>
+
   <!-- API key -->
   <script src="../static/js/barChart.js"></script>
   <script type="text/javascript" src="static/js/config.py"></script>
   <!-- <script type="text/javascript" src="static/js/js-templating.js"></script> -->
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <!-- Our JS -->
+  <!-- <script type="text/javascript" src="static/js/logic.js"></script> -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/css/autoComplete.min.css">
+
+  <!-- for auto fill
+  <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script> -->
 
   <!-- auto style sheet -->
   <script src="https://cdn.jsdelivr.net/npm/@tarekraafat/autocomplete.js@8.3.0/dist/js/autoComplete.min.js"></script>
-  <script type="text/javascript" src="../static/js/index.js"></script>
-  <script type="text/javascript" src="../static/js/autoComplete.js"></script>
+  <script src="../static/js/index.js"></script>
+  <script src="../static/js/autoComplete.js"></script>
 
 </body>
 

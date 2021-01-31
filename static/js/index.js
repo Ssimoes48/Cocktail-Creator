@@ -33,7 +33,7 @@ document.querySelector("#autoComplete").addEventListener("init", function (event
 
 // The autoComplete.js Engine instance creator
 const autoCompleteJS = new autoComplete({
-  name: "food & drinks",
+  name: "cocktail",
   selector: "#autoComplete",
   observer: false,
   data: {
@@ -60,12 +60,12 @@ const autoCompleteJS = new autoComplete({
 
       return JSON.parse(localStorage.getItem("acData"));
     },
-    key: ["category", "cocktail"],
+    key: ["cocktail"],
     cache: true,
     results: (list) => {
       // Filter duplicates
-      const filteredResults = Array.from(new Set(list.map((value) => value.match))).map((category) => {
-        return list.find((value) => value.match === category);
+      const filteredResults = Array.from(new Set(list.map((value) => value.match))).map((cocktail) => {
+        return list.find((value) => value.match === cocktail);
       });
 
       return filteredResults;
@@ -122,8 +122,9 @@ const autoCompleteJS = new autoComplete({
     document.querySelector("#autoComplete").value = selection;
     // Console log autoComplete data feedback
     console.log(feedback);
-    buildRecipe(selection);
+// Calls Bar chart update and recipe update
     buildBarChart(selection);
+
 ;
   },
 });
