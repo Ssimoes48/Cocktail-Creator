@@ -126,7 +126,6 @@ hr {
 }
 
 .leaflet-popup-content-wrapper {
-  /* background-color: #9B0BB4; */
   background-image: url("../Images/chalkboard.jpg")
 }
 
@@ -140,17 +139,14 @@ hr {
   position: center;
   height: auto;
   width: auto;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 10%;
-  padding: 20px;
   border-radius: 10px;
+  margin-top: 20px;
 }
 
 #recipe-list {
   padding: 20px;
-  margin-left: 50px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: left;
   text-overflow: ellipsis;
   color: rgb(226, 223, 223);
@@ -162,8 +158,8 @@ hr {
 #panel-title {
   padding:
     top 20px,
-    left 30px,
-    right 30px,
+    left 10%,
+    right 10%,
     bottom 10px
 }
 
@@ -173,8 +169,7 @@ hr {
   background-size: cover;
   padding-top: 20px;
   height: 300px; 
-  width: auto
-  /* padding: 20px; */
+  width: auto;
   border-radius: 15px;
 }
 
@@ -203,7 +198,6 @@ hr {
 
 .divfoot {
   width:100%;
-  /* position:absolute; */
   bottom:0;
   background-color: rgb(45, 44, 44);
   z-index:0;

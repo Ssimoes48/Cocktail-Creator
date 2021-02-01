@@ -27,7 +27,7 @@ function buildBarChart(cocktail) {
                 y: [parseFloat(measurements[i])],
                 name: `${measurements[i]} oz ${ingredients[i]}`,
                 type: 'bar',
-                width: 0.4,
+                width: 1,
                 marker: {
                     color: colors[i],
                 }
