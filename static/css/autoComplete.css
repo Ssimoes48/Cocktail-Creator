@@ -1,12 +1,12 @@
 .autoComplete_wrapper {
   position: relative;
   display: inline-block;
-  width: 370px;
+  width: 100%;
 }
 
 #autoComplete {
   height: 3rem;
-  width: 370px;
+  width: 350px;
   margin: 0;
   padding: 0 2rem 0 3.2rem;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
   -webkit-box-sizing: border-box;
   font-size: 1rem;
   text-overflow: ellipsis;
-  color: rgba(255, 122, 122, 0.3);
+  color: rgba(255, 122, 122, 0.804);
   outline: none;
   border-radius: 10rem;
   border: 0;
@@ -30,7 +30,7 @@
 }
 
 #autoComplete::placeholder {
-  color: rgba(255, 122, 122, 0.5);
+  color: slategrey;
   transition: all 0.3s ease;
   -webkit-transition: all -webkit-transform 0.3s ease;
 }
