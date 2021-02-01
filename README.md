@@ -57,7 +57,7 @@ We combined data sets for state cocktail and geographic coordinates into one tab
 We chose to use a SLQ database in Postgres for our data because it is a more structured format. We hoped to have additional visualizations with more complicated queries, but we did not have time to complete them. We mapped out our database using Quick Database Diagram and created a schema. The schema assigned keys and foreign keys to help link our data together in our queries. We used the cocktail name as a our primary key. 
 Once our schema was loaded into Postgres, we ran our jupyter notebooks to load the data. 
 
-![Schema](static/Images/Draft_Schema.png)
+![Schema](static/Images/schema.png)
 
 # Deploy
 
@@ -72,7 +72,7 @@ We created several visualizations for our Cocktail Creator website. On our home 
 
 The dropdown also uses a new Javascript library called [Vanilla autoComplete JS](https://github.com/TarekRaafat/autoComplete.js)  which allows the drop down to start to auto complete as you begin to type. 
 
-![barchart](static/Images/recipe_bar.png)
+![barchart](static/Images/new_homepage.png)
 
 
 ![bubble](static/Images/bubble.JPG)
