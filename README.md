@@ -91,7 +91,7 @@ Our final visualization is an interactive map of the United States that shows th
 
 We designed our interactive Cocktail Creator website using css formatting. To make the site a seamless experience for the user, we formatted each page with a matching themed background image and user-friendly navigation bar. We also added image headers to each page for consistency. 
 
-![menu bar](static/Images/nav_bar.JPG)
+![menu bar](static/Images/cocktail_menu.JPG)
 
 ![nav bar](static/Images/nav_bar.JPG)
 
