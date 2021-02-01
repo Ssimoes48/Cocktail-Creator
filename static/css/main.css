@@ -100,8 +100,8 @@ h4::selection {
     margin-top: 15vh;
   }
 
-@media only screen and (max-height: 500px) {
+/* @media only screen and (max-height: 600px) {
   .footer {
     display: none;
   }
-}
+} */
