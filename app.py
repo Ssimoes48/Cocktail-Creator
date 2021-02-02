@@ -1,9 +1,22 @@
+# import necessary libraries
+from models import create_classes
 from flask import Flask, jsonify, render_template, redirect
 # from geopy.geocoders import GoogleV3
 import os
 import psycopg2
 import numpy as np
 import socket
+
+from flask_sqlalchemy import SQLAlchemy
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
+
+# Remove tracking modifications
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+
+Pet = create_classes(db)
+
 
 db_name = "cocktail_db"
 
