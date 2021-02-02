@@ -2,8 +2,6 @@
 
 ![logo](static/Images/logo3.JPG)
 
-[Cocktail Creator]( https://makeyourcocktails.herokuapp.com)
-
 ## Table of contents
 * [Cocktail Creator](#cocktail-creator)
 * [Technologies](#technologies)
@@ -55,7 +53,7 @@ We combined data sets for state cocktail and geographic coordinates into one tab
 # Load
 
 We chose to use a SLQ database in Postgres for our data because it is a more structured format. We hoped to have additional visualizations with more complicated queries, but we did not have time to complete them. We mapped out our database using Quick Database Diagram and created a schema. The schema assigned keys and foreign keys to help link our data together in our queries. We used the cocktail name as a our primary key. 
-Once our schema was loaded into Postgres, we ran our jupyter notebooks to load the data. 
+Once our [schema](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/Schema/cocktail_db.sql) was loaded into Postgres, we ran our jupyter notebooks to load the data. 
 
 ![Schema](static/Images/schema.png)
 
@@ -111,21 +109,23 @@ To Deploy our Flask App, please follow the below steps :
 
 * step 5: Create a database in postgres called 'cocktail_db'
 
-* step 6: Use the cocktail_db.txt inside schema folder to run the create table commands
+* step 6: Use the [cocktail_db.txt](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/Schema/cocktail_db.sql) inside schema folder to run the create table commands
 
 * step 7: run all the jupyter notebooks in the following order:
-	* category_table
-	* cocktail_cleanup_function
-	* recipe_csv
-	* recipe_csv
+	* [category_table](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/DataCleaning/category_table.ipynb)
+	* [cocktail_cleanup_function](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/DataCleaning/cocktail_cleanup_function.ipynb)
+	* [recipe_csv](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/DataCleaning/recipe_csv.ipynb)
+	* [state combine](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/DataCleaning/state_combine.ipynb)
 
-* step 8: Confirm config.py has the right postgress url, username and password 
+
+
+* step 8: Confirm [config.py](https://github.com/Ssimoes48/Cocktail-Creator/blob/main/config.py) has the right postgress url, username and password  
 
 * step 9: Execute command python app.py and launch the server using URL: http://127.0.0.1:5000/
 
 ## Heroku
 
-[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com)
+[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com) We worked to deploy our app to Heroku however, we had issues initializing our data and calling the data to our server. If you view the above link, you will see our website and some of the visualizations load, there is just no data being populated. We are going to continue to work on this.
 
 ## Resources
 
