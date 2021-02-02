@@ -29,8 +29,9 @@ def create_classes(db):
     class measure(db.Model):
         __tablename__ = 'measure'
         ingredient    = db.relationship('ingredients', backref = 'name', primary_key = True, lazy = 'dynamic')
-        measure        = db.Column(db.Integer, db.ForeignKey('member.id'))
-        version      = db.Column(db.Integer, db.ForeignKey('version.id'))
+        measure       = db.Column(db.String(64))
+        cocktail      = db.relationship('cocktail', backref = 'name', primary_key = True, lazy = 'dynamic')
+        unit          = db.Column(db.String(64))
 
 def __repr__(self):
             return '<Pet %r>' % (self.name)
