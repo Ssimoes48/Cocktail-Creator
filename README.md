@@ -125,7 +125,7 @@ To Deploy our Flask App, please follow the below steps :
 
 ## Heroku
 
-[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com) We worked to deploy our app to Heroku however, we had issues initializing our data and calling the data to our server. If you view the above link, you will see our website and some of the visualizations load, there is just no data being populated. We are going to continue to work on this.
+[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com) We were able to deploy our app to Heroku.
 
 ## Resources
 
