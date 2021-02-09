@@ -20,7 +20,7 @@
 
 ![gif](https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif)
 
-## Coctail Creator 
+## Cocktail Creator 
 
 Objective: Our objective was to create an interactive website where you can find recipes for hundreds of unique cocktails.
 
