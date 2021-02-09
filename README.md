@@ -2,10 +2,11 @@
 
 ![logo](static/Images/logo3.JPG)
 
+[Cocktail Creator Heroku Link](https://makeyourcocktails.herokuapp.com)
+
 ## Table of contents
 * [Cocktail Creator](#cocktail-creator)
 * [Technologies](#technologies)
-* [Objective](#objective)
 * [Extract](#extract)
 * [Transform](#transform)
 * [Load](#load)
@@ -19,9 +20,9 @@
 
 ![gif](https://media0.giphy.com/media/3o7qDZCsPfhyaRazE4/giphy.gif?cid=ecf05e475kr7ugqqtux44yfk8yyp0stctomqe8kxneh8anve&rid=giphy.gif)
 
-## Objective 
+## Coctail Creator 
 
-Our objective was to create an interactive website where you can find recipes for hundreds of unique cocktails.
+Objective: Our objective was to create an interactive website where you can find recipes for hundreds of unique cocktails.
 
 Target Market:
 
